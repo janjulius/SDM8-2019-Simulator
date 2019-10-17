@@ -13,7 +13,7 @@ public class Path : MonoBehaviour
     
     void Start()
     {
-        GizmoColor = GetPathColor(PathType);
+
     }
     
     void Update()
@@ -23,6 +23,7 @@ public class Path : MonoBehaviour
 
     void OnDrawGizmos()
     {
+        GizmoColor = GetPathColor(PathType);
         for (int i = 0; i < Points.Length; i++)
         {
             Gizmos.color = GizmoColor;
