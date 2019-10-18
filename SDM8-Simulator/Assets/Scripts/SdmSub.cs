@@ -24,4 +24,10 @@ public class SdmSub : MonoBehaviour
     {
         return $"{teamId}/{laneType.ToString().ToLower()}/{direction.ToString().ToLower()}/{groupId}/{subgroupId}/{componentType.ToString().ToLower()}/{componentId}";
     }
+
+    private void OnDrawGizmosSelected()
+    {
+        Gizmos.color = Color.white;
+        Gizmos.DrawWireSphere(gameObject.transform.position, 5);
+    }
 }

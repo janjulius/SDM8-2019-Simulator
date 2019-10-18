@@ -10,6 +10,9 @@ public class Path : MonoBehaviour
     private Color GizmoColor;
 
     public PathTypes PathType;
+
+    [Header("Stoplights units on this path should stop for")]
+    public StopLight[] StopForStopLights;
     
     void Start()
     {

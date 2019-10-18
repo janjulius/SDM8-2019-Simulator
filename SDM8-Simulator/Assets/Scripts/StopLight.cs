@@ -8,6 +8,10 @@ public class StopLight : SdmSub
 
     private GameObject ConnectedTrafficLight;
 
+    public Vector3 StopCollisionLocation;
+
+    public Vector3 StopCollisionSize;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -45,5 +49,11 @@ public class StopLight : SdmSub
         status = status == 2 ? 0 : status + 1;
         yield return new WaitForSeconds(1f);
         StartCoroutine(StopLightTest());
+    }
+
+    private void OnDrawGizmosSelected()
+    {
+        Gizmos.color = Color.black;
+        Gizmos.DrawCube(StopCollisionLocation, StopCollisionSize);
     }
 }
