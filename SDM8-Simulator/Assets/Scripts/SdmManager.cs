@@ -4,8 +4,13 @@ using UnityEngine;
 
 public class SdmManager : MonoBehaviour
 {
-    public string connectedGroup;
+    public string connectedGroup = "8";
     private static SdmManager instance = null;
+
+    private void Awake()
+    {
+        new SdmManager();
+    }
 
     private SdmManager()
     {

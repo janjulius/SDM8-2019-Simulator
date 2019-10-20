@@ -7152,10 +7152,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   laneType: 0
   direction: 0
-  groupId: 
-  subgroupId: 
+  groupId: 0
+  subgroupId: 0
   componentType: 0
-  componentId: 
+  componentId: 0
   StopCollisionLocation: {x: 237.7, y: 3.01, z: 174.16}
   StopCollisionSize: {x: 17.7, y: 43.7, z: 14}
 --- !u!1001 &1452287149

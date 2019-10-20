@@ -16,13 +16,20 @@ public class StopLight : SdmSub
     void Start()
     {
         ConnectedTrafficLight = gameObject;
-        StartCoroutine(StopLightTest());
+        base.Start();
+        //StartCoroutine(StopLightTest());
     }
 
     // Update is called once per frame
     void Update()
     {
         
+    }
+
+    public void SetStatus(int status)
+    {
+        this.status = status;
+        UpdateStopLight();
     }
     
     public void UpdateStopLight()
