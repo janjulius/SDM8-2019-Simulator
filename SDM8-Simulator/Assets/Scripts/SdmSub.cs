@@ -68,7 +68,8 @@ public class SdmSub : MonoBehaviour
         string clientId = Guid.NewGuid().ToString();
         client.Connect(clientId);
         client.Subscribe(new string[] { topic }, new byte[] { MqttMsgBase.QOS_LEVEL_AT_LEAST_ONCE });
-        print($"Started subscription on: {Constants.ADDRESS}:{Constants.PORT}, topic: {ToString()}");
+        if(Constants.SHOW_CONNECTED_MESSAGES)
+            print($"Started subscription on: {Constants.ADDRESS}:{Constants.PORT}, topic: {ToString()}");
     }
 
     public virtual void Client_MqttMsgPublishReceived(object sender, MqttMsgPublishEventArgs e)

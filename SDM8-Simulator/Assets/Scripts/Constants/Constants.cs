@@ -12,5 +12,6 @@ namespace Assets.Scripts.Constants
 	    public static string ADDRESS = "91.121.165.36";
 	    public static int PORT = 1883;
 	    public static string CONNECTED_TEAM = "8";
+        public static bool SHOW_CONNECTED_MESSAGES = false;
     }
 }

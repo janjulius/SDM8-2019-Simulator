@@ -1170,6 +1170,31 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 07e6fdb41b265184dad1158beefc08f1, type: 3}
+--- !u!1 &184847620 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1985699654567720, guid: 682f8b1e793d91f43b2ec051e8fd4f3a,
+    type: 3}
+  m_PrefabInstance: {fileID: 1299777394}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &184847623
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 184847620}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1906dc610092dee4e858a0f459399264, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  laneType: 2
+  groupId: 6
+  subgroupId: 0
+  componentType: 0
+  componentId: 0
+  StopCollisionLocation: {x: 195.3, y: 3, z: 174}
+  StopCollisionSize: {x: 15.79, y: 43, z: 14}
 --- !u!1001 &189257209
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6723,6 +6748,31 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 541698233}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1325141819 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1985699654567720, guid: 682f8b1e793d91f43b2ec051e8fd4f3a,
+    type: 3}
+  m_PrefabInstance: {fileID: 2135380009}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1325141822
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1325141819}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1906dc610092dee4e858a0f459399264, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  laneType: 2
+  groupId: 5
+  subgroupId: 0
+  componentType: 0
+  componentId: 0
+  StopCollisionLocation: {x: 0, y: 0, z: 0}
+  StopCollisionSize: {x: 0, y: 0, z: 0}
 --- !u!1 &1340837015
 GameObject:
   m_ObjectHideFlags: 0
@@ -7150,10 +7200,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1906dc610092dee4e858a0f459399264, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  laneType: 0
-  direction: 0
-  groupId: 0
-  subgroupId: 0
+  laneType: 2
+  groupId: 5
+  subgroupId: 1
   componentType: 0
   componentId: 0
   StopCollisionLocation: {x: 237.7, y: 3.01, z: 174.16}
@@ -8917,7 +8966,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1817196265}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: 6.1}
+  m_LocalPosition: {x: 242.4, y: 20.75, z: 136.92}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}

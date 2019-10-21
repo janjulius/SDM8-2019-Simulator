@@ -1,56 +1,28 @@
-﻿using System;
+﻿using Assets.Scripts;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using uPLibrary.Networking.M2Mqtt.Messages;
 
-public class StopLight : SdmSub
+public class StopLight : TrafficObject
 {
-    private int status = 0;
-
-    private GameObject ConnectedTrafficLight;
-
     public Vector3 StopCollisionLocation;
 
     public Vector3 StopCollisionSize;
-
-    // Start is called before the first frame update
-    new void Start()
+    
+    public override void SetStatus(int status)
     {
-        base.Start();
-        ConnectedTrafficLight = gameObject;
-    }
-
-    public override void Client_MqttMsgPublishReceived(object sender, MqttMsgPublishEventArgs e)
-    {
-        base.Client_MqttMsgPublishReceived(sender, e);
-        try
-        {
-            int i = Convert.ToInt32(e.Message[e.Message.Length - 1]);
-            SetStatus(i);
-        }
-        catch (InvalidCastException fe)
-        {
-            print($"Incorrect format: {e.Message}, {fe.StackTrace}");
-        }
-        catch(Exception r)
-        {
-            print(r);
-        }
-    }
-
-    public void SetStatus(int status)
-    {
-        this.status = status;
+        base.SetStatus(status);
         UnityThread.executeInUpdate(() =>
         {
             UpdateStopLight();
         });
     }
-    
+
     public void UpdateStopLight()
     {
-        ConnectedTrafficLight.GetComponent<Renderer>().material.SetColor("_Color", GetColorByStatus(status));
+        SetRendererColor(GetColorByStatus(Status));
     }
 
     public Color GetColorByStatus(int status)
@@ -68,7 +40,7 @@ public class StopLight : SdmSub
     IEnumerator StopLightTest()
     {
         UpdateStopLight();
-        status = status == 2 ? 0 : status + 1;
+        SetStatus(Status == 2 ? 0 : Status + 1);
         yield return new WaitForSeconds(1f);
         StartCoroutine(StopLightTest());
     }
