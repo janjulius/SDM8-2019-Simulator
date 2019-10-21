@@ -6,8 +6,12 @@ using System.Threading.Tasks;
 
 namespace Assets.Scripts
 {
-    class Barrier : SdmClient
+    class Barrier : TrafficObject
     {
-
+        public override void SetUp()
+        {
+            base.SetUp();
+            Subscribe();
+        }
     }
 }
