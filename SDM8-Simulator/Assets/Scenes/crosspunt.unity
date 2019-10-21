@@ -6748,31 +6748,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 541698233}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1325141819 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1985699654567720, guid: 682f8b1e793d91f43b2ec051e8fd4f3a,
-    type: 3}
-  m_PrefabInstance: {fileID: 2135380009}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1325141822
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1325141819}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1906dc610092dee4e858a0f459399264, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  laneType: 2
-  groupId: 5
-  subgroupId: 0
-  componentType: 0
-  componentId: 0
-  StopCollisionLocation: {x: 0, y: 0, z: 0}
-  StopCollisionSize: {x: 0, y: 0, z: 0}
 --- !u!1 &1340837015
 GameObject:
   m_ObjectHideFlags: 0
@@ -8966,7 +8941,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1817196265}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 242.4, y: 20.75, z: 136.92}
+  m_LocalPosition: {x: 218.47, y: 20.75, z: 136.92}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
