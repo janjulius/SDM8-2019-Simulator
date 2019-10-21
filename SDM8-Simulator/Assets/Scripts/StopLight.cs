@@ -17,6 +17,7 @@ public class StopLight : SdmSub
     // Start is called before the first frame update
     new void Start()
     {
+        base.Start();
         ConnectedTrafficLight = gameObject;
     }
 
