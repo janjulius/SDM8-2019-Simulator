@@ -10,6 +10,9 @@ using uPLibrary.Networking.M2Mqtt.Messages;
 
 namespace Assets.Scripts
 {
+    /// <summary>
+    /// Represents the SdmClient built to hold all mqtt behaviour
+    /// </summary>
     public class SdmClient : MonoBehaviour
     {
         protected MqttClient mqttClient;
@@ -63,7 +66,13 @@ namespace Assets.Scripts
         /// </summary>
         public virtual void ConnectedRefresh() { }
 
-        public MqttClient Connect(string host, int brokerPort)
+        /// <summary>
+        /// Connect to a host
+        /// </summary>
+        /// <param name="host">The host</param>
+        /// <param name="brokerPort">The port</param>
+        /// <returns>The resulting MqttClient</returns>
+        private MqttClient Connect(string host, int brokerPort)
         {
             MqttClient client = new MqttClient(host, brokerPort, false, null);
             string clientId = Guid.NewGuid().ToString();
@@ -73,37 +82,55 @@ namespace Assets.Scripts
             return client;
         }
 
-        public void Subscribe()
-        {
-            Subscribe(ToString());
-        }
+        /// <summary>
+        /// Auto subscribe to set values and find mqttclient if not existing
+        /// </summary>
+        protected void Subscribe() => Subscribe(mqttClient ?? Connect(Constants.Constants.ADDRESS, Constants.Constants.PORT));
 
-        public void Subscribe(string topic)
-        {
-            Subscribe(mqttClient ?? Connect(Constants.Constants.ADDRESS, Constants.Constants.PORT), topic);
-        }
-        
-        public void Subscribe(MqttClient client, string topic)
+        /// <summary>
+        /// Subscribe to this mqtt topic
+        /// </summary>
+        /// <param name="client">The client</param>
+        private void Subscribe(MqttClient client)
         {
             client.MqttMsgPublishReceived += Client_MqttMsgPublishReceived;
             string clientId = Guid.NewGuid().ToString();
             client.Connect(clientId);
-            client.Subscribe(new string[] { topic }, new byte[] { MqttMsgBase.QOS_LEVEL_AT_LEAST_ONCE });
+            client.Subscribe(new string[] { ToString() }, new byte[] { MqttMsgBase.QOS_LEVEL_AT_LEAST_ONCE });
             if (Constants.Constants.SHOW_CONNECTED_MESSAGES)
                 print($"Started subscription on: {Constants.Constants.ADDRESS}:{Constants.Constants.PORT}, topic: {ToString()}");
         }
 
-        public void Publish(string topic, string message)
-        {
-            Publish(mqttClient ?? Connect(Constants.Constants.ADDRESS, Constants.Constants.PORT), topic, Encoding.ASCII.GetBytes(message));
-        }
+        /// <summary>
+        /// Publishes a message on the current topic
+        /// </summary>
+        /// <param name="message">The message</param>
+        protected void Publish(string message) => Publish(mqttClient ?? Connect(Constants.Constants.ADDRESS, Constants.Constants.PORT), ToString(), Encoding.ASCII.GetBytes(message));
 
-        public void Publish(MqttClient client, string topic, string message)
+        /// <summary>
+        /// Publishes a message on the current topic
+        /// </summary>
+        /// <param name="message">The message</param>
+        protected void Publish(int message) => Publish(message.ToString());
+
+        /// <summary>
+        /// Publishes a message on a custom topic and client
+        /// </summary>
+        /// <param name="client"></param>
+        /// <param name="topic"></param>
+        /// <param name="message"></param>
+        private void Publish(MqttClient client, string topic, string message)
         {
             Publish(client, topic, Encoding.ASCII.GetBytes(message));
         }
 
-        public void Publish(MqttClient client, string topic, byte[] message)
+        /// <summary>
+        /// Publishes a message on a custom topic and client
+        /// </summary>
+        /// <param name="client"></param>
+        /// <param name="topic"></param>
+        /// <param name="message"></param>
+        private void Publish(MqttClient client, string topic, byte[] message)
         {
             string clientId = Guid.NewGuid().ToString();
             client.Connect(clientId);

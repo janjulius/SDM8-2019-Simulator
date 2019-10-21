@@ -14,16 +14,6 @@ public class Path : MonoBehaviour
     [Header("Stoplights units on this path should stop for")]
     public StopLight[] StopForStopLights;
     
-    void Start()
-    {
-
-    }
-    
-    void Update()
-    {
-        
-    }
-
     void OnDrawGizmos()
     {
         GizmoColor = GetPathColor(PathType);

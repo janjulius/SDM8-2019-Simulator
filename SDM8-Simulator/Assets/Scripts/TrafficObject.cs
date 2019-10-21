@@ -8,7 +8,9 @@ using uPLibrary.Networking.M2Mqtt.Messages;
 
 namespace Assets.Scripts
 {
-
+    /// <summary>
+    /// Represetns a traffic object that has a mqtt connection
+    /// </summary>
     public class TrafficObject : SdmClient
     {
         public int Status { private set; get; } = 0;
