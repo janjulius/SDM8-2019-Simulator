@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace Assets.Scripts
 {
-    class Sensor
+    class Sensor : SdmClient
     {
+
     }
 }

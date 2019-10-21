@@ -6,9 +6,8 @@ using System.Threading.Tasks;
 
 namespace Assets.Scripts
 {
-    class Barrier : SdmSub
+    class Barrier : SdmClient
     {
-
 
     }
 }

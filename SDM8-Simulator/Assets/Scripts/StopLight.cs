@@ -10,19 +10,25 @@ public class StopLight : TrafficObject
     public Vector3 StopCollisionLocation;
 
     public Vector3 StopCollisionSize;
-    
+
+    public override void SetUp()
+    {
+        base.SetUp();
+        SetStatus(0);
+        Subscribe(); 
+    }
+
     public override void SetStatus(int status)
     {
         base.SetStatus(status);
-        UnityThread.executeInUpdate(() =>
-        {
-            UpdateStopLight();
-        });
+        UpdateStopLight();
     }
 
     public void UpdateStopLight()
     {
-        SetRendererColor(GetColorByStatus(Status));
+        UnityThread.executeInUpdate(() =>
+            SetRendererColor(GetColorByStatus(Status))
+        );
     }
 
     public Color GetColorByStatus(int status)

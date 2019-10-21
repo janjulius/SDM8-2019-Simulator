@@ -9,23 +9,17 @@ using uPLibrary.Networking.M2Mqtt.Messages;
 namespace Assets.Scripts
 {
 
-    public class TrafficObject : SdmSub
+    public class TrafficObject : SdmClient
     {
-        private int status = 0;
+        public int Status { private set; get; } = 0;
 
-        public int Status
+        protected delegate void StatusUpdatedDelegate(int i);
+
+        protected event StatusUpdatedDelegate StatusUpdatedEvent;
+        
+        public override void SetUp()
         {
-            private set { status = value; }
-            get { return status; }
-        }
-
-        private delegate void StatusUpdatedDelegate(int i);
-
-        event StatusUpdatedDelegate StatusUpdatedEvent;
-
-        void Start()
-        {
-            base.Start();
+            base.SetUp();
             StatusUpdatedEvent += new StatusUpdatedDelegate(SetStatus);
         }
 
@@ -33,7 +27,7 @@ namespace Assets.Scripts
         {
             gameObject.GetComponent<Renderer>().material.SetColor("_Color", c);
         }
-
+        
         public override void Client_MqttMsgPublishReceived(object sender, MqttMsgPublishEventArgs e)
         {
             base.Client_MqttMsgPublishReceived(sender, e);
@@ -54,7 +48,7 @@ namespace Assets.Scripts
 
         public virtual void SetStatus(int i)
         {
-            status = i;
+            Status = i;
         }
     }
 }
