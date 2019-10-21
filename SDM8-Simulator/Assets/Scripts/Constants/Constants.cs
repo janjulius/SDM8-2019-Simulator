@@ -10,7 +10,7 @@ namespace Assets.Scripts.Constants
     {
         public static string PROTOCOL = "tcp://";   
 	    public static string ADDRESS = "91.121.165.36";
-	    public static string PORT = "1883";
+	    public static int PORT = 1883;
 	    public static string CONNECTED_TEAM = "8";
     }
 }
