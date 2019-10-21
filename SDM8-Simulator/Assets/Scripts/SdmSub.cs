@@ -16,7 +16,6 @@ public class SdmSub : MonoBehaviour
 
     private string teamId = "8";
     public LaneType laneType;
-    public Direction direction;
     public string groupId;
     public string subgroupId;
     public ComponentType componentType;
@@ -46,7 +45,7 @@ public class SdmSub : MonoBehaviour
 
     public override string ToString()
     {
-        return $"{teamId}/{laneType.ToString().ToLower()}/{direction.ToString().ToLower()}/{groupId}/{subgroupId}/{componentType.ToString().ToLower()}/{componentId}";
+        return $"{teamId}/{laneType.ToString().ToLower()}/{groupId}/{subgroupId}/{componentType.ToString().ToLower()}/{componentId}";
     }
 
     private void OnDrawGizmosSelected()
