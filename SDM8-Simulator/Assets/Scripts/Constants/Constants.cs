@@ -34,6 +34,6 @@ namespace Assets.Scripts.Constants
         /// <summary>
         /// If it should show a debug message if a connection was successful
         /// </summary>
-        public static bool SHOW_CONNECTED_MESSAGES = true;
+        public static bool SHOW_CONNECTED_MESSAGES = false;
     }
 }

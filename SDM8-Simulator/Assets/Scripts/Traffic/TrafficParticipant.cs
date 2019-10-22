@@ -15,6 +15,8 @@ namespace Assets.Scripts.Traffic
 
         public int Speed = 3;
 
+        private bool Drive = true;
+
         private void Update()
         {
             print(currentNode + " " + (path.Points.Length - 1));
@@ -26,17 +28,23 @@ namespace Assets.Scripts.Traffic
             if (CheckForDeath())
                 return;
 
-            foreach(StopLight s in path.StopForStopLights)
+            foreach (StopLight s in path.StopForStopLights)
             {
-                if(Vector3.Distance(gameObject.transform.position, s.gameObject.transform.position) < 1
-                    && InFrontOfStopLight(s))
+                if (GetDistance(s) < 5 && InFrontOfStopLight(s))
                 {
                     if (s.Status == 0)
-                        return;
+                    {
+                        Drive = false;
+                        break;
+                    }
                 }
+                Drive = true;
             }
-            Face(path.Points[currentNode + 1]);
-            transform.position = Vector3.MoveTowards(gameObject.transform.position, path.Points[currentNode + 1], Speed * Time.deltaTime);
+            if (Drive)
+            {
+                Face(path.Points[currentNode + 1]);
+                transform.position = Vector3.MoveTowards(gameObject.transform.position, path.Points[currentNode + 1], Speed * Time.deltaTime);
+            }
         }
 
         private bool CheckForDeath()
@@ -51,9 +59,7 @@ namespace Assets.Scripts.Traffic
 
         private bool InFrontOfStopLight(StopLight s)
         {
-            var rot = s.transform.rotation.y;
-            if (rot != 0 || rot != 90 || rot != 180 || rot != 270)
-                Debug.LogError("Stoplight does not have the correct rotation");
+            int rot = (int)Mathf.Floor(s.transform.rotation.y);
 
             if(s.transform.rotation.y == 0 && transform.position.z < s.transform.position.z
                 || s.transform.rotation.y == 90 && transform.position.x < s.transform.position.x
@@ -63,6 +69,17 @@ namespace Assets.Scripts.Traffic
                 return true;
             }
             return false;
+        }
+
+        private float GetDistance(StopLight s)
+        {
+            var rot = s.transform.rotation.y;
+            if (rot == 0 || rot == 180)
+                return Math.Abs(transform.position.z - s.transform.position.z);
+            if (rot == 90 || rot == 270)
+                return Math.Abs(transform.position.x - s.transform.position.x);
+            Debug.LogError("No proper rotation was found. @ Get2DAxis @ TrafficParticipant");
+            return 0;
         }
 
         public void SetPath(Path path)
