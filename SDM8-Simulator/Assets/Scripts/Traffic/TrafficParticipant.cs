@@ -17,11 +17,14 @@ namespace Assets.Scripts.Traffic
 
         private void Update()
         {
-            if(currentNode == (path.Points.Length - 1))
-                Destroy(this);
-            
+            print(currentNode + " " + (path.Points.Length - 1));
+            CheckForDeath();
+
             if (Vector3.Distance(gameObject.transform.position, path.Points[currentNode + 1]) < 1)
                 currentNode++;
+
+            if (CheckForDeath())
+                return;
 
             foreach(StopLight s in path.StopForStopLights)
             {
@@ -34,6 +37,16 @@ namespace Assets.Scripts.Traffic
             }
             Face(path.Points[currentNode + 1]);
             transform.position = Vector3.MoveTowards(gameObject.transform.position, path.Points[currentNode + 1], Speed * Time.deltaTime);
+        }
+
+        private bool CheckForDeath()
+        {
+            if (currentNode == (path.Points.Length - 1))
+            {
+                Destroy(gameObject);
+                return true;
+            }
+            return false;
         }
 
         private bool InFrontOfStopLight(StopLight s)
