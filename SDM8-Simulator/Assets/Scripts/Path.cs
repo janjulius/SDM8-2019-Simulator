@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using Assets.Scripts.Traffic;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
@@ -13,7 +14,26 @@ public class Path : MonoBehaviour
 
     [Header("Stoplights units on this path should stop for")]
     public StopLight[] StopForStopLights;
-    
+
+    //todo change to array
+    public GameObject SpawnableObjects;
+
+    private TrafficParticipant myTrafficParticipant;
+
+    void Start()
+    {
+        if (SpawnableObjects == null)
+            return;
+        SpawnTrafficParticipant();
+    }
+
+    public TrafficParticipant SpawnTrafficParticipant()
+    {
+        GameObject obj = Instantiate(SpawnableObjects, Points[0], Quaternion.identity);
+        obj.GetComponent<TrafficParticipant>().SetPath(this);
+        return null;
+    }
+
     void OnDrawGizmos()
     {
         GizmoColor = GetPathColor(PathType);
