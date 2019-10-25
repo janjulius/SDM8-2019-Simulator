@@ -13,7 +13,12 @@ namespace Assets.Scripts.Traffic
 
         private int currentNode = 0;
 
-        public int Speed = 3;
+        public float Speed = 3;
+
+        public float Acceleration = 0.5f;
+
+        private float currentSpeed;
+        private float prevSpeed;
 
         private bool Drive = true;
 
@@ -27,6 +32,8 @@ namespace Assets.Scripts.Traffic
 
             if (CheckForDeath())
                 return;
+
+            UpdateSpeed();
 
             foreach (StopLight s in path.StopForStopLights)
             {
@@ -43,8 +50,28 @@ namespace Assets.Scripts.Traffic
             if (Drive)
             {
                 Face(path.Points[currentNode + 1]);
-                transform.position = Vector3.MoveTowards(gameObject.transform.position, path.Points[currentNode + 1], Speed * Time.deltaTime);
+                transform.position = Vector3.MoveTowards(gameObject.transform.position, path.Points[currentNode + 1], currentSpeed * Time.deltaTime);
             }
+        }
+
+        private void UpdateSpeed()
+        {
+            if (Mathf.Approximately(currentSpeed, Speed))
+            {
+                return;
+            }
+
+            currentSpeed = currentSpeed + Acceleration * Time.fixedDeltaTime;
+            if (prevSpeed > Speed)
+            {
+                currentSpeed = Mathf.Max(currentSpeed, Speed);
+            }
+            else if (prevSpeed < Speed)
+            {
+                currentSpeed = Mathf.Min(currentSpeed, Speed);
+            }
+
+            currentSpeed = Mathf.Max(currentSpeed, 0);
         }
 
         private bool CheckForDeath()
