@@ -105,8 +105,10 @@ namespace Assets.Scripts
         /// Publishes a message on the current topic
         /// </summary>
         /// <param name="message">The message</param>
-        protected void Publish(string message) => Publish(mqttClient ?? Connect(Constants.Constants.ADDRESS, Constants.Constants.PORT), ToString(), Encoding.ASCII.GetBytes(message));
-
+        protected void Publish(string message)
+            =>
+            Publish(mqttClient ?? Connect(Constants.Constants.ADDRESS, Constants.Constants.PORT), ToString(), Encoding.ASCII.GetBytes(message));
+        
         /// <summary>
         /// Publishes a message on the current topic
         /// </summary>
@@ -132,8 +134,11 @@ namespace Assets.Scripts
         /// <param name="message"></param>
         private void Publish(MqttClient client, string topic, byte[] message)
         {
+            if (Constants.Constants.SHOW_CONNECTED_MESSAGES)
+                print($"Sent message: {message.ToString()} to topic: {topic.ToString()}");
             string clientId = Guid.NewGuid().ToString();
-            client.Connect(clientId);
+            if(!client.IsConnected)
+                client.Connect(clientId);
             client.Publish(topic, message);
         }
         

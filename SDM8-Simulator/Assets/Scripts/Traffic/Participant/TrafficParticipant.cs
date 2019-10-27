@@ -24,7 +24,6 @@ namespace Assets.Scripts.Traffic
 
         private void Update()
         {
-            print(currentNode + " " + (path.Points.Length - 1));
             CheckForDeath();
 
             if (Vector3.Distance(gameObject.transform.position, path.Points[currentNode + 1]) < 1)
