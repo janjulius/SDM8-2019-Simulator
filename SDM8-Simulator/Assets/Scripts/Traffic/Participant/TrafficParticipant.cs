@@ -13,14 +13,21 @@ namespace Assets.Scripts.Traffic
 
         private int currentNode = 0;
 
-        public float Speed = 3;
+        protected float origSpeed { get; private set; } = 3;
 
-        public float Acceleration = 0.5f;
+        protected float Speed = 3;
+
+        private float Acceleration = 0.5f;
 
         private float currentSpeed;
         private float prevSpeed;
 
         private bool Drive = true;
+
+        private void Awake()
+        {
+            origSpeed = Speed;
+        }
 
         private void Update()
         {
@@ -51,16 +58,23 @@ namespace Assets.Scripts.Traffic
                 Face(path.Points[currentNode + 1]);
                 transform.position = Vector3.MoveTowards(gameObject.transform.position, path.Points[currentNode + 1], currentSpeed * Time.deltaTime);
             }
+            TrafficUpdate();
+        }
+
+        public virtual void TrafficUpdate()
+        {
+
         }
 
         private void UpdateSpeed()
         {
             if (Mathf.Approximately(currentSpeed, Speed))
-            {
                 return;
-            }
 
-            currentSpeed = currentSpeed + Acceleration * Time.fixedDeltaTime;
+            if (Speed < origSpeed)
+                currentSpeed = currentSpeed - Acceleration * Time.fixedDeltaTime;
+            else
+                currentSpeed = currentSpeed + Acceleration * Time.fixedDeltaTime;
             if (prevSpeed > Speed)
             {
                 currentSpeed = Mathf.Max(currentSpeed, Speed);
@@ -104,7 +118,7 @@ namespace Assets.Scripts.Traffic
                 return Math.Abs(transform.position.z - s.transform.position.z);
             if (rot == 90 || rot == 270)
                 return Math.Abs(transform.position.x - s.transform.position.x);
-            Debug.LogError("No proper rotation was found. @ Get2DAxis @ TrafficParticipant");
+            Debug.LogError("No proper rotation was found. @ Get2DAxis @ TrafficParticipant " + s.gameObject.transform.position);
             return 0;
         }
 

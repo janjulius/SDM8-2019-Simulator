@@ -23,8 +23,6 @@ public class Path : MonoBehaviour
     //todo change to array
     public GameObject[] SpawnableObjects;
 
-    private TrafficParticipant myTrafficParticipant;
-
     void Start()
     {
         if (SpawnableObjects == null)
@@ -35,7 +33,7 @@ public class Path : MonoBehaviour
         spawnBlockAreaCollider = gameObject.AddComponent<BoxCollider>();
         spawnBlockAreaCollider.size = SpawnBlockArea.size;
 
-        SpawnTrafficParticipant();
+        SdmManager.trafficParticipants.Add(SpawnTrafficParticipant());
     }
 
     public TrafficParticipant SpawnTrafficParticipant()

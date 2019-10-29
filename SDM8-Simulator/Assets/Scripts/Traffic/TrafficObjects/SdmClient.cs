@@ -31,7 +31,7 @@ namespace Assets.Scripts
 
         public void Start()
         {
-            teamId = SdmManager.Instance.connectedGroup;
+            teamId = SdmManager.connectedGroup;
             mqttClient = Connect($"{Constants.Constants.ADDRESS}", Constants.Constants.PORT);
             SetUp();
         }
