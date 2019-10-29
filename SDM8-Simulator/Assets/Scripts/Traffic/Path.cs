@@ -10,13 +10,18 @@ public class Path : MonoBehaviour
 
     private Color GizmoColor;
 
+    private BoxCollider spawnBlockAreaCollider;
+
     public PathTypes PathType;
+
+    [Header("Center is automatically the first point if it exists")]
+    public Bounds SpawnBlockArea;
 
     [Header("Stoplights units on this path should stop for")]
     public StopLight[] StopForStopLights;
 
     //todo change to array
-    public GameObject SpawnableObjects;
+    public GameObject[] SpawnableObjects;
 
     private TrafficParticipant myTrafficParticipant;
 
@@ -24,13 +29,23 @@ public class Path : MonoBehaviour
     {
         if (SpawnableObjects == null)
             return;
+        if (Points.Length > 0)
+            SpawnBlockArea.center = Points[0];
+
+        spawnBlockAreaCollider = gameObject.AddComponent<BoxCollider>();
+        spawnBlockAreaCollider.size = SpawnBlockArea.size;
+
         SpawnTrafficParticipant();
     }
 
     public TrafficParticipant SpawnTrafficParticipant()
     {
-        GameObject obj = Instantiate(SpawnableObjects, Points[0], Quaternion.identity);
-        obj.GetComponent<TrafficParticipant>().SetPath(this);
+        if (SpawnableObjects.Length > 0)
+        {
+            GameObject obj = Instantiate(SpawnableObjects[Random.Range(0, SpawnableObjects.Length)], Points[0], Quaternion.identity);
+            obj.GetComponent<TrafficParticipant>().SetPath(this);
+            return obj.GetComponent<TrafficParticipant>();
+        }
         return null;
     }
 
@@ -46,6 +61,8 @@ public class Path : MonoBehaviour
             Gizmos.color = new Color(GizmoColor.r, GizmoColor.g, GizmoColor.b, 0.5f);
             Gizmos.DrawLine(Points[i], Points[i + 1]);
         }
+        Gizmos.color = new Color(255, 0, 0, 0.2f);
+        Gizmos.DrawCube(SpawnBlockArea.center, SpawnBlockArea.size);
     }
 
     private void OnDrawGizmosSelected()
