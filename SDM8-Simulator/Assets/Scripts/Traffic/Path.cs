@@ -19,12 +19,13 @@ public class Path : MonoBehaviour
 
     [Header("Stoplights units on this path should stop for")]
     public StopLight[] StopForStopLights;
-
-    //todo change to array
+    
     public GameObject[] SpawnableObjects;
-
+    
+    [Header("How much delay between each spawn, in seconds.")]
     public float SpawnDelay = 1;
 
+    [Header("The chance on every SpawnDelay to spawn (1/SpawnChance)")]
     public int SpawnChance = 1;
 
     void Start()
