@@ -23,6 +23,10 @@ public class Path : MonoBehaviour
     //todo change to array
     public GameObject[] SpawnableObjects;
 
+    public float SpawnDelay = 1;
+
+    public int SpawnChance = 1;
+
     void Start()
     {
         if (SpawnableObjects == null)
@@ -34,6 +38,17 @@ public class Path : MonoBehaviour
         spawnBlockAreaCollider.size = SpawnBlockArea.size;
 
         SdmManager.trafficParticipants.Add(SpawnTrafficParticipant());
+
+        StartCoroutine(ContiniousSpawning());
+    }
+
+    IEnumerator ContiniousSpawning()
+    {
+        yield return new WaitForSeconds(SpawnDelay);
+        int r = Random.Range(1, SpawnChance);
+        if (r == 1)
+            SpawnTrafficParticipant();
+        StartCoroutine(ContiniousSpawning());
     }
 
     public TrafficParticipant SpawnTrafficParticipant()
