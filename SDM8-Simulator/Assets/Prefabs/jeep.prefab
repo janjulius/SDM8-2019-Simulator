@@ -150,7 +150,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Speed: 25
-  Acceleration: 7.5
+  Acceleration: 50
 --- !u!65 &-6246598232737029296
 BoxCollider:
   m_ObjectHideFlags: 0

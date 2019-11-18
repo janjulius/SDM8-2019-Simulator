@@ -472,8 +472,14 @@ MonoBehaviour:
   - {x: 236.9, y: 0, z: 671.5}
   - {x: 236.9, y: 0, z: 957.8}
   PathType: 0
+  SpawnBlockArea:
+    m_Center: {x: 0, y: 0, z: 0}
+    m_Extent: {x: 0, y: 0, z: 0}
   StopForStopLights: []
-  SpawnableObjects: {fileID: 0}
+  SpawnableObjects:
+  - {fileID: 3240987765902758805, guid: 229015cbafdc2bc45b14be620e15aae5, type: 3}
+  SpawnDelay: 1
+  SpawnChance: 50
 --- !u!1001 &37843597
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -675,11 +681,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 117873993}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 226.76237, y: 9.264511, z: 272.55063}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1609451713}
   - {fileID: 768472880}
+  - {fileID: 961023575}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1563,8 +1570,14 @@ MonoBehaviour:
   - {x: 169.2, y: 0, z: 27.6}
   - {x: 158.7, y: 0, z: -3.7}
   PathType: 0
+  SpawnBlockArea:
+    m_Center: {x: 0, y: 0, z: 0}
+    m_Extent: {x: 0, y: 0, z: 0}
   StopForStopLights: []
-  SpawnableObjects: {fileID: 0}
+  SpawnableObjects:
+  - {fileID: 3240987765902758805, guid: 229015cbafdc2bc45b14be620e15aae5, type: 3}
+  SpawnDelay: 1
+  SpawnChance: 50
 --- !u!4 &243757547 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: e9390ae0e432be447bf637e4bac268ae,
@@ -1772,6 +1785,60 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 10ffc052a8e4bb8439b2ce53b6daf3a4, type: 3}
+--- !u!1 &264621546
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 264621547}
+  - component: {fileID: 264621548}
+  m_Layer: 0
+  m_Name: boatWE
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &264621547
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 264621546}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 961023575}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &264621548
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 264621546}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1ff367f2572d3444bcc39636870dbb8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Points:
+  - {x: 20.3, y: -100, z: 840}
+  - {x: 500, y: -100, z: 840}
+  PathType: 1
+  SpawnBlockArea:
+    m_Center: {x: 0, y: 0, z: 0}
+    m_Extent: {x: 0, y: 0, z: 0}
+  StopForStopLights: []
+  SpawnableObjects: []
+  SpawnDelay: 1
+  SpawnChance: 1
 --- !u!1001 &268271007
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2020,7 +2087,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a5578a69b5bc6d248919f98015166154, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  connectedGroup: 8
 --- !u!4 &302845754
 Transform:
   m_ObjectHideFlags: 0
@@ -2451,8 +2517,14 @@ MonoBehaviour:
   - {x: 119.7, y: 0, z: 364.9}
   - {x: -76.3, y: 0, z: 363.8}
   PathType: 0
+  SpawnBlockArea:
+    m_Center: {x: 0, y: 0, z: 0}
+    m_Extent: {x: 0, y: 0, z: 0}
   StopForStopLights: []
-  SpawnableObjects: {fileID: 0}
+  SpawnableObjects:
+  - {fileID: 3240987765902758805, guid: 229015cbafdc2bc45b14be620e15aae5, type: 3}
+  SpawnDelay: 1
+  SpawnChance: 50
 --- !u!4 &360560658 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 07e6fdb41b265184dad1158beefc08f1,
@@ -2664,8 +2736,14 @@ MonoBehaviour:
   - {x: 272.6, y: 0, z: 306.1}
   - {x: 544.6, y: 0, z: 306.1}
   PathType: 0
+  SpawnBlockArea:
+    m_Center: {x: 0, y: 0, z: 0}
+    m_Extent: {x: 0, y: 0, z: 0}
   StopForStopLights: []
-  SpawnableObjects: {fileID: 0}
+  SpawnableObjects:
+  - {fileID: 3240987765902758805, guid: 229015cbafdc2bc45b14be620e15aae5, type: 3}
+  SpawnDelay: 1
+  SpawnChance: 50
 --- !u!4 &426238873 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: e9390ae0e432be447bf637e4bac268ae,
@@ -2906,6 +2984,62 @@ MonoBehaviour:
   componentId: 0
   StopCollisionLocation: {x: 275, y: 14, z: 347.5}
   StopCollisionSize: {x: 10, y: 30, z: 18}
+--- !u!1 &470322562
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 470322563}
+  - component: {fileID: 470322564}
+  m_Layer: 0
+  m_Name: boatEW
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &470322563
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 470322562}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 961023575}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &470322564
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 470322562}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1ff367f2572d3444bcc39636870dbb8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Points:
+  - {x: 500, y: -100, z: 840}
+  - {x: 20, y: -100, z: 840}
+  PathType: 1
+  SpawnBlockArea:
+    m_Center: {x: 512.75, y: -100, z: 840}
+    m_Extent: {x: 63.44, y: 30.1, z: 63.4}
+  StopForStopLights:
+  - {fileID: 939637757}
+  SpawnableObjects:
+  - {fileID: 4636838405463798673, guid: 114ab369b3e177e4f88c0879109740ab, type: 3}
+  SpawnDelay: 1
+  SpawnChance: 1
 --- !u!1 &491709280
 GameObject:
   m_ObjectHideFlags: 0
@@ -2959,8 +3093,14 @@ MonoBehaviour:
   - {x: 169.1, y: 0, z: 27.3}
   - {x: 158.4, y: 0, z: -3.6}
   PathType: 0
+  SpawnBlockArea:
+    m_Center: {x: 0, y: 0, z: 0}
+    m_Extent: {x: 0, y: 0, z: 0}
   StopForStopLights: []
-  SpawnableObjects: {fileID: 0}
+  SpawnableObjects:
+  - {fileID: 3240987765902758805, guid: 229015cbafdc2bc45b14be620e15aae5, type: 3}
+  SpawnDelay: 1
+  SpawnChance: 50
 --- !u!4 &503827764 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: e9390ae0e432be447bf637e4bac268ae,
@@ -3382,10 +3522,17 @@ MonoBehaviour:
   - {x: 236.9, y: 0, z: 671.5}
   - {x: 236.9, y: 0, z: 957.8}
   PathType: 0
+  SpawnBlockArea:
+    m_Center: {x: 0, y: 0, z: 0}
+    m_Extent: {x: 0, y: 0, z: 0}
   StopForStopLights:
   - {fileID: 2135380011}
-  SpawnableObjects: {fileID: 3240987765902758805, guid: 229015cbafdc2bc45b14be620e15aae5,
-    type: 3}
+  SpawnableObjects:
+  - {fileID: 3240987765902758805, guid: 229015cbafdc2bc45b14be620e15aae5, type: 3}
+  - {fileID: 0}
+  - {fileID: 0}
+  SpawnDelay: 1
+  SpawnChance: 50
 --- !u!1001 &587271913
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3872,8 +4019,14 @@ MonoBehaviour:
   - {x: 148.58, y: 0, z: 29.4}
   - {x: 158.4, y: 0, z: -3.5}
   PathType: 0
+  SpawnBlockArea:
+    m_Center: {x: 0, y: 0, z: 0}
+    m_Extent: {x: 0, y: 0, z: 0}
   StopForStopLights: []
-  SpawnableObjects: {fileID: 0}
+  SpawnableObjects:
+  - {fileID: 3240987765902758805, guid: 229015cbafdc2bc45b14be620e15aae5, type: 3}
+  SpawnDelay: 1
+  SpawnChance: 50
 --- !u!4 &690043018 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 07e6fdb41b265184dad1158beefc08f1,
@@ -4095,6 +4248,7 @@ Transform:
   - {fileID: 256852644}
   - {fileID: 1892536438}
   - {fileID: 1443552487}
+  - {fileID: 939637760}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -5434,6 +5588,37 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1143334093}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &939637756 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1532468895285226, guid: a5faf4711ef4cef489a20f0ef5c5e8f3,
+    type: 3}
+  m_PrefabInstance: {fileID: 1112255088}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &939637757
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 939637756}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1906dc610092dee4e858a0f459399264, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  laneType: 3
+  groupId: 1
+  subgroupId: 0
+  componentType: 0
+  componentId: 0
+  StopCollisionLocation: {x: 263.3, y: -14.7, z: 833.9}
+  StopCollisionSize: {x: 90.9, y: 102.8, z: 58.7}
+--- !u!4 &939637760 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4549882812725322, guid: a5faf4711ef4cef489a20f0ef5c5e8f3,
+    type: 3}
+  m_PrefabInstance: {fileID: 1112255088}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &953623911
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5509,6 +5694,38 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 642220086}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &961023574
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 961023575}
+  m_Layer: 0
+  m_Name: boat
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &961023575
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 961023574}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 264621547}
+  - {fileID: 470322563}
+  m_Father: {fileID: 117873994}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &977473387
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5989,8 +6206,14 @@ MonoBehaviour:
   - {x: 236.8, y: 0, z: 671.1}
   - {x: 236.8, y: 0, z: 958.5}
   PathType: 0
+  SpawnBlockArea:
+    m_Center: {x: 0, y: 0, z: 0}
+    m_Extent: {x: 0, y: 0, z: 0}
   StopForStopLights: []
-  SpawnableObjects: {fileID: 0}
+  SpawnableObjects:
+  - {fileID: 3240987765902758805, guid: 229015cbafdc2bc45b14be620e15aae5, type: 3}
+  SpawnDelay: 1
+  SpawnChance: 50
 --- !u!4 &1050993022 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 07e6fdb41b265184dad1158beefc08f1,
@@ -6136,8 +6359,14 @@ MonoBehaviour:
   - {x: 237.1, y: 0, z: 671.2}
   - {x: 237.1, y: 0, z: 958.2}
   PathType: 0
+  SpawnBlockArea:
+    m_Center: {x: 0, y: 0, z: 0}
+    m_Extent: {x: 0, y: 0, z: 0}
   StopForStopLights: []
-  SpawnableObjects: {fileID: 0}
+  SpawnableObjects:
+  - {fileID: 3240987765902758805, guid: 229015cbafdc2bc45b14be620e15aae5, type: 3}
+  SpawnDelay: 1
+  SpawnChance: 50
 --- !u!1001 &1109287544
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6207,6 +6436,75 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 07c627544057bf342983155ea21aedfa, type: 3}
+--- !u!1001 &1112255088
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 710579417}
+    m_Modifications:
+    - target: {fileID: 1532468895285226, guid: a5faf4711ef4cef489a20f0ef5c5e8f3, type: 3}
+      propertyPath: m_Name
+      value: TB_CITY_Prop_TrafficLight_B_Black
+      objectReference: {fileID: 0}
+    - target: {fileID: 4549882812725322, guid: a5faf4711ef4cef489a20f0ef5c5e8f3, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 24.08635
+      objectReference: {fileID: 0}
+    - target: {fileID: 4549882812725322, guid: a5faf4711ef4cef489a20f0ef5c5e8f3, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.5204
+      objectReference: {fileID: 0}
+    - target: {fileID: 4549882812725322, guid: a5faf4711ef4cef489a20f0ef5c5e8f3, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 509.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4549882812725322, guid: a5faf4711ef4cef489a20f0ef5c5e8f3, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4549882812725322, guid: a5faf4711ef4cef489a20f0ef5c5e8f3, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 4549882812725322, guid: a5faf4711ef4cef489a20f0ef5c5e8f3, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4549882812725322, guid: a5faf4711ef4cef489a20f0ef5c5e8f3, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 4549882812725322, guid: a5faf4711ef4cef489a20f0ef5c5e8f3, type: 3}
+      propertyPath: m_RootOrder
+      value: 131
+      objectReference: {fileID: 0}
+    - target: {fileID: 4549882812725322, guid: a5faf4711ef4cef489a20f0ef5c5e8f3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4549882812725322, guid: a5faf4711ef4cef489a20f0ef5c5e8f3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 4549882812725322, guid: a5faf4711ef4cef489a20f0ef5c5e8f3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4549882812725322, guid: a5faf4711ef4cef489a20f0ef5c5e8f3, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 10.517687
+      objectReference: {fileID: 0}
+    - target: {fileID: 4549882812725322, guid: a5faf4711ef4cef489a20f0ef5c5e8f3, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 10.517683
+      objectReference: {fileID: 0}
+    - target: {fileID: 4549882812725322, guid: a5faf4711ef4cef489a20f0ef5c5e8f3, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 10.517687
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a5faf4711ef4cef489a20f0ef5c5e8f3, type: 3}
 --- !u!1001 &1117427883
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6336,8 +6634,14 @@ MonoBehaviour:
   - {x: 236.9, y: 0, z: 670.8}
   - {x: 236.9, y: 0, z: 957.6}
   PathType: 0
+  SpawnBlockArea:
+    m_Center: {x: 0, y: 0, z: 0}
+    m_Extent: {x: 0, y: 0, z: 0}
   StopForStopLights: []
-  SpawnableObjects: {fileID: 0}
+  SpawnableObjects:
+  - {fileID: 3240987765902758805, guid: 229015cbafdc2bc45b14be620e15aae5, type: 3}
+  SpawnDelay: 1
+  SpawnChance: 50
 --- !u!1001 &1139672845
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7196,8 +7500,14 @@ MonoBehaviour:
   - {x: 272.2, y: 0, z: 325.6}
   - {x: 544.7, y: 0, z: 325.6}
   PathType: 0
+  SpawnBlockArea:
+    m_Center: {x: 0, y: 0, z: 0}
+    m_Extent: {x: 0, y: 0, z: 0}
   StopForStopLights: []
-  SpawnableObjects: {fileID: 0}
+  SpawnableObjects:
+  - {fileID: 3240987765902758805, guid: 229015cbafdc2bc45b14be620e15aae5, type: 3}
+  SpawnDelay: 1
+  SpawnChance: 50
 --- !u!4 &1348260900 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: e9390ae0e432be447bf637e4bac268ae,
@@ -7257,8 +7567,14 @@ MonoBehaviour:
   - {x: 236.8, y: 0, z: 671.2}
   - {x: 236.8, y: 0, z: 957.5}
   PathType: 0
+  SpawnBlockArea:
+    m_Center: {x: 0, y: 0, z: 0}
+    m_Extent: {x: 0, y: 0, z: 0}
   StopForStopLights: []
-  SpawnableObjects: {fileID: 0}
+  SpawnableObjects:
+  - {fileID: 3240987765902758805, guid: 229015cbafdc2bc45b14be620e15aae5, type: 3}
+  SpawnDelay: 1
+  SpawnChance: 50
 --- !u!1001 &1364520465
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7398,8 +7714,14 @@ MonoBehaviour:
   - {x: 236.6, y: 0, z: 670.8}
   - {x: 236.6, y: 0, z: 957.8}
   PathType: 0
+  SpawnBlockArea:
+    m_Center: {x: 0, y: 0, z: 0}
+    m_Extent: {x: 0, y: 0, z: 0}
   StopForStopLights: []
-  SpawnableObjects: {fileID: 0}
+  SpawnableObjects:
+  - {fileID: 3240987765902758805, guid: 229015cbafdc2bc45b14be620e15aae5, type: 3}
+  SpawnDelay: 1
+  SpawnChance: 50
 --- !u!1001 &1408678223
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7968,8 +8290,14 @@ MonoBehaviour:
   - {x: 119.6, y: 0, z: 365.1}
   - {x: -76.4, y: 0, z: 363.6}
   PathType: 0
+  SpawnBlockArea:
+    m_Center: {x: 0, y: 0, z: 0}
+    m_Extent: {x: 0, y: 0, z: 0}
   StopForStopLights: []
-  SpawnableObjects: {fileID: 0}
+  SpawnableObjects:
+  - {fileID: 3240987765902758805, guid: 229015cbafdc2bc45b14be620e15aae5, type: 3}
+  SpawnDelay: 1
+  SpawnChance: 50
 --- !u!4 &1512600755 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 07e6fdb41b265184dad1158beefc08f1,
@@ -8303,8 +8631,14 @@ MonoBehaviour:
   - {x: 148.4, y: 0, z: 29.2}
   - {x: 158.3, y: 0, z: -3.8}
   PathType: 0
+  SpawnBlockArea:
+    m_Center: {x: 0, y: 0, z: 0}
+    m_Extent: {x: 0, y: 0, z: 0}
   StopForStopLights: []
-  SpawnableObjects: {fileID: 0}
+  SpawnableObjects:
+  - {fileID: 3240987765902758805, guid: 229015cbafdc2bc45b14be620e15aae5, type: 3}
+  SpawnDelay: 1
+  SpawnChance: 50
 --- !u!1001 &1636352728
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8597,8 +8931,14 @@ MonoBehaviour:
   - {x: 169.5, y: 0, z: 27.6}
   - {x: 158.7, y: 0, z: -4}
   PathType: 0
+  SpawnBlockArea:
+    m_Center: {x: 0, y: 0, z: 0}
+    m_Extent: {x: 0, y: 0, z: 0}
   StopForStopLights: []
-  SpawnableObjects: {fileID: 0}
+  SpawnableObjects:
+  - {fileID: 3240987765902758805, guid: 229015cbafdc2bc45b14be620e15aae5, type: 3}
+  SpawnDelay: 1
+  SpawnChance: 50
 --- !u!1001 &1682909080
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8859,8 +9199,14 @@ MonoBehaviour:
   - {x: 411.6, y: 0, z: 233.7}
   - {x: -81.6, y: 0, z: 233.7}
   PathType: 2
+  SpawnBlockArea:
+    m_Center: {x: 0, y: 0, z: 0}
+    m_Extent: {x: 0, y: 0, z: 0}
   StopForStopLights: []
-  SpawnableObjects: {fileID: 0}
+  SpawnableObjects:
+  - {fileID: 0}
+  SpawnDelay: 1
+  SpawnChance: 1
 --- !u!4 &1716967488 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: e9390ae0e432be447bf637e4bac268ae,
@@ -8993,8 +9339,14 @@ MonoBehaviour:
   - {x: 272.2, y: 0, z: 306}
   - {x: 544.7, y: 0, z: 306}
   PathType: 0
+  SpawnBlockArea:
+    m_Center: {x: 0, y: 0, z: 0}
+    m_Extent: {x: 0, y: 0, z: 0}
   StopForStopLights: []
-  SpawnableObjects: {fileID: 0}
+  SpawnableObjects:
+  - {fileID: 3240987765902758805, guid: 229015cbafdc2bc45b14be620e15aae5, type: 3}
+  SpawnDelay: 1
+  SpawnChance: 50
 --- !u!1001 &1751936567
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10046,8 +10398,14 @@ MonoBehaviour:
   - {x: 272.1, y: 0, z: 325.6}
   - {x: 545.1, y: 0, z: 325.6}
   PathType: 0
+  SpawnBlockArea:
+    m_Center: {x: 0, y: 0, z: 0}
+    m_Extent: {x: 0, y: 0, z: 0}
   StopForStopLights: []
-  SpawnableObjects: {fileID: 0}
+  SpawnableObjects:
+  - {fileID: 3240987765902758805, guid: 229015cbafdc2bc45b14be620e15aae5, type: 3}
+  SpawnDelay: 1
+  SpawnChance: 50
 --- !u!4 &1914759942 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: e9390ae0e432be447bf637e4bac268ae,
@@ -11193,8 +11551,14 @@ MonoBehaviour:
   - {x: 148.5, y: 0, z: 29.3}
   - {x: 158.8, y: 0, z: -4}
   PathType: 0
+  SpawnBlockArea:
+    m_Center: {x: 0, y: 0, z: 0}
+    m_Extent: {x: 0, y: 0, z: 0}
   StopForStopLights: []
-  SpawnableObjects: {fileID: 0}
+  SpawnableObjects:
+  - {fileID: 3240987765902758805, guid: 229015cbafdc2bc45b14be620e15aae5, type: 3}
+  SpawnDelay: 1
+  SpawnChance: 50
 --- !u!1001 &2083443545
 PrefabInstance:
   m_ObjectHideFlags: 0
