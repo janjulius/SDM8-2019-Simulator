@@ -26,7 +26,7 @@ public class Path : MonoBehaviour
     public float SpawnDelay = 1;
 
     [Header("The chance on every SpawnDelay to spawn (1/SpawnChance)")]
-    public int SpawnChance = 1;
+    public int SpawnChance = 50;
 
     void Start()
     {
@@ -37,6 +37,7 @@ public class Path : MonoBehaviour
 
         spawnBlockAreaCollider = gameObject.AddComponent<BoxCollider>();
         spawnBlockAreaCollider.size = SpawnBlockArea.size;
+        spawnBlockAreaCollider.center = Points[0];
 
         SdmManager.trafficParticipants.Add(SpawnTrafficParticipant());
 
