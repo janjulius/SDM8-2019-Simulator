@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using UnityEditor;
 using UnityEngine;
 
 namespace Assets.Scripts.Traffic
@@ -15,18 +16,21 @@ namespace Assets.Scripts.Traffic
 
         protected float origSpeed { get; private set; } = 3;
 
-        protected float Speed = 3;
+        public float Speed = 3;
 
-        private float Acceleration = 0.5f;
+        private float Acceleration;
 
         private float currentSpeed;
         private float prevSpeed;
 
         private bool Drive = true;
 
+        protected string status = "Lounging";
+
         private void Awake()
         {
             origSpeed = Speed;
+            Acceleration = origSpeed * 2;
         }
 
         private void Update()
@@ -48,6 +52,7 @@ namespace Assets.Scripts.Traffic
                     if (s.Status == 0)
                     {
                         Drive = false;
+                        status = $"Waiting for stoplight {s.name}";
                         break;
                     }
                 }
@@ -55,6 +60,7 @@ namespace Assets.Scripts.Traffic
             }
             if (Drive)
             {
+                status = $"Driving to point: {currentNode + 1} on path: {path.name}";
                 Face(path.Points[currentNode + 1]);
                 transform.position = Vector3.MoveTowards(gameObject.transform.position, path.Points[currentNode + 1], currentSpeed * Time.deltaTime);
             }
@@ -101,7 +107,7 @@ namespace Assets.Scripts.Traffic
         {
             int rot = (int)Mathf.Floor(s.transform.rotation.y);
 
-            if(s.transform.rotation.y == 0 && transform.position.z < s.transform.position.z
+            if (s.transform.rotation.y == 0 && transform.position.z < s.transform.position.z
                 || s.transform.rotation.y == 90 && transform.position.x < s.transform.position.x
                 || s.transform.rotation.y == 180 && transform.position.z > s.transform.position.z
                 || s.transform.rotation.y == 270 && transform.position.x > s.transform.position.x)
@@ -131,6 +137,10 @@ namespace Assets.Scripts.Traffic
         public void Face(Vector3 faceTo)
             => transform.LookAt(faceTo);
 
+        void OnDrawGizmos()
+        {
+            Handles.Label(transform.position, $"{status}");
+        }
 
     }
 }
