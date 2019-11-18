@@ -9,7 +9,7 @@ namespace Assets.Scripts.Traffic
 {
     public class Car : TrafficParticipant
     {
-        private int tailGatingDistance = 14;
+        private int tailGatingDistance = 20;
 
         public override void TrafficUpdate()
         {
@@ -21,6 +21,7 @@ namespace Assets.Scripts.Traffic
             Vector3 fwd = transform.TransformDirection(Vector3.forward);
             if (Physics.Raycast(transform.position, fwd, out hit, tailGatingDistance, layerMask))
             {
+                status = $"Somethign on raycast: {hit.transform.name}";
                 Speed = 0;
             }
             else
