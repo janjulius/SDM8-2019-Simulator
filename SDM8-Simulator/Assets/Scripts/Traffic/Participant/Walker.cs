@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Assets.Scripts.Traffic.Participant
 {
-    class Walker
+    class Walker : TrafficParticipant
     {
     }
 }
