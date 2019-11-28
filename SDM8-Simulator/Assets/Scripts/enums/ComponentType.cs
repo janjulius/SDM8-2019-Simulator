@@ -3,5 +3,8 @@
     TRAFFIC_LIGHT,
     WARNING_LIGHT,
     SENSOR,
-    BARRIER
+    BARRIER,
+    BOAT_LIGHT,
+    DECK,
+    DECK_SENSOR
 }

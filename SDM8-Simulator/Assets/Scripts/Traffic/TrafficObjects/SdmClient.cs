@@ -20,7 +20,6 @@ namespace Assets.Scripts
         protected string teamId = "8";
         public LaneType laneType;
         public string groupId;
-        public string subgroupId;
         public ComponentType componentType;
         public string componentId;
 
@@ -149,7 +148,7 @@ namespace Assets.Scripts
 
         public override string ToString()
         {
-            return $"{teamId}/{laneType.ToString().ToLower()}/{groupId}/{subgroupId}/{componentType.ToString().ToLower()}/{componentId}";
+            return $"{teamId}/{laneType.ToString().ToLower()}/{groupId}/{componentType.ToString().ToLower()}/{componentId}";
         }
 
     }

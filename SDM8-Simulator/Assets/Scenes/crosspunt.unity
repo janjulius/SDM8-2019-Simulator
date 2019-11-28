@@ -211,7 +211,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   laneType: 0
   groupId: 1
-  subgroupId: 0
   componentType: 0
   componentId: 0
   StopCollisionLocation: {x: 118.1, y: 9.7, z: 396.9}
@@ -828,7 +827,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   laneType: 2
   groupId: 8
-  subgroupId: 0
   componentType: 0
   componentId: 0
   StopCollisionLocation: {x: 112, y: 14, z: 322.88}
@@ -948,7 +946,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   laneType: 1
   groupId: 2
-  subgroupId: 0
   componentType: 0
   componentId: 0
   StopCollisionLocation: {x: 138.4, y: 9.7, z: 280.9}
@@ -1549,7 +1546,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   laneType: 1
   groupId: 3
-  subgroupId: 0
   componentType: 0
   componentId: 0
   StopCollisionLocation: {x: 138.4, y: 9.7, z: 203.3}
@@ -1740,7 +1736,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   laneType: 2
   groupId: 6
-  subgroupId: 0
   componentType: 0
   componentId: 0
   StopCollisionLocation: {x: 195.3, y: 14, z: 174}
@@ -3024,7 +3019,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   laneType: 1
   groupId: 1
-  subgroupId: 0
   componentType: 0
   componentId: 0
   StopCollisionLocation: {x: 260, y: 9.7, z: 289.2}
@@ -3229,7 +3223,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   laneType: 2
   groupId: 2
-  subgroupId: 0
   componentType: 0
   componentId: 0
   StopCollisionLocation: {x: 134.98, y: 14.2, z: 404.2}
@@ -4322,7 +4315,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   laneType: 0
   groupId: 6
-  subgroupId: 0
   componentType: 0
   componentId: 0
   StopCollisionLocation: {x: 121, y: 9.7, z: 382.3}
@@ -4689,7 +4681,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   laneType: 2
   groupId: 4
-  subgroupId: 0
   componentType: 0
   componentId: 0
   StopCollisionLocation: {x: 275, y: 14, z: 347.5}
@@ -4931,7 +4922,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   laneType: 1
   groupId: 3
-  subgroupId: 0
   componentType: 0
   componentId: 0
   StopCollisionLocation: {x: 245.3, y: 9.7, z: 203.3}
@@ -6012,7 +6002,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   laneType: 0
   groupId: 0
-  subgroupId: 0
   componentType: 0
   componentId: 0
   StopCollisionLocation: {x: 257.3, y: 9.7, z: 396.9}
@@ -6789,7 +6778,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   laneType: 2
   groupId: 1
-  subgroupId: 0
   componentType: 0
   componentId: 1
   StopCollisionLocation: {x: 175.9, y: 14, z: 404}
@@ -7238,7 +7226,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   laneType: 2
   groupId: 5
-  subgroupId: 0
   componentType: 2
   componentId: 0
 --- !u!65 &773039027
@@ -7271,7 +7258,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 10301, guid: 0000000000000000f000000000000000, type: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -8362,8 +8349,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   laneType: 3
   groupId: 1
-  subgroupId: 0
-  componentType: 0
+  componentType: 4
   componentId: 0
   StopCollisionLocation: {x: 263.3, y: -14.7, z: 833.9}
   StopCollisionSize: {x: 90.9, y: 102.8, z: 58.7}
@@ -8794,7 +8780,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   laneType: 2
   groupId: 1
-  subgroupId: 1
   componentType: 0
   componentId: 0
   StopCollisionLocation: {x: 155.16, y: 14, z: 404}
@@ -10340,7 +10325,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   laneType: 1
   groupId: 
-  subgroupId: 
   componentType: 3
   componentId: 
   StopCollisionLocation: {x: 0, y: 0, z: 0}
@@ -10448,7 +10432,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   laneType: 0
   groupId: 6
-  subgroupId: 0
   componentType: 0
   componentId: 0
   StopCollisionLocation: {x: 121, y: 9.7, z: 304.3}
@@ -11213,7 +11196,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   laneType: 0
   groupId: 3
-  subgroupId: 0
   componentType: 0
   componentId: 0
   StopCollisionLocation: {x: 245.3, y: 9.7, z: 211.4}
@@ -11389,7 +11371,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   laneType: 1
   groupId: 4
-  subgroupId: 0
   componentType: 0
   componentId: 0
   StopCollisionLocation: {x: 127.7, y: 9.7, z: 374}
@@ -11485,7 +11466,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   laneType: 0
   groupId: 1
-  subgroupId: 0
   componentType: 0
   componentId: 0
   StopCollisionLocation: {x: 207.1, y: 9.7, z: 396.9}
@@ -11883,7 +11863,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   laneType: 0
   groupId: 2
-  subgroupId: 0
   componentType: 0
   componentId: 0
   StopCollisionLocation: {x: 265.3, y: 9.7, z: 384}
@@ -12254,7 +12233,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   laneType: 2
   groupId: 5
-  subgroupId: 1
   componentType: 0
   componentId: 0
   StopCollisionLocation: {x: 237.7, y: 14, z: 174.16}
@@ -12578,7 +12556,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   laneType: 0
   groupId: 5
-  subgroupId: 0
   componentType: 0
   componentId: 0
   StopCollisionLocation: {x: 138.4, y: 9.7, z: 211.3}
@@ -13147,7 +13124,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   laneType: 0
   groupId: 2
-  subgroupId: 0
   componentType: 0
   componentId: 0
   StopCollisionLocation: {x: 265.3, y: 9.7, z: 292.15}
@@ -13976,7 +13952,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   laneType: 2
   groupId: 3
-  subgroupId: 0
   componentType: 0
   componentId: 0
   StopCollisionLocation: {x: 274.5, y: 14, z: 367.1}
@@ -14563,7 +14538,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   laneType: 1
   groupId: 4
-  subgroupId: 0
   componentType: 0
   componentId: 0
   StopCollisionLocation: {x: 127.7, y: 9.7, z: 311.36}
@@ -15531,7 +15505,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   laneType: 1
   groupId: 0
-  subgroupId: 0
   componentType: 0
   componentId: 0
   StopCollisionLocation: {x: 257.3, y: 9.7, z: 391.9}
@@ -15958,7 +15931,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   laneType: 0
   groupId: 0
-  subgroupId: 0
   componentType: 0
   componentId: 0
   StopCollisionLocation: {x: 217.1, y: 9.7, z: 396.9}
@@ -17629,7 +17601,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   laneType: 0
   groupId: 0
-  subgroupId: 0
   componentType: 0
   componentId: 0
   StopCollisionLocation: {x: 196, y: 14, z: 404}
@@ -17782,7 +17753,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   laneType: 2
   groupId: 7
-  subgroupId: 0
   componentType: 0
   componentId: 0
   StopCollisionLocation: {x: 112.6, y: 14, z: 343.1}
@@ -19072,7 +19042,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   laneType: 2
   groupId: 5
-  subgroupId: 0
   componentType: 0
   componentId: 0
   StopCollisionLocation: {x: 216.4, y: 14, z: 175}
