@@ -4587,7 +4587,7 @@ MonoBehaviour:
     m_Extent: {x: 0, y: 0, z: 0}
   StopForStopLights: []
   SpawnableObjects:
-  - {fileID: 3240987765902758805, guid: 229015cbafdc2bc45b14be620e15aae5, type: 3}
+  - {fileID: 100848, guid: aed502683c9d9b540b8e9f801bfebaf8, type: 3}
   SpawnDelay: 1
   SpawnChance: 50
 --- !u!4 &459846526 stripped
@@ -6844,7 +6844,7 @@ MonoBehaviour:
     m_Extent: {x: 0, y: 0, z: 0}
   StopForStopLights: []
   SpawnableObjects:
-  - {fileID: 3240987765902758805, guid: 229015cbafdc2bc45b14be620e15aae5, type: 3}
+  - {fileID: 100848, guid: aed502683c9d9b540b8e9f801bfebaf8, type: 3}
   SpawnDelay: 1
   SpawnChance: 50
 --- !u!1001 &736681673
@@ -8935,7 +8935,7 @@ MonoBehaviour:
     m_Extent: {x: 0, y: 0, z: 0}
   StopForStopLights: []
   SpawnableObjects:
-  - {fileID: 3240987765902758805, guid: 229015cbafdc2bc45b14be620e15aae5, type: 3}
+  - {fileID: 100848, guid: aed502683c9d9b540b8e9f801bfebaf8, type: 3}
   SpawnDelay: 1
   SpawnChance: 50
 --- !u!1001 &1011627948
@@ -9247,7 +9247,7 @@ MonoBehaviour:
     m_Extent: {x: 0, y: 0, z: 0}
   StopForStopLights: []
   SpawnableObjects:
-  - {fileID: 3240987765902758805, guid: 229015cbafdc2bc45b14be620e15aae5, type: 3}
+  - {fileID: 100848, guid: aed502683c9d9b540b8e9f801bfebaf8, type: 3}
   SpawnDelay: 1
   SpawnChance: 50
 --- !u!1 &1103052662
@@ -10110,7 +10110,7 @@ MonoBehaviour:
     m_Extent: {x: 0, y: 0, z: 0}
   StopForStopLights: []
   SpawnableObjects:
-  - {fileID: 3240987765902758805, guid: 229015cbafdc2bc45b14be620e15aae5, type: 3}
+  - {fileID: 100848, guid: aed502683c9d9b540b8e9f801bfebaf8, type: 3}
   SpawnDelay: 1
   SpawnChance: 50
 --- !u!4 &1171977335 stripped
@@ -10176,7 +10176,7 @@ MonoBehaviour:
     m_Extent: {x: 0, y: 0, z: 0}
   StopForStopLights: []
   SpawnableObjects:
-  - {fileID: 3240987765902758805, guid: 229015cbafdc2bc45b14be620e15aae5, type: 3}
+  - {fileID: 100848, guid: aed502683c9d9b540b8e9f801bfebaf8, type: 3}
   SpawnDelay: 1
   SpawnChance: 50
 --- !u!4 &1179655285 stripped
@@ -10834,7 +10834,7 @@ MonoBehaviour:
     m_Extent: {x: 0, y: 0, z: 0}
   StopForStopLights: []
   SpawnableObjects:
-  - {fileID: 3240987765902758805, guid: 229015cbafdc2bc45b14be620e15aae5, type: 3}
+  - {fileID: 100848, guid: aed502683c9d9b540b8e9f801bfebaf8, type: 3}
   SpawnDelay: 1
   SpawnChance: 50
 --- !u!1001 &1257192889
@@ -12807,7 +12807,7 @@ MonoBehaviour:
     m_Extent: {x: 0, y: 0, z: 0}
   StopForStopLights: []
   SpawnableObjects:
-  - {fileID: 3240987765902758805, guid: 229015cbafdc2bc45b14be620e15aae5, type: 3}
+  - {fileID: 100848, guid: aed502683c9d9b540b8e9f801bfebaf8, type: 3}
   SpawnDelay: 1
   SpawnChance: 50
 --- !u!1001 &1559555145
@@ -12950,7 +12950,7 @@ MonoBehaviour:
     m_Extent: {x: 0, y: 0, z: 0}
   StopForStopLights: []
   SpawnableObjects:
-  - {fileID: 3240987765902758805, guid: 229015cbafdc2bc45b14be620e15aae5, type: 3}
+  - {fileID: 100848, guid: aed502683c9d9b540b8e9f801bfebaf8, type: 3}
   SpawnDelay: 1
   SpawnChance: 50
 --- !u!4 &1560462886 stripped
@@ -15837,7 +15837,7 @@ MonoBehaviour:
     m_Extent: {x: 0, y: 0, z: 0}
   StopForStopLights: []
   SpawnableObjects:
-  - {fileID: 3240987765902758805, guid: 229015cbafdc2bc45b14be620e15aae5, type: 3}
+  - {fileID: 100848, guid: aed502683c9d9b540b8e9f801bfebaf8, type: 3}
   SpawnDelay: 1
   SpawnChance: 50
 --- !u!1001 &1837713015
@@ -16993,7 +16993,7 @@ MonoBehaviour:
     m_Extent: {x: 0, y: 0, z: 0}
   StopForStopLights: []
   SpawnableObjects:
-  - {fileID: 3240987765902758805, guid: 229015cbafdc2bc45b14be620e15aae5, type: 3}
+  - {fileID: 100848, guid: aed502683c9d9b540b8e9f801bfebaf8, type: 3}
   SpawnDelay: 1
   SpawnChance: 50
 --- !u!1001 &1976396835
@@ -18134,7 +18134,7 @@ MonoBehaviour:
     m_Extent: {x: 0, y: 0, z: 0}
   StopForStopLights: []
   SpawnableObjects:
-  - {fileID: 3240987765902758805, guid: 229015cbafdc2bc45b14be620e15aae5, type: 3}
+  - {fileID: 100848, guid: aed502683c9d9b540b8e9f801bfebaf8, type: 3}
   SpawnDelay: 1
   SpawnChance: 50
 --- !u!1001 &2040638868
