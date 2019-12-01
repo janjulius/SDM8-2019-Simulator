@@ -28,10 +28,17 @@ public class Path : MonoBehaviour
     [Header("The chance on every SpawnDelay to spawn (1/SpawnChance)")]
     public int SpawnChance = 50;
 
+    [Header("Wont spawn anything for this amount of seconds after spawning something.")]
+    public int GracePeriod = 1;
+
+    private int gracePeriod;
+
     public bool SpawnBothWays = false;
 
     void Start()
     {
+        gracePeriod = GracePeriod;
+
         if (SpawnableObjects == null)
             return;
         if (Points.Length > 0)
@@ -57,12 +64,19 @@ public class Path : MonoBehaviour
 
     public TrafficParticipant SpawnTrafficParticipant()
     {
-        if (SpawnableObjects.Length > 0)
+        if (gracePeriod <= 0)
         {
-            Vector3 spawnLoc = SpawnBothWays ? Random.Range(0,1) == 1 ? Points[Points.Length-1] : Points[0] : Points[0];
-            GameObject obj = Instantiate(SpawnableObjects[Random.Range(0, SpawnableObjects.Length)], spawnLoc, Quaternion.identity);
-            obj.GetComponent<TrafficParticipant>().SetPath(this);
-            return obj.GetComponent<TrafficParticipant>();
+            if (SpawnableObjects.Length > 0)
+            {
+                Vector3 spawnLoc = SpawnBothWays ? Random.Range(0, 1) == 1 ? Points[Points.Length - 1] : Points[0] : Points[0];
+                GameObject obj = Instantiate(SpawnableObjects[Random.Range(0, SpawnableObjects.Length)], spawnLoc, Quaternion.identity);
+                obj.GetComponent<TrafficParticipant>().SetPath(this);
+                return obj.GetComponent<TrafficParticipant>();
+            }
+        }
+        else
+        {
+            gracePeriod--;
         }
         return null;
     }
