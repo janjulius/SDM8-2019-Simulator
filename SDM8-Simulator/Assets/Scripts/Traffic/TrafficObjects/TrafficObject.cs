@@ -35,8 +35,10 @@ namespace Assets.Scripts
             base.Client_MqttMsgPublishReceived(sender, e);
             try
             {
-                int i = Convert.ToInt32(e.Message[e.Message.Length - 1]);
+                int i = BitConverter.ToInt32(e.Message, 0);
                 SetStatus(i);
+                if(!isValidStatus(i, Constants.Constants.STATUS_BOUNDARY_MIN, Constants.Constants.STATUS_BOUNDARY_MAX))
+                    Debug.LogError($"A status was set to invalid values: {i} {this}");
             }
             catch (InvalidCastException fe)
             {
@@ -48,6 +50,8 @@ namespace Assets.Scripts
             }
         }
 
+        private bool isValidStatus(int s, int min, int max)  => s >= min && s <= max;
+        
         public virtual void SetStatus(int i)
         {
             Status = i;

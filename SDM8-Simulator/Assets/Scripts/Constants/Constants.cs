@@ -35,5 +35,9 @@ namespace Assets.Scripts.Constants
         /// If it should show a debug message if a connection was successful
         /// </summary>
         public static bool SHOW_CONNECTED_MESSAGES = true;
+
+        public static int STATUS_BOUNDARY_MAX = 3;
+
+        public static int STATUS_BOUNDARY_MIN = 0;
     }
 }
