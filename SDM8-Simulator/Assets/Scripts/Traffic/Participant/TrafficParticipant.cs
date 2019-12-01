@@ -13,6 +13,7 @@ namespace Assets.Scripts.Traffic
         private Path path;
 
         private int currentNode = 0;
+        private int tailGatingDistance = 20;
 
         protected float origSpeed { get; private set; } = 3;
 
@@ -69,7 +70,23 @@ namespace Assets.Scripts.Traffic
 
         public virtual void TrafficUpdate()
         {
+            //int layerMask = 1 << 8;
+            //layerMask = ~layerMask;
+            //print(layerMask);
+            int layerMask = LayerMask.GetMask("Vehicles");
+            RaycastHit hit;
+            Vector3 fwd = transform.TransformDirection(Vector3.forward);
+            if (Physics.Raycast(transform.position, fwd, out hit, tailGatingDistance, layerMask))
+            {
+                status = $"Somethign on raycast: {hit.transform.name}";
+                Speed = 0;
+            }
+            else
+            {
+                Speed = origSpeed;
+            }
 
+            Debug.DrawRay(transform.position, fwd * tailGatingDistance, Color.green);
         }
 
         private void UpdateSpeed()
