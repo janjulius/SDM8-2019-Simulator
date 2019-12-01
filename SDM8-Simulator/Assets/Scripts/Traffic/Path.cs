@@ -28,6 +28,8 @@ public class Path : MonoBehaviour
     [Header("The chance on every SpawnDelay to spawn (1/SpawnChance)")]
     public int SpawnChance = 50;
 
+    public bool SpawnBothWays = false;
+
     void Start()
     {
         if (SpawnableObjects == null)
@@ -57,7 +59,8 @@ public class Path : MonoBehaviour
     {
         if (SpawnableObjects.Length > 0)
         {
-            GameObject obj = Instantiate(SpawnableObjects[Random.Range(0, SpawnableObjects.Length)], Points[0], Quaternion.identity);
+            Vector3 spawnLoc = SpawnBothWays ? Random.Range(0,1) == 1 ? Points[Points.Length-1] : Points[0] : Points[0];
+            GameObject obj = Instantiate(SpawnableObjects[Random.Range(0, SpawnableObjects.Length)], spawnLoc, Quaternion.identity);
             obj.GetComponent<TrafficParticipant>().SetPath(this);
             return obj.GetComponent<TrafficParticipant>();
         }
