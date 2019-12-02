@@ -30,7 +30,7 @@ namespace Assets.Scripts
 
         public void Start()
         {
-            teamId = SdmManager.connectedGroup;
+            teamId = Camera.main.GetComponent<SdmManager>().connectedGroup;
             mqttClient = Connect($"{Constants.Constants.ADDRESS}", Constants.Constants.PORT);
             SetUp();
         }

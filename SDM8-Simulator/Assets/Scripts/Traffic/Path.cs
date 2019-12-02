@@ -35,20 +35,31 @@ public class Path : MonoBehaviour
 
     public bool SpawnBothWays = false;
 
+    public int blockSize = 10;
+    
+    /// <summary>
+    /// The location of the stopping area
+    /// </summary>
+    private Vector3 StopCollisionLocation;
+
+    /// <summary>
+    /// The size of the stopping area
+    /// </summary>
+    private Vector3 StopCollisionSize;
+
     void Start()
     {
         gracePeriod = GracePeriod;
 
         if (SpawnableObjects == null)
             return;
-        if (Points.Length > 0)
-            SpawnBlockArea.center = Points[0];
+        //if (Points.Length > 0)
+        //    SpawnBlockArea.center = Points[0];
 
-        spawnBlockAreaCollider = gameObject.AddComponent<BoxCollider>();
-        spawnBlockAreaCollider.size = SpawnBlockArea.size;
-        spawnBlockAreaCollider.center = Points[0];
+        //spawnBlockAreaCollider = gameObject.AddComponent<BoxCollider>();
+        //spawnBlockAreaCollider.size = SpawnBlockArea.size;
+        //spawnBlockAreaCollider.center = Points[0];
 
-        SdmManager.trafficParticipants.Add(SpawnTrafficParticipant());
 
         StartCoroutine(ContiniousSpawning());
     }
@@ -68,9 +79,23 @@ public class Path : MonoBehaviour
         {
             if (SpawnableObjects.Length > 0)
             {
+                var spawneyboy = SpawnableObjects[Random.Range(0, SpawnableObjects.Length)];
                 Vector3 spawnLoc = SpawnBothWays ? Random.Range(0, 1) == 1 ? Points[Points.Length - 1] : Points[0] : Points[0];
-                GameObject obj = Instantiate(SpawnableObjects[Random.Range(0, SpawnableObjects.Length)], spawnLoc, Quaternion.identity);
+
+                foreach(TrafficParticipant p in Camera.main.GetComponent<SdmManager>().trafficParticipants)
+                {
+                    if (p == null)
+                        continue;
+                    if (Vector3.Distance(p.transform.position, spawnLoc) <= 3)
+                    {
+                        print("Someone is too close for spawning a new object");
+                        return null;
+                    }
+                }
+
+                GameObject obj = Instantiate(spawneyboy, spawnLoc, Quaternion.identity);
                 obj.GetComponent<TrafficParticipant>().SetPath(this);
+                Camera.main.GetComponent<SdmManager>().trafficParticipants.Add(obj.GetComponent<TrafficParticipant>());
                 return obj.GetComponent<TrafficParticipant>();
             }
         }
@@ -94,7 +119,7 @@ public class Path : MonoBehaviour
             Gizmos.DrawLine(Points[i], Points[i + 1]);
         }
         Gizmos.color = new Color(255, 0, 0, 0.2f);
-        Gizmos.DrawCube(SpawnBlockArea.center, SpawnBlockArea.size);
+        Gizmos.DrawCube(Points[0], new Vector3(blockSize, blockSize, blockSize));
     }
 
     private void OnDrawGizmosSelected()

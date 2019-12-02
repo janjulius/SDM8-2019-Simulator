@@ -5,11 +5,11 @@ using UnityEngine;
 
 public class SdmManager : MonoBehaviour
 {
-    public static string connectedGroup = "8";
+    public string connectedGroup = "8";
     //private static SdmManager instance = null;
     
-    [HideInInspector]
-    public static List<TrafficParticipant> trafficParticipants = new List<TrafficParticipant>();
+    //[HideInInspector]
+    public List<TrafficParticipant> trafficParticipants = new List<TrafficParticipant>();
 
     //private void Awake()
     //{

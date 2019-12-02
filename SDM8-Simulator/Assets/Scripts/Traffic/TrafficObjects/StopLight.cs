@@ -1,27 +1,30 @@
 ﻿using Assets.Scripts;
+using Assets.Scripts.Constants;
+using Assets.Scripts.Traffic.TrafficObjects;
 using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using uPLibrary.Networking.M2Mqtt.Messages;
 
-public class StopLight : TrafficObject
+public class StopLight : StopableTrafficObject
 {
-    public Vector3 StopCollisionLocation;
-
-    public Vector3 StopCollisionSize;
 
     public override void SetUp()
     {
         base.SetUp();
         SetStatus(0);
-        Subscribe(); 
+        Subscribe();
     }
 
     public override void SetStatus(int status)
     {
         base.SetStatus(status);
         UpdateStopLight();
+        if (status >= 2)
+            stopCube.SetActive(false);
+        else
+            stopCube?.SetActive(true);
     }
 
     public void UpdateStopLight()

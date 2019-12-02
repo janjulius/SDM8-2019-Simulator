@@ -13,7 +13,7 @@ namespace Assets.Scripts.Traffic
         private Path path;
 
         private int currentNode = 0;
-        private int tailGatingDistance = 20;
+        private int tailGatingDistance = 25;
 
         protected float origSpeed { get; private set; } = 3;
 
@@ -73,11 +73,12 @@ namespace Assets.Scripts.Traffic
             //int layerMask = 1 << 8;
             //layerMask = ~layerMask;
             //print(layerMask);
-            int layerMask = LayerMask.GetMask("Vehicles");
+            int layerMask = LayerMask.GetMask("Vehicles", "Stop");
             RaycastHit hit;
             Vector3 fwd = transform.TransformDirection(Vector3.forward);
             if (Physics.Raycast(transform.position, fwd, out hit, tailGatingDistance, layerMask))
             {
+
                 status = $"Somethign on raycast: {hit.transform.name}";
                 Speed = 0;
             }
@@ -114,6 +115,7 @@ namespace Assets.Scripts.Traffic
         {
             if (currentNode == (path.Points.Length - 1))
             {
+                Camera.main.GetComponent<SdmManager>().trafficParticipants.Remove(this);
                 Destroy(gameObject);
                 return true;
             }
@@ -141,7 +143,7 @@ namespace Assets.Scripts.Traffic
                 return Math.Abs(transform.position.z - s.transform.position.z);
             if (rot == 90 || rot == 270)
                 return Math.Abs(transform.position.x - s.transform.position.x);
-            Debug.LogError("No proper rotation was found. @ Get2DAxis @ TrafficParticipant " + s.gameObject.transform.position);
+           // Debug.LogError("No proper rotation was found. @ Get2DAxis @ TrafficParticipant " + s.gameObject.transform.position);
             return 0;
         }
 

@@ -39,5 +39,9 @@ namespace Assets.Scripts.Constants
         public static int STATUS_BOUNDARY_MAX = 3;
 
         public static int STATUS_BOUNDARY_MIN = 0;
+
+        public static int STOP_LAYER = 9;
+
+        public static int VEHICLE_LAYER = 8;
     }
 }
