@@ -684,11 +684,10 @@ MonoBehaviour:
   SpawnableObjects:
   - {fileID: 3240987765902758805, guid: 229015cbafdc2bc45b14be620e15aae5, type: 3}
   SpawnDelay: 1
-  SpawnChance: 50
+  SpawnChance: 20
   GracePeriod: 1
   SpawnBothWays: 0
-  StopCollisionLocation: {x: 0, y: 0, z: 0}
-  StopCollisionSize: {x: 0, y: 0, z: 0}
+  blockSize: 1
 --- !u!1001 &37843597
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1796,11 +1795,10 @@ MonoBehaviour:
   SpawnableObjects:
   - {fileID: 6095559526769236910, guid: 305e530e74db3254e94913af0c0d268a, type: 3}
   SpawnDelay: 1
-  SpawnChance: 50
+  SpawnChance: 20
   GracePeriod: 1
   SpawnBothWays: 0
-  StopCollisionLocation: {x: 0, y: 0, z: 0}
-  StopCollisionSize: {x: 0, y: 0, z: 0}
+  blockSize: 1
 --- !u!1001 &189257209
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2350,11 +2348,10 @@ MonoBehaviour:
   SpawnableObjects:
   - {fileID: 3240987765902758805, guid: 229015cbafdc2bc45b14be620e15aae5, type: 3}
   SpawnDelay: 1
-  SpawnChance: 50
+  SpawnChance: 20
   GracePeriod: 1
   SpawnBothWays: 0
-  StopCollisionLocation: {x: 0, y: 0, z: 0}
-  StopCollisionSize: {x: 0, y: 0, z: 0}
+  blockSize: 1
 --- !u!4 &243757547 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: e9390ae0e432be447bf637e4bac268ae,
@@ -3636,11 +3633,10 @@ MonoBehaviour:
   SpawnableObjects:
   - {fileID: 3240987765902758805, guid: 229015cbafdc2bc45b14be620e15aae5, type: 3}
   SpawnDelay: 1
-  SpawnChance: 50
+  SpawnChance: 20
   GracePeriod: 1
   SpawnBothWays: 0
-  StopCollisionLocation: {x: 0, y: 0, z: 0}
-  StopCollisionSize: {x: 0, y: 0, z: 0}
+  blockSize: 1
 --- !u!4 &360560658 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 07e6fdb41b265184dad1158beefc08f1,
@@ -4237,11 +4233,10 @@ MonoBehaviour:
   SpawnableObjects:
   - {fileID: 3240987765902758805, guid: 229015cbafdc2bc45b14be620e15aae5, type: 3}
   SpawnDelay: 1
-  SpawnChance: 50
+  SpawnChance: 20
   GracePeriod: 1
   SpawnBothWays: 0
-  StopCollisionLocation: {x: 0, y: 0, z: 0}
-  StopCollisionSize: {x: 0, y: 0, z: 0}
+  blockSize: 1
 --- !u!4 &426238873 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: e9390ae0e432be447bf637e4bac268ae,
@@ -4449,11 +4444,10 @@ MonoBehaviour:
   SpawnableObjects:
   - {fileID: 100848, guid: aed502683c9d9b540b8e9f801bfebaf8, type: 3}
   SpawnDelay: 1
-  SpawnChance: 50
+  SpawnChance: 20
   GracePeriod: 1
   SpawnBothWays: 0
-  StopCollisionLocation: {x: 0, y: 0, z: 0}
-  StopCollisionSize: {x: 0, y: 0, z: 0}
+  blockSize: 1
 --- !u!4 &459846526 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 07e6fdb41b265184dad1158beefc08f1,
@@ -4604,11 +4598,10 @@ MonoBehaviour:
   SpawnableObjects:
   - {fileID: 4636838405463798673, guid: 114ab369b3e177e4f88c0879109740ab, type: 3}
   SpawnDelay: 1
-  SpawnChance: 1
+  SpawnChance: 1000
   GracePeriod: 1
   SpawnBothWays: 1
-  StopCollisionLocation: {x: 0, y: 0, z: 0}
-  StopCollisionSize: {x: 0, y: 0, z: 0}
+  blockSize: 3
 --- !u!1001 &470757383
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4854,11 +4847,10 @@ MonoBehaviour:
   SpawnableObjects:
   - {fileID: 3240987765902758805, guid: 229015cbafdc2bc45b14be620e15aae5, type: 3}
   SpawnDelay: 1
-  SpawnChance: 50
+  SpawnChance: 20
   GracePeriod: 1
   SpawnBothWays: 0
-  StopCollisionLocation: {x: 0, y: 0, z: 0}
-  StopCollisionSize: {x: 0, y: 0, z: 0}
+  blockSize: 1
 --- !u!4 &503827764 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: e9390ae0e432be447bf637e4bac268ae,
@@ -5307,14 +5299,11 @@ MonoBehaviour:
   - {fileID: 2135380011}
   SpawnableObjects:
   - {fileID: 3240987765902758805, guid: 229015cbafdc2bc45b14be620e15aae5, type: 3}
-  - {fileID: 0}
-  - {fileID: 0}
   SpawnDelay: 1
-  SpawnChance: 50
+  SpawnChance: 20
   GracePeriod: 1
   SpawnBothWays: 0
-  StopCollisionLocation: {x: 0, y: 0, z: 0}
-  StopCollisionSize: {x: 0, y: 0, z: 0}
+  blockSize: 1
 --- !u!1 &579864861 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: 10ffc052a8e4bb8439b2ce53b6daf3a4,
@@ -6132,11 +6121,10 @@ MonoBehaviour:
   SpawnableObjects:
   - {fileID: 3240987765902758805, guid: 229015cbafdc2bc45b14be620e15aae5, type: 3}
   SpawnDelay: 1
-  SpawnChance: 50
+  SpawnChance: 20
   GracePeriod: 1
   SpawnBothWays: 0
-  StopCollisionLocation: {x: 0, y: 0, z: 0}
-  StopCollisionSize: {x: 0, y: 0, z: 0}
+  blockSize: 1
 --- !u!4 &690043018 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 07e6fdb41b265184dad1158beefc08f1,
@@ -6527,11 +6515,10 @@ MonoBehaviour:
   SpawnableObjects:
   - {fileID: 6095559526769236910, guid: 305e530e74db3254e94913af0c0d268a, type: 3}
   SpawnDelay: 1
-  SpawnChance: 50
+  SpawnChance: 20
   GracePeriod: 1
   SpawnBothWays: 0
-  StopCollisionLocation: {x: 0, y: 0, z: 0}
-  StopCollisionSize: {x: 0, y: 0, z: 0}
+  blockSize: 1
 --- !u!1001 &717884605
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6751,11 +6738,10 @@ MonoBehaviour:
   SpawnableObjects:
   - {fileID: 100848, guid: aed502683c9d9b540b8e9f801bfebaf8, type: 3}
   SpawnDelay: 1
-  SpawnChance: 50
+  SpawnChance: 20
   GracePeriod: 1
   SpawnBothWays: 0
-  StopCollisionLocation: {x: 0, y: 0, z: 0}
-  StopCollisionSize: {x: 0, y: 0, z: 0}
+  blockSize: 1
 --- !u!1001 &736681673
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7575,11 +7561,10 @@ MonoBehaviour:
   SpawnableObjects:
   - {fileID: 6095559526769236910, guid: 305e530e74db3254e94913af0c0d268a, type: 3}
   SpawnDelay: 1
-  SpawnChance: 50
+  SpawnChance: 20
   GracePeriod: 1
   SpawnBothWays: 0
-  StopCollisionLocation: {x: 0, y: 0, z: 0}
-  StopCollisionSize: {x: 0, y: 0, z: 0}
+  blockSize: 1
 --- !u!1001 &828609115
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8596,11 +8581,10 @@ MonoBehaviour:
   SpawnableObjects:
   - {fileID: 6095559526769236910, guid: 305e530e74db3254e94913af0c0d268a, type: 3}
   SpawnDelay: 1
-  SpawnChance: 50
+  SpawnChance: 20
   GracePeriod: 1
   SpawnBothWays: 0
-  StopCollisionLocation: {x: 0, y: 0, z: 0}
-  StopCollisionSize: {x: 0, y: 0, z: 0}
+  blockSize: 1
 --- !u!4 &989550065 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: e9390ae0e432be447bf637e4bac268ae,
@@ -8859,11 +8843,10 @@ MonoBehaviour:
   SpawnableObjects:
   - {fileID: 100848, guid: aed502683c9d9b540b8e9f801bfebaf8, type: 3}
   SpawnDelay: 1
-  SpawnChance: 50
+  SpawnChance: 20
   GracePeriod: 1
   SpawnBothWays: 0
-  StopCollisionLocation: {x: 0, y: 0, z: 0}
-  StopCollisionSize: {x: 0, y: 0, z: 0}
+  blockSize: 1
 --- !u!1001 &1011627948
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9017,11 +9000,10 @@ MonoBehaviour:
   SpawnableObjects:
   - {fileID: 3240987765902758805, guid: 229015cbafdc2bc45b14be620e15aae5, type: 3}
   SpawnDelay: 1
-  SpawnChance: 50
+  SpawnChance: 20
   GracePeriod: 1
   SpawnBothWays: 0
-  StopCollisionLocation: {x: 0, y: 0, z: 0}
-  StopCollisionSize: {x: 0, y: 0, z: 0}
+  blockSize: 1
 --- !u!4 &1050993022 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 07e6fdb41b265184dad1158beefc08f1,
@@ -9197,11 +9179,10 @@ MonoBehaviour:
   SpawnableObjects:
   - {fileID: 100848, guid: aed502683c9d9b540b8e9f801bfebaf8, type: 3}
   SpawnDelay: 1
-  SpawnChance: 50
+  SpawnChance: 20
   GracePeriod: 1
   SpawnBothWays: 0
-  StopCollisionLocation: {x: 0, y: 0, z: 0}
-  StopCollisionSize: {x: 0, y: 0, z: 0}
+  blockSize: 1
 --- !u!1 &1103052662
 GameObject:
   m_ObjectHideFlags: 0
@@ -9261,11 +9242,10 @@ MonoBehaviour:
   SpawnableObjects:
   - {fileID: 3240987765902758805, guid: 229015cbafdc2bc45b14be620e15aae5, type: 3}
   SpawnDelay: 1
-  SpawnChance: 50
+  SpawnChance: 20
   GracePeriod: 1
   SpawnBothWays: 0
-  StopCollisionLocation: {x: 0, y: 0, z: 0}
-  StopCollisionSize: {x: 0, y: 0, z: 0}
+  blockSize: 1
 --- !u!1001 &1109287544
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9640,11 +9620,10 @@ MonoBehaviour:
   SpawnableObjects:
   - {fileID: 3240987765902758805, guid: 229015cbafdc2bc45b14be620e15aae5, type: 3}
   SpawnDelay: 1
-  SpawnChance: 50
+  SpawnChance: 20
   GracePeriod: 1
   SpawnBothWays: 0
-  StopCollisionLocation: {x: 0, y: 0, z: 0}
-  StopCollisionSize: {x: 0, y: 0, z: 0}
+  blockSize: 1
 --- !u!1001 &1139672845
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9850,11 +9829,10 @@ MonoBehaviour:
   SpawnableObjects:
   - {fileID: 6095559526769236910, guid: 305e530e74db3254e94913af0c0d268a, type: 3}
   SpawnDelay: 1
-  SpawnChance: 50
+  SpawnChance: 20
   GracePeriod: 1
   SpawnBothWays: 0
-  StopCollisionLocation: {x: 0, y: 0, z: 0}
-  StopCollisionSize: {x: 0, y: 0, z: 0}
+  blockSize: 1
 --- !u!4 &1145300098 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 07c627544057bf342983155ea21aedfa,
@@ -10076,11 +10054,10 @@ MonoBehaviour:
   SpawnableObjects:
   - {fileID: 100848, guid: aed502683c9d9b540b8e9f801bfebaf8, type: 3}
   SpawnDelay: 1
-  SpawnChance: 50
+  SpawnChance: 20
   GracePeriod: 1
   SpawnBothWays: 0
-  StopCollisionLocation: {x: 0, y: 0, z: 0}
-  StopCollisionSize: {x: 0, y: 0, z: 0}
+  blockSize: 1
 --- !u!4 &1171977335 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4924622523539148, guid: 682f8b1e793d91f43b2ec051e8fd4f3a,
@@ -10146,11 +10123,10 @@ MonoBehaviour:
   SpawnableObjects:
   - {fileID: 100848, guid: aed502683c9d9b540b8e9f801bfebaf8, type: 3}
   SpawnDelay: 1
-  SpawnChance: 50
+  SpawnChance: 20
   GracePeriod: 1
   SpawnBothWays: 0
-  StopCollisionLocation: {x: 0, y: 0, z: 0}
-  StopCollisionSize: {x: 0, y: 0, z: 0}
+  blockSize: 1
 --- !u!4 &1179655285 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: e9390ae0e432be447bf637e4bac268ae,
@@ -10745,11 +10721,10 @@ MonoBehaviour:
   SpawnableObjects:
   - {fileID: 100848, guid: aed502683c9d9b540b8e9f801bfebaf8, type: 3}
   SpawnDelay: 1
-  SpawnChance: 50
+  SpawnChance: 20
   GracePeriod: 1
   SpawnBothWays: 0
-  StopCollisionLocation: {x: 0, y: 0, z: 0}
-  StopCollisionSize: {x: 0, y: 0, z: 0}
+  blockSize: 1
 --- !u!1001 &1257192889
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11390,11 +11365,10 @@ MonoBehaviour:
   SpawnableObjects:
   - {fileID: 3240987765902758805, guid: 229015cbafdc2bc45b14be620e15aae5, type: 3}
   SpawnDelay: 1
-  SpawnChance: 50
+  SpawnChance: 20
   GracePeriod: 1
   SpawnBothWays: 0
-  StopCollisionLocation: {x: 0, y: 0, z: 0}
-  StopCollisionSize: {x: 0, y: 0, z: 0}
+  blockSize: 1
 --- !u!1001 &1347096742
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11551,11 +11525,10 @@ MonoBehaviour:
   SpawnableObjects:
   - {fileID: 3240987765902758805, guid: 229015cbafdc2bc45b14be620e15aae5, type: 3}
   SpawnDelay: 1
-  SpawnChance: 50
+  SpawnChance: 20
   GracePeriod: 1
   SpawnBothWays: 0
-  StopCollisionLocation: {x: 0, y: 0, z: 0}
-  StopCollisionSize: {x: 0, y: 0, z: 0}
+  blockSize: 1
 --- !u!1001 &1364520465
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11802,11 +11775,10 @@ MonoBehaviour:
   SpawnableObjects:
   - {fileID: 3240987765902758805, guid: 229015cbafdc2bc45b14be620e15aae5, type: 3}
   SpawnDelay: 1
-  SpawnChance: 50
+  SpawnChance: 20
   GracePeriod: 1
   SpawnBothWays: 0
-  StopCollisionLocation: {x: 0, y: 0, z: 0}
-  StopCollisionSize: {x: 0, y: 0, z: 0}
+  blockSize: 1
 --- !u!1001 &1406770462
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12618,11 +12590,10 @@ MonoBehaviour:
   SpawnableObjects:
   - {fileID: 3240987765902758805, guid: 229015cbafdc2bc45b14be620e15aae5, type: 3}
   SpawnDelay: 1
-  SpawnChance: 50
+  SpawnChance: 20
   GracePeriod: 1
   SpawnBothWays: 0
-  StopCollisionLocation: {x: 0, y: 0, z: 0}
-  StopCollisionSize: {x: 0, y: 0, z: 0}
+  blockSize: 1
 --- !u!4 &1512600755 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 07e6fdb41b265184dad1158beefc08f1,
@@ -12786,11 +12757,10 @@ MonoBehaviour:
   SpawnableObjects:
   - {fileID: 100848, guid: aed502683c9d9b540b8e9f801bfebaf8, type: 3}
   SpawnDelay: 1
-  SpawnChance: 50
+  SpawnChance: 20
   GracePeriod: 1
   SpawnBothWays: 0
-  StopCollisionLocation: {x: 0, y: 0, z: 0}
-  StopCollisionSize: {x: 0, y: 0, z: 0}
+  blockSize: 1
 --- !u!1001 &1559555145
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12933,11 +12903,10 @@ MonoBehaviour:
   SpawnableObjects:
   - {fileID: 100848, guid: aed502683c9d9b540b8e9f801bfebaf8, type: 3}
   SpawnDelay: 1
-  SpawnChance: 50
+  SpawnChance: 20
   GracePeriod: 1
   SpawnBothWays: 0
-  StopCollisionLocation: {x: 0, y: 0, z: 0}
-  StopCollisionSize: {x: 0, y: 0, z: 0}
+  blockSize: 1
 --- !u!4 &1560462886 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: e9390ae0e432be447bf637e4bac268ae,
@@ -13018,6 +12987,115 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: f2d50559112609e4b9633e158f844cb6, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 07e6fdb41b265184dad1158beefc08f1, type: 3}
+--- !u!1 &1579438654
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1579438659}
+  - component: {fileID: 1579438658}
+  - component: {fileID: 1579438657}
+  - component: {fileID: 1579438656}
+  - component: {fileID: 1579438655}
+  m_Layer: 0
+  m_Name: Cube (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1579438655
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1579438654}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae859443ad2eea047875da9a4e527896, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  laneType: 2
+  groupId: 5
+  componentType: 2
+  componentId: 0
+--- !u!65 &1579438656
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1579438654}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &1579438657
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1579438654}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10301, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!33 &1579438658
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1579438654}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &1579438659
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1579438654}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 237, y: 0.3, z: 158.5}
+  m_LocalScale: {x: 16.337, y: 17.712, z: 27.033}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1594773782
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13459,11 +13537,10 @@ MonoBehaviour:
   SpawnableObjects:
   - {fileID: 3240987765902758805, guid: 229015cbafdc2bc45b14be620e15aae5, type: 3}
   SpawnDelay: 1
-  SpawnChance: 50
+  SpawnChance: 20
   GracePeriod: 1
   SpawnBothWays: 0
-  StopCollisionLocation: {x: 0, y: 0, z: 0}
-  StopCollisionSize: {x: 0, y: 0, z: 0}
+  blockSize: 1
 --- !u!1001 &1636352728
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14127,11 +14204,10 @@ MonoBehaviour:
   SpawnableObjects:
   - {fileID: 3240987765902758805, guid: 229015cbafdc2bc45b14be620e15aae5, type: 3}
   SpawnDelay: 1
-  SpawnChance: 50
+  SpawnChance: 20
   GracePeriod: 1
   SpawnBothWays: 0
-  StopCollisionLocation: {x: 0, y: 0, z: 0}
-  StopCollisionSize: {x: 0, y: 0, z: 0}
+  blockSize: 1
 --- !u!1001 &1679632555
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14636,8 +14712,7 @@ MonoBehaviour:
   SpawnChance: 10
   GracePeriod: 1
   SpawnBothWays: 0
-  StopCollisionLocation: {x: 0, y: 0, z: 0}
-  StopCollisionSize: {x: 0, y: 0, z: 0}
+  blockSize: 1
 --- !u!4 &1716967488 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: e9390ae0e432be447bf637e4bac268ae,
@@ -14706,11 +14781,10 @@ MonoBehaviour:
   SpawnableObjects:
   - {fileID: 6095559526769236910, guid: 305e530e74db3254e94913af0c0d268a, type: 3}
   SpawnDelay: 1
-  SpawnChance: 50
+  SpawnChance: 20
   GracePeriod: 1
   SpawnBothWays: 0
-  StopCollisionLocation: {x: 0, y: 0, z: 0}
-  StopCollisionSize: {x: 0, y: 0, z: 0}
+  blockSize: 1
 --- !u!1001 &1733912494
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14843,11 +14917,10 @@ MonoBehaviour:
   SpawnableObjects:
   - {fileID: 3240987765902758805, guid: 229015cbafdc2bc45b14be620e15aae5, type: 3}
   SpawnDelay: 1
-  SpawnChance: 50
+  SpawnChance: 20
   GracePeriod: 1
   SpawnBothWays: 0
-  StopCollisionLocation: {x: 0, y: 0, z: 0}
-  StopCollisionSize: {x: 0, y: 0, z: 0}
+  blockSize: 1
 --- !u!1001 &1751404247
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15251,11 +15324,10 @@ MonoBehaviour:
   SpawnableObjects:
   - {fileID: 6095559526769236910, guid: 305e530e74db3254e94913af0c0d268a, type: 3}
   SpawnDelay: 1
-  SpawnChance: 50
+  SpawnChance: 20
   GracePeriod: 1
   SpawnBothWays: 0
-  StopCollisionLocation: {x: 0, y: 0, z: 0}
-  StopCollisionSize: {x: 0, y: 0, z: 0}
+  blockSize: 1
 --- !u!1001 &1778005345
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15539,11 +15611,10 @@ MonoBehaviour:
   SpawnableObjects:
   - {fileID: 6095559526769236910, guid: 305e530e74db3254e94913af0c0d268a, type: 3}
   SpawnDelay: 1
-  SpawnChance: 50
+  SpawnChance: 20
   GracePeriod: 1
   SpawnBothWays: 0
-  StopCollisionLocation: {x: 0, y: 0, z: 0}
-  StopCollisionSize: {x: 0, y: 0, z: 0}
+  blockSize: 1
 --- !u!1001 &1796791350
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15831,11 +15902,10 @@ MonoBehaviour:
   SpawnableObjects:
   - {fileID: 100848, guid: aed502683c9d9b540b8e9f801bfebaf8, type: 3}
   SpawnDelay: 1
-  SpawnChance: 50
+  SpawnChance: 20
   GracePeriod: 1
   SpawnBothWays: 0
-  StopCollisionLocation: {x: 0, y: 0, z: 0}
-  StopCollisionSize: {x: 0, y: 0, z: 0}
+  blockSize: 1
 --- !u!1001 &1837713015
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16756,11 +16826,10 @@ MonoBehaviour:
   SpawnableObjects:
   - {fileID: 3240987765902758805, guid: 229015cbafdc2bc45b14be620e15aae5, type: 3}
   SpawnDelay: 1
-  SpawnChance: 50
+  SpawnChance: 20
   GracePeriod: 1
   SpawnBothWays: 0
-  StopCollisionLocation: {x: 0, y: 0, z: 0}
-  StopCollisionSize: {x: 0, y: 0, z: 0}
+  blockSize: 1
 --- !u!4 &1914759942 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: e9390ae0e432be447bf637e4bac268ae,
@@ -17019,11 +17088,10 @@ MonoBehaviour:
   SpawnableObjects:
   - {fileID: 100848, guid: aed502683c9d9b540b8e9f801bfebaf8, type: 3}
   SpawnDelay: 1
-  SpawnChance: 50
+  SpawnChance: 20
   GracePeriod: 1
   SpawnBothWays: 0
-  StopCollisionLocation: {x: 0, y: 0, z: 0}
-  StopCollisionSize: {x: 0, y: 0, z: 0}
+  blockSize: 1
 --- !u!1001 &1976396835
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18158,11 +18226,10 @@ MonoBehaviour:
   SpawnableObjects:
   - {fileID: 100848, guid: aed502683c9d9b540b8e9f801bfebaf8, type: 3}
   SpawnDelay: 1
-  SpawnChance: 50
+  SpawnChance: 20
   GracePeriod: 1
   SpawnBothWays: 0
-  StopCollisionLocation: {x: 0, y: 0, z: 0}
-  StopCollisionSize: {x: 0, y: 0, z: 0}
+  blockSize: 1
 --- !u!1001 &2040638868
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18439,11 +18506,10 @@ MonoBehaviour:
   SpawnableObjects:
   - {fileID: 3240987765902758805, guid: 229015cbafdc2bc45b14be620e15aae5, type: 3}
   SpawnDelay: 1
-  SpawnChance: 50
+  SpawnChance: 20
   GracePeriod: 1
   SpawnBothWays: 0
-  StopCollisionLocation: {x: 0, y: 0, z: 0}
-  StopCollisionSize: {x: 0, y: 0, z: 0}
+  blockSize: 1
 --- !u!1001 &2082885193
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18904,11 +18970,10 @@ MonoBehaviour:
   SpawnableObjects:
   - {fileID: 6095559526769236910, guid: 305e530e74db3254e94913af0c0d268a, type: 3}
   SpawnDelay: 1
-  SpawnChance: 50
+  SpawnChance: 20
   GracePeriod: 1
   SpawnBothWays: 0
-  StopCollisionLocation: {x: 0, y: 0, z: 0}
-  StopCollisionSize: {x: 0, y: 0, z: 0}
+  blockSize: 1
 --- !u!1001 &2134826210
 PrefabInstance:
   m_ObjectHideFlags: 0
