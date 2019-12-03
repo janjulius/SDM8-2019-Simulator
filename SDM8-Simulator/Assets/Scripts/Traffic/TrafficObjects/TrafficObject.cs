@@ -35,7 +35,8 @@ namespace Assets.Scripts
             base.Client_MqttMsgPublishReceived(sender, e);
             try
             {
-                int i = BitConverter.ToInt32(e.Message, 0);
+                //int i = BitConverter.ToInt32(e.Message, 0);
+                int i = Convert.ToInt32(Encoding.UTF8.GetString(e.Message));
                 SetStatus(i);
                 if(!isValidStatus(i, Constants.Constants.STATUS_BOUNDARY_MIN, Constants.Constants.STATUS_BOUNDARY_MAX))
                     Debug.LogError($"A status was set to invalid values: {i} {this}");
