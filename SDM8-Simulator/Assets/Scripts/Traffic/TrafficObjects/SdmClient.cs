@@ -7,6 +7,7 @@ using UnityEngine;
 using uPLibrary.Networking.M2Mqtt;
 using Assets.Scripts.Constants;
 using uPLibrary.Networking.M2Mqtt.Messages;
+using System.Threading;
 
 namespace Assets.Scripts
 {
@@ -31,8 +32,11 @@ namespace Assets.Scripts
         public void Start()
         {
             teamId = Camera.main.GetComponent<SdmManager>().connectedGroup;
-            mqttClient = Connect($"{Constants.Constants.ADDRESS}", Constants.Constants.PORT);
-            SetUp();
+            new Thread(() =>
+            {
+                mqttClient = Connect($"{Constants.Constants.ADDRESS}", Constants.Constants.PORT);
+                SetUp();
+            }).Start();
         }
 
         private void Update()
@@ -77,7 +81,7 @@ namespace Assets.Scripts
             string clientId = Guid.NewGuid().ToString();
             client.Connect(clientId);
             if (Constants.Constants.SHOW_CONNECTED_MESSAGES)
-                print($"Connection started to {host}:{brokerPort}");
+                print($"Connection started to {host}:{brokerPort} ({ToString()})");
             return client;
         }
 
@@ -133,8 +137,8 @@ namespace Assets.Scripts
         /// <param name="message"></param>
         private void Publish(MqttClient client, string topic, byte[] message)
         {
-            if (Constants.Constants.SHOW_CONNECTED_MESSAGES)
-                print($"Sent message: {message.ToString()} to topic: {topic.ToString()}");
+            //if (Constants.Constants.SHOW_CONNECTED_MESSAGES)
+                //print($"Sent message: {message.ToString()} to topic: {topic.ToString()}");
             string clientId = Guid.NewGuid().ToString();
             if(!client.IsConnected)
                 client.Connect(clientId);

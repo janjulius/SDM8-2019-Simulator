@@ -131,6 +131,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: TB_CITY_Prop_TrafficLight_A_Black (22)
       objectReference: {fileID: 0}
+    - target: {fileID: 1985699654567720, guid: 682f8b1e793d91f43b2ec051e8fd4f3a, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4924622523539148, guid: 682f8b1e793d91f43b2ec051e8fd4f3a, type: 3}
       propertyPath: m_LocalPosition.x
       value: -98.15
@@ -1087,6 +1091,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: TB_CITY_Prop_TrafficLight_A_Black (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 1985699654567720, guid: 682f8b1e793d91f43b2ec051e8fd4f3a, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4924622523539148, guid: 682f8b1e793d91f43b2ec051e8fd4f3a, type: 3}
       propertyPath: m_LocalPosition.x
       value: -79.3
@@ -1216,6 +1224,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 10ffc052a8e4bb8439b2ce53b6daf3a4, type: 3}
       propertyPath: m_Name
       value: Candy-Cane (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 10ffc052a8e4bb8439b2ce53b6daf3a4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 10ffc052a8e4bb8439b2ce53b6daf3a4, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1884,6 +1896,10 @@ PrefabInstance:
     - target: {fileID: 1985699654567720, guid: 682f8b1e793d91f43b2ec051e8fd4f3a, type: 3}
       propertyPath: m_Name
       value: TB_CITY_Prop_TrafficLight_A_Black (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1985699654567720, guid: 682f8b1e793d91f43b2ec051e8fd4f3a, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4924622523539148, guid: 682f8b1e793d91f43b2ec051e8fd4f3a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3131,6 +3147,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Candy-Cane (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 10ffc052a8e4bb8439b2ce53b6daf3a4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 10ffc052a8e4bb8439b2ce53b6daf3a4, type: 3}
       propertyPath: m_LocalPosition.x
       value: -6.9
@@ -3530,6 +3550,10 @@ PrefabInstance:
     - target: {fileID: 1985699654567720, guid: 682f8b1e793d91f43b2ec051e8fd4f3a, type: 3}
       propertyPath: m_Name
       value: TB_CITY_Prop_TrafficLight_A_Black (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1985699654567720, guid: 682f8b1e793d91f43b2ec051e8fd4f3a, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4924622523539148, guid: 682f8b1e793d91f43b2ec051e8fd4f3a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4793,6 +4817,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Candy-Cane (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 10ffc052a8e4bb8439b2ce53b6daf3a4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 10ffc052a8e4bb8439b2ce53b6daf3a4, type: 3}
       propertyPath: m_LocalPosition.x
       value: -32.699997
@@ -4974,7 +5002,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &387503876
 Transform:
   m_ObjectHideFlags: 0
@@ -5187,6 +5215,10 @@ PrefabInstance:
     - target: {fileID: 1985699654567720, guid: 682f8b1e793d91f43b2ec051e8fd4f3a, type: 3}
       propertyPath: m_Name
       value: TB_CITY_Prop_TrafficLight_A_Black (23)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1985699654567720, guid: 682f8b1e793d91f43b2ec051e8fd4f3a, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4924622523539148, guid: 682f8b1e793d91f43b2ec051e8fd4f3a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6067,6 +6099,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: TB_CITY_Prop_TrafficLight_A_Black (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 1985699654567720, guid: 682f8b1e793d91f43b2ec051e8fd4f3a, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4924622523539148, guid: 682f8b1e793d91f43b2ec051e8fd4f3a, type: 3}
       propertyPath: m_LocalPosition.x
       value: 24.36
@@ -6643,6 +6679,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 10ffc052a8e4bb8439b2ce53b6daf3a4, type: 3}
       propertyPath: m_Name
       value: Candy-Cane (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 10ffc052a8e4bb8439b2ce53b6daf3a4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 10ffc052a8e4bb8439b2ce53b6daf3a4, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7788,6 +7828,10 @@ PrefabInstance:
     - target: {fileID: 1985699654567720, guid: 682f8b1e793d91f43b2ec051e8fd4f3a, type: 3}
       propertyPath: m_Name
       value: TB_CITY_Prop_TrafficLight_A_Black (18)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1985699654567720, guid: 682f8b1e793d91f43b2ec051e8fd4f3a, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4924622523539148, guid: 682f8b1e793d91f43b2ec051e8fd4f3a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -9168,7 +9212,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &768472880
 Transform:
   m_ObjectHideFlags: 0
@@ -10673,7 +10717,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &961023575
 Transform:
   m_ObjectHideFlags: 0
@@ -11773,6 +11817,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Candy-Cane (16)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 10ffc052a8e4bb8439b2ce53b6daf3a4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 10ffc052a8e4bb8439b2ce53b6daf3a4, type: 3}
       propertyPath: m_LocalPosition.x
       value: 35.83
@@ -12148,6 +12196,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: TB_CITY_Prop_TrafficLight_B_Black (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1532468895285226, guid: a5faf4711ef4cef489a20f0ef5c5e8f3, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4549882812725322, guid: a5faf4711ef4cef489a20f0ef5c5e8f3, type: 3}
       propertyPath: m_LocalPosition.x
       value: -36.9
@@ -12383,6 +12435,10 @@ PrefabInstance:
     - target: {fileID: 1532468895285226, guid: a5faf4711ef4cef489a20f0ef5c5e8f3, type: 3}
       propertyPath: m_Name
       value: TB_CITY_Prop_TrafficLight_B_Black
+      objectReference: {fileID: 0}
+    - target: {fileID: 1532468895285226, guid: a5faf4711ef4cef489a20f0ef5c5e8f3, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4549882812725322, guid: a5faf4711ef4cef489a20f0ef5c5e8f3, type: 3}
       propertyPath: m_LocalPosition.x
@@ -13108,6 +13164,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Candy-Cane (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 10ffc052a8e4bb8439b2ce53b6daf3a4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 10ffc052a8e4bb8439b2ce53b6daf3a4, type: 3}
       propertyPath: m_LocalPosition.x
       value: -91.3
@@ -13505,6 +13565,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Candy-Cane (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 10ffc052a8e4bb8439b2ce53b6daf3a4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 10ffc052a8e4bb8439b2ce53b6daf3a4, type: 3}
       propertyPath: m_LocalPosition.x
       value: 29.6
@@ -13603,6 +13667,10 @@ PrefabInstance:
     - target: {fileID: 1985699654567720, guid: 682f8b1e793d91f43b2ec051e8fd4f3a, type: 3}
       propertyPath: m_Name
       value: TB_CITY_Prop_TrafficLight_A_Black (24)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1985699654567720, guid: 682f8b1e793d91f43b2ec051e8fd4f3a, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4924622523539148, guid: 682f8b1e793d91f43b2ec051e8fd4f3a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -14744,6 +14812,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: TB_CITY_Prop_TrafficLight_A_Black (25)
       objectReference: {fileID: 0}
+    - target: {fileID: 1985699654567720, guid: 682f8b1e793d91f43b2ec051e8fd4f3a, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4924622523539148, guid: 682f8b1e793d91f43b2ec051e8fd4f3a, type: 3}
       propertyPath: m_LocalPosition.x
       value: 23.66
@@ -14919,6 +14991,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: TB_CITY_Prop_TrafficLight_A_Black (17)
       objectReference: {fileID: 0}
+    - target: {fileID: 1985699654567720, guid: 682f8b1e793d91f43b2ec051e8fd4f3a, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4924622523539148, guid: 682f8b1e793d91f43b2ec051e8fd4f3a, type: 3}
       propertyPath: m_LocalPosition.x
       value: -87.75
@@ -15013,6 +15089,10 @@ PrefabInstance:
     - target: {fileID: 1985699654567720, guid: 682f8b1e793d91f43b2ec051e8fd4f3a, type: 3}
       propertyPath: m_Name
       value: TB_CITY_Prop_TrafficLight_A_Black (21)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1985699654567720, guid: 682f8b1e793d91f43b2ec051e8fd4f3a, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4924622523539148, guid: 682f8b1e793d91f43b2ec051e8fd4f3a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -15727,6 +15807,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: TB_CITY_Prop_TrafficLight_A_Black (19)
       objectReference: {fileID: 0}
+    - target: {fileID: 1985699654567720, guid: 682f8b1e793d91f43b2ec051e8fd4f3a, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4924622523539148, guid: 682f8b1e793d91f43b2ec051e8fd4f3a, type: 3}
       propertyPath: m_LocalPosition.x
       value: 48.726364
@@ -15833,6 +15917,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 10ffc052a8e4bb8439b2ce53b6daf3a4, type: 3}
       propertyPath: m_Name
       value: Candy-Cane (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 10ffc052a8e4bb8439b2ce53b6daf3a4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 10ffc052a8e4bb8439b2ce53b6daf3a4, type: 3}
       propertyPath: m_LocalPosition.x
@@ -16183,6 +16271,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: railway (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 233572773337365236, guid: 507c6e5d373eb4e43a188060d619eb78,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 233572773337365237, guid: 507c6e5d373eb4e43a188060d619eb78,
         type: 3}
@@ -16845,6 +16938,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: TB_CITY_Prop_TrafficLight_A_Black (26)
       objectReference: {fileID: 0}
+    - target: {fileID: 1985699654567720, guid: 682f8b1e793d91f43b2ec051e8fd4f3a, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4924622523539148, guid: 682f8b1e793d91f43b2ec051e8fd4f3a, type: 3}
       propertyPath: m_LocalPosition.x
       value: -76.7
@@ -17216,6 +17313,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: TB_CITY_Prop_TrafficLight_A_Black (27)
       objectReference: {fileID: 0}
+    - target: {fileID: 1985699654567720, guid: 682f8b1e793d91f43b2ec051e8fd4f3a, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4924622523539148, guid: 682f8b1e793d91f43b2ec051e8fd4f3a, type: 3}
       propertyPath: m_LocalPosition.x
       value: 60.9
@@ -17299,7 +17400,7 @@ MonoBehaviour:
   componentType: 0
   componentId: 0
   StopCollisionLocation: {x: 296.8, y: 9.7, z: 232.56}
-  StopCollisionSize: {x: 1, y: 20, z: 18.7}
+  StopCollisionSize: {x: 35.66, y: 20, z: 18.7}
 --- !u!4 &1512600755 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 07e6fdb41b265184dad1158beefc08f1,
@@ -17432,6 +17533,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: railway (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 233572773337365236, guid: 507c6e5d373eb4e43a188060d619eb78,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 233572773337365237, guid: 507c6e5d373eb4e43a188060d619eb78,
         type: 3}
@@ -17921,6 +18027,10 @@ PrefabInstance:
     - target: {fileID: 1985699654567720, guid: 682f8b1e793d91f43b2ec051e8fd4f3a, type: 3}
       propertyPath: m_Name
       value: TB_CITY_Prop_TrafficLight_A_Black (18)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1985699654567720, guid: 682f8b1e793d91f43b2ec051e8fd4f3a, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4924622523539148, guid: 682f8b1e793d91f43b2ec051e8fd4f3a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -19589,6 +19699,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: TB_CITY_Prop_TrafficLight_A_Black (16)
       objectReference: {fileID: 0}
+    - target: {fileID: 1985699654567720, guid: 682f8b1e793d91f43b2ec051e8fd4f3a, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4924622523539148, guid: 682f8b1e793d91f43b2ec051e8fd4f3a, type: 3}
       propertyPath: m_LocalPosition.x
       value: -86.4
@@ -20254,6 +20368,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Candy-Cane (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 10ffc052a8e4bb8439b2ce53b6daf3a4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 10ffc052a8e4bb8439b2ce53b6daf3a4, type: 3}
       propertyPath: m_LocalPosition.x
       value: -90.43
@@ -20396,6 +20514,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 10ffc052a8e4bb8439b2ce53b6daf3a4, type: 3}
       propertyPath: m_Name
       value: Candy-Cane (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 10ffc052a8e4bb8439b2ce53b6daf3a4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 10ffc052a8e4bb8439b2ce53b6daf3a4, type: 3}
       propertyPath: m_LocalPosition.x
@@ -21063,6 +21185,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: TB_CITY_Prop_TrafficLight_A_Black (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 1985699654567720, guid: 682f8b1e793d91f43b2ec051e8fd4f3a, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4924622523539148, guid: 682f8b1e793d91f43b2ec051e8fd4f3a, type: 3}
       propertyPath: m_LocalPosition.x
       value: 33.88
@@ -21619,6 +21745,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: TB_CITY_Prop_TrafficLight_A_Black (20)
       objectReference: {fileID: 0}
+    - target: {fileID: 1985699654567720, guid: 682f8b1e793d91f43b2ec051e8fd4f3a, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4924622523539148, guid: 682f8b1e793d91f43b2ec051e8fd4f3a, type: 3}
       propertyPath: m_LocalPosition.x
       value: -4.65
@@ -22172,7 +22302,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1865284396
 Transform:
   m_ObjectHideFlags: 0
@@ -24625,6 +24755,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Candy-Cane (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 10ffc052a8e4bb8439b2ce53b6daf3a4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 10ffc052a8e4bb8439b2ce53b6daf3a4, type: 3}
       propertyPath: m_LocalPosition.x
       value: 29.600006
@@ -25432,6 +25566,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 10ffc052a8e4bb8439b2ce53b6daf3a4, type: 3}
       propertyPath: m_Name
       value: Candy-Cane (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 10ffc052a8e4bb8439b2ce53b6daf3a4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 10ffc052a8e4bb8439b2ce53b6daf3a4, type: 3}
       propertyPath: m_LocalPosition.x

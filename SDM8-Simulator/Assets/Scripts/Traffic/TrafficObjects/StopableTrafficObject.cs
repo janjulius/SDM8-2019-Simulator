@@ -30,14 +30,17 @@ namespace Assets.Scripts.Traffic.TrafficObjects
         public override void SetUp()
         {
             base.SetUp();
-            
-            stopCube = GameObject.CreatePrimitive(PrimitiveType.Cube);
-            stopCube.transform.position = StopCollisionLocation;
-            stopCube.transform.localScale = StopCollisionSize;
-            stopCube.layer = Constants.Constants.STOP_LAYER;
-            stopCube.GetComponent<Collider>().isTrigger = true;
-            stopCube.name = $"Cube: {ToString()}";
-            stopCube.SetActive(true);
+
+            UnityThread.executeInUpdate(() =>
+            {
+                stopCube = GameObject.CreatePrimitive(PrimitiveType.Cube);
+                stopCube.transform.position = StopCollisionLocation;
+                stopCube.transform.localScale = StopCollisionSize;
+                stopCube.layer = Constants.Constants.STOP_LAYER;
+                stopCube.GetComponent<Collider>().isTrigger = true;
+                stopCube.name = $"Cube: {ToString()}";
+                stopCube.SetActive(true);
+            });
         }
 
     }

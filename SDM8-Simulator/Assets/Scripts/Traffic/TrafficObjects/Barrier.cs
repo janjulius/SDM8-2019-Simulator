@@ -30,10 +30,13 @@ namespace Assets.Scripts
 
         public void UpdateBarrier()
         {
-            if (Status >= 1)
-                transform.Rotate(transform.rotation.x, transform.rotation.y, 90);
-            else
-                transform.Rotate(transform.rotation.x, transform.rotation.y, 180);
+            UnityThread.executeInUpdate(() =>
+            {
+                if (Status >= 1)
+                    transform.Rotate(transform.rotation.x, transform.rotation.y, 90);
+                else
+                    transform.Rotate(transform.rotation.x, transform.rotation.y, 180);
+            });
         }
     }
 }

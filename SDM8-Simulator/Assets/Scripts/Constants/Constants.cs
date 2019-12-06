@@ -19,7 +19,7 @@ namespace Assets.Scripts.Constants
         /// <summary>
         /// The ip address to connect to (broker)
         /// </summary>
-	    public static string ADDRESS = "arankieskamp.com";
+	    public static string ADDRESS = "62.210.180.72";
 
         /// <summary>
         /// The port

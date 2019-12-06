@@ -18,16 +18,17 @@ public class StopLight : StopableTrafficObject
         Subscribe();
     }
 
-    public override void Client_MqttMsgPublishReceived(object sender, MqttMsgPublishEventArgs e)
-    {
-        print("New message on stoplight");
-        SetStatus(Convert.ToInt32(Encoding.UTF8.GetString(e.Message)));
-    }
+   //public override void Client_MqttMsgPublishReceived(object sender, MqttMsgPublishEventArgs e)
+   //{
+   //    print("New message on stoplight " + this.name);
+   //    SetStatus(Convert.ToInt32(Encoding.UTF8.GetString(e.Message)));
+   //}
 
     public override void SetStatus(int status)
     {
         base.SetStatus(status);
         UpdateStopLight();
+
         if (status >= 2)
             UnityThread.executeInUpdate(() => stopCube?.SetActive(false));
         else
