@@ -6,5 +6,5 @@
     BARRIER,
     BOAT_LIGHT,
     DECK,
-    DECK_SENSOR
-}
+    TRAIN_LIGHT
+}   
