@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class SdmManager : MonoBehaviour
 {
-    public string connectedGroup = "8";
+    public string connectedGroup = "12";
     //private static SdmManager instance = null;
     
     //[HideInInspector]

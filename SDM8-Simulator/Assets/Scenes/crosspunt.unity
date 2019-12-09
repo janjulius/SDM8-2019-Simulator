@@ -797,7 +797,7 @@ MonoBehaviour:
   SpawnableObjects:
   - {fileID: 3240987765902758805, guid: 229015cbafdc2bc45b14be620e15aae5, type: 3}
   SpawnDelay: 1
-  SpawnChance: 20
+  SpawnChance: 50
   GracePeriod: 1
   SpawnBothWays: 0
   blockSize: 1
@@ -2225,7 +2225,7 @@ MonoBehaviour:
   SpawnableObjects:
   - {fileID: 6095559526769236910, guid: 305e530e74db3254e94913af0c0d268a, type: 3}
   SpawnDelay: 1
-  SpawnChance: 20
+  SpawnChance: 100
   GracePeriod: 1
   SpawnBothWays: 0
   blockSize: 1
@@ -2797,7 +2797,7 @@ MonoBehaviour:
   SpawnableObjects:
   - {fileID: 3240987765902758805, guid: 229015cbafdc2bc45b14be620e15aae5, type: 3}
   SpawnDelay: 1
-  SpawnChance: 20
+  SpawnChance: 50
   GracePeriod: 1
   SpawnBothWays: 0
   blockSize: 1
@@ -4466,7 +4466,7 @@ MonoBehaviour:
   SpawnableObjects:
   - {fileID: 3240987765902758805, guid: 229015cbafdc2bc45b14be620e15aae5, type: 3}
   SpawnDelay: 1
-  SpawnChance: 20
+  SpawnChance: 50
   GracePeriod: 1
   SpawnBothWays: 0
   blockSize: 1
@@ -5002,7 +5002,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &387503876
 Transform:
   m_ObjectHideFlags: 0
@@ -5366,7 +5366,7 @@ MonoBehaviour:
   SpawnableObjects:
   - {fileID: 3240987765902758805, guid: 229015cbafdc2bc45b14be620e15aae5, type: 3}
   SpawnDelay: 1
-  SpawnChance: 20
+  SpawnChance: 50
   GracePeriod: 1
   SpawnBothWays: 0
   blockSize: 1
@@ -5672,7 +5672,7 @@ MonoBehaviour:
   SpawnableObjects:
   - {fileID: 100848, guid: aed502683c9d9b540b8e9f801bfebaf8, type: 3}
   SpawnDelay: 1
-  SpawnChance: 20
+  SpawnChance: 100
   GracePeriod: 1
   SpawnBothWays: 0
   blockSize: 1
@@ -5935,7 +5935,7 @@ MonoBehaviour:
   SpawnableObjects:
   - {fileID: 4636838405463798673, guid: 114ab369b3e177e4f88c0879109740ab, type: 3}
   SpawnDelay: 1
-  SpawnChance: 1000
+  SpawnChance: 600
   GracePeriod: 1
   SpawnBothWays: 1
   blockSize: 3
@@ -6084,7 +6084,7 @@ MonoBehaviour:
   SpawnableObjects:
   - {fileID: 4636838405463798673, guid: 114ab369b3e177e4f88c0879109740ab, type: 3}
   SpawnDelay: 1
-  SpawnChance: 1000
+  SpawnChance: 600
   GracePeriod: 1
   SpawnBothWays: 1
   blockSize: 3
@@ -6247,7 +6247,7 @@ MonoBehaviour:
   SpawnableObjects:
   - {fileID: 3240987765902758805, guid: 229015cbafdc2bc45b14be620e15aae5, type: 3}
   SpawnDelay: 1
-  SpawnChance: 20
+  SpawnChance: 50
   GracePeriod: 1
   SpawnBothWays: 0
   blockSize: 1
@@ -6900,7 +6900,7 @@ MonoBehaviour:
   SpawnableObjects:
   - {fileID: 3240987765902758805, guid: 229015cbafdc2bc45b14be620e15aae5, type: 3}
   SpawnDelay: 1
-  SpawnChance: 20
+  SpawnChance: 50
   GracePeriod: 1
   SpawnBothWays: 0
   blockSize: 1
@@ -8252,7 +8252,7 @@ MonoBehaviour:
   SpawnableObjects:
   - {fileID: 3240987765902758805, guid: 229015cbafdc2bc45b14be620e15aae5, type: 3}
   SpawnDelay: 1
-  SpawnChance: 20
+  SpawnChance: 50
   GracePeriod: 1
   SpawnBothWays: 0
   blockSize: 1
@@ -8567,7 +8567,7 @@ MonoBehaviour:
   SpawnableObjects:
   - {fileID: 6095559526769236910, guid: 305e530e74db3254e94913af0c0d268a, type: 3}
   SpawnDelay: 1
-  SpawnChance: 20
+  SpawnChance: 100
   GracePeriod: 1
   SpawnBothWays: 0
   blockSize: 1
@@ -8723,7 +8723,7 @@ MonoBehaviour:
   laneType: 2
   groupId: 1
   componentType: 0
-  componentId: 1
+  componentId: 0
   StopCollisionLocation: {x: 175.9, y: 14, z: 404}
   StopCollisionSize: {x: 18, y: 30, z: 10}
 --- !u!4 &735142445 stripped
@@ -8790,7 +8790,7 @@ MonoBehaviour:
   SpawnableObjects:
   - {fileID: 100848, guid: aed502683c9d9b540b8e9f801bfebaf8, type: 3}
   SpawnDelay: 1
-  SpawnChance: 20
+  SpawnChance: 100
   GracePeriod: 1
   SpawnBothWays: 0
   blockSize: 1
@@ -9212,7 +9212,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &768472880
 Transform:
   m_ObjectHideFlags: 0
@@ -9817,7 +9817,7 @@ MonoBehaviour:
   SpawnableObjects:
   - {fileID: 6095559526769236910, guid: 305e530e74db3254e94913af0c0d268a, type: 3}
   SpawnDelay: 1
-  SpawnChance: 20
+  SpawnChance: 100
   GracePeriod: 1
   SpawnBothWays: 0
   blockSize: 1
@@ -10614,8 +10614,8 @@ MonoBehaviour:
   groupId: 0
   componentType: 4
   componentId: 0
-  StopCollisionLocation: {x: 263.3, y: -14.7, z: 833.9}
-  StopCollisionSize: {x: 3.9, y: 279.75, z: 231.7}
+  StopCollisionLocation: {x: 312.87, y: -14.7, z: 833.9}
+  StopCollisionSize: {x: 88.7, y: 279.75, z: 231.7}
 --- !u!4 &939637760 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4549882812725322, guid: a5faf4711ef4cef489a20f0ef5c5e8f3,
@@ -10717,7 +10717,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &961023575
 Transform:
   m_ObjectHideFlags: 0
@@ -10947,7 +10947,7 @@ MonoBehaviour:
   SpawnableObjects:
   - {fileID: 6095559526769236910, guid: 305e530e74db3254e94913af0c0d268a, type: 3}
   SpawnDelay: 1
-  SpawnChance: 20
+  SpawnChance: 100
   GracePeriod: 1
   SpawnBothWays: 0
   blockSize: 1
@@ -11536,7 +11536,7 @@ MonoBehaviour:
   SpawnableObjects:
   - {fileID: 100848, guid: aed502683c9d9b540b8e9f801bfebaf8, type: 3}
   SpawnDelay: 1
-  SpawnChance: 20
+  SpawnChance: 100
   GracePeriod: 1
   SpawnBothWays: 0
   blockSize: 1
@@ -11788,8 +11788,8 @@ MonoBehaviour:
   - {x: -76.7, y: 0, z: 332.8}
   - {x: -43.8, y: 0, z: 343.4}
   - {x: 104.4, y: 0, z: 343.4}
-  - {x: 196.2, y: 0, z: 343.5}
-  - {x: 215.2, y: 0, z: 360}
+  - {x: 175.5, y: 0, z: 343.5}
+  - {x: 208.4, y: 0, z: 360}
   - {x: 225.9, y: 0, z: 398.8}
   - {x: 228.2, y: 0, z: 634.5}
   - {x: 236.8, y: 0, z: 671.1}
@@ -11802,7 +11802,7 @@ MonoBehaviour:
   SpawnableObjects:
   - {fileID: 3240987765902758805, guid: 229015cbafdc2bc45b14be620e15aae5, type: 3}
   SpawnDelay: 1
-  SpawnChance: 20
+  SpawnChance: 50
   GracePeriod: 1
   SpawnBothWays: 0
   blockSize: 1
@@ -12072,7 +12072,7 @@ MonoBehaviour:
   SpawnableObjects:
   - {fileID: 100848, guid: aed502683c9d9b540b8e9f801bfebaf8, type: 3}
   SpawnDelay: 1
-  SpawnChance: 20
+  SpawnChance: 100
   GracePeriod: 1
   SpawnBothWays: 0
   blockSize: 1
@@ -12286,8 +12286,8 @@ MonoBehaviour:
   groupId: 1
   componentType: 4
   componentId: 0
-  StopCollisionLocation: {x: 179.48, y: -14.7, z: 833.9}
-  StopCollisionSize: {x: 3.9, y: 279.75, z: 215.8}
+  StopCollisionLocation: {x: 137.16, y: -14.7, z: 833.9}
+  StopCollisionSize: {x: 87.9, y: 279.75, z: 215.8}
 --- !u!1 &1103052662
 GameObject:
   m_ObjectHideFlags: 0
@@ -12347,7 +12347,7 @@ MonoBehaviour:
   SpawnableObjects:
   - {fileID: 3240987765902758805, guid: 229015cbafdc2bc45b14be620e15aae5, type: 3}
   SpawnDelay: 1
-  SpawnChance: 20
+  SpawnChance: 50
   GracePeriod: 1
   SpawnBothWays: 0
   blockSize: 1
@@ -12715,7 +12715,7 @@ MonoBehaviour:
   - {x: -76.7, y: 0, z: 332.8}
   - {x: -43.8, y: 0, z: 343.4}
   - {x: 104.4, y: 0, z: 343.4}
-  - {x: 196.2, y: 0, z: 343.5}
+  - {x: 172, y: 0, z: 343.5}
   - {x: 236.7, y: 0, z: 363.4}
   - {x: 246.8, y: 0, z: 398.9}
   - {x: 248.4, y: 0, z: 634.5}
@@ -12729,7 +12729,7 @@ MonoBehaviour:
   SpawnableObjects:
   - {fileID: 3240987765902758805, guid: 229015cbafdc2bc45b14be620e15aae5, type: 3}
   SpawnDelay: 1
-  SpawnChance: 20
+  SpawnChance: 50
   GracePeriod: 1
   SpawnBothWays: 0
   blockSize: 1
@@ -12780,9 +12780,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   laneType: 3
-  groupId: 2
+  groupId: 0
   componentType: 2
-  componentId: 0
+  componentId: 2
 --- !u!65 &1139422746
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13047,7 +13047,7 @@ MonoBehaviour:
   SpawnableObjects:
   - {fileID: 6095559526769236910, guid: 305e530e74db3254e94913af0c0d268a, type: 3}
   SpawnDelay: 1
-  SpawnChance: 20
+  SpawnChance: 100
   GracePeriod: 1
   SpawnBothWays: 0
   blockSize: 1
@@ -13276,7 +13276,7 @@ MonoBehaviour:
   SpawnableObjects:
   - {fileID: 100848, guid: aed502683c9d9b540b8e9f801bfebaf8, type: 3}
   SpawnDelay: 1
-  SpawnChance: 20
+  SpawnChance: 100
   GracePeriod: 1
   SpawnBothWays: 0
   blockSize: 1
@@ -13345,7 +13345,7 @@ MonoBehaviour:
   SpawnableObjects:
   - {fileID: 100848, guid: aed502683c9d9b540b8e9f801bfebaf8, type: 3}
   SpawnDelay: 1
-  SpawnChance: 20
+  SpawnChance: 100
   GracePeriod: 1
   SpawnBothWays: 0
   blockSize: 1
@@ -13754,7 +13754,7 @@ MonoBehaviour:
   groupId: 6
   componentType: 0
   componentId: 0
-  StopCollisionLocation: {x: 121, y: 9.7, z: 304.3}
+  StopCollisionLocation: {x: 121, y: 9.7, z: 312}
   StopCollisionSize: {x: 5, y: 20, z: 1}
 --- !u!4 &1211710178 stripped
 Transform:
@@ -13809,9 +13809,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   laneType: 3
-  groupId: 3
+  groupId: 0
   componentType: 2
-  componentId: 0
+  componentId: 3
 --- !u!65 &1221874142
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -14259,7 +14259,7 @@ MonoBehaviour:
   SpawnableObjects:
   - {fileID: 100848, guid: aed502683c9d9b540b8e9f801bfebaf8, type: 3}
   SpawnDelay: 1
-  SpawnChance: 20
+  SpawnChance: 100
   GracePeriod: 1
   SpawnBothWays: 0
   blockSize: 1
@@ -15552,7 +15552,7 @@ MonoBehaviour:
   SpawnableObjects:
   - {fileID: 3240987765902758805, guid: 229015cbafdc2bc45b14be620e15aae5, type: 3}
   SpawnDelay: 1
-  SpawnChance: 20
+  SpawnChance: 50
   GracePeriod: 1
   SpawnBothWays: 0
   blockSize: 1
@@ -15712,7 +15712,7 @@ MonoBehaviour:
   SpawnableObjects:
   - {fileID: 3240987765902758805, guid: 229015cbafdc2bc45b14be620e15aae5, type: 3}
   SpawnDelay: 1
-  SpawnChance: 20
+  SpawnChance: 50
   GracePeriod: 1
   SpawnBothWays: 0
   blockSize: 1
@@ -16256,7 +16256,7 @@ MonoBehaviour:
   SpawnableObjects:
   - {fileID: 3240987765902758805, guid: 229015cbafdc2bc45b14be620e15aae5, type: 3}
   SpawnDelay: 1
-  SpawnChance: 20
+  SpawnChance: 50
   GracePeriod: 1
   SpawnBothWays: 0
   blockSize: 1
@@ -17073,9 +17073,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   laneType: 3
-  groupId: 1
+  groupId: 0
   componentType: 2
-  componentId: 0
+  componentId: 1
 --- !u!65 &1471788996
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -17298,7 +17298,7 @@ MonoBehaviour:
   SpawnableObjects:
   - {fileID: 3240987765902758805, guid: 229015cbafdc2bc45b14be620e15aae5, type: 3}
   SpawnDelay: 1
-  SpawnChance: 20
+  SpawnChance: 50
   GracePeriod: 1
   SpawnBothWays: 0
   blockSize: 1
@@ -17399,8 +17399,8 @@ MonoBehaviour:
   groupId: 0
   componentType: 0
   componentId: 0
-  StopCollisionLocation: {x: 296.8, y: 9.7, z: 232.56}
-  StopCollisionSize: {x: 35.66, y: 20, z: 18.7}
+  StopCollisionLocation: {x: 293.2, y: 9.7, z: 232.56}
+  StopCollisionSize: {x: 60, y: 20, z: 18.7}
 --- !u!4 &1512600755 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 07e6fdb41b265184dad1158beefc08f1,
@@ -17678,7 +17678,7 @@ MonoBehaviour:
   SpawnableObjects:
   - {fileID: 100848, guid: aed502683c9d9b540b8e9f801bfebaf8, type: 3}
   SpawnDelay: 1
-  SpawnChance: 20
+  SpawnChance: 100
   GracePeriod: 1
   SpawnBothWays: 0
   blockSize: 1
@@ -17824,7 +17824,7 @@ MonoBehaviour:
   SpawnableObjects:
   - {fileID: 100848, guid: aed502683c9d9b540b8e9f801bfebaf8, type: 3}
   SpawnDelay: 1
-  SpawnChance: 20
+  SpawnChance: 100
   GracePeriod: 1
   SpawnBothWays: 0
   blockSize: 1
@@ -18661,7 +18661,7 @@ MonoBehaviour:
   SpawnableObjects:
   - {fileID: 3240987765902758805, guid: 229015cbafdc2bc45b14be620e15aae5, type: 3}
   SpawnDelay: 1
-  SpawnChance: 20
+  SpawnChance: 50
   GracePeriod: 1
   SpawnBothWays: 0
   blockSize: 1
@@ -19315,7 +19315,7 @@ MonoBehaviour:
   Points:
   - {x: 544.9, y: 0, z: 347.7}
   - {x: 285.1, y: 0, z: 347.7}
-  - {x: 187.7, y: 0, z: 347.7}
+  - {x: 218.9, y: 0, z: 335.3}
   - {x: 170.9, y: 0, z: 300.6}
   - {x: 169.5, y: 0, z: 274.7}
   - {x: 169.5, y: 0, z: 27.6}
@@ -19328,7 +19328,7 @@ MonoBehaviour:
   SpawnableObjects:
   - {fileID: 3240987765902758805, guid: 229015cbafdc2bc45b14be620e15aae5, type: 3}
   SpawnDelay: 1
-  SpawnChance: 20
+  SpawnChance: 50
   GracePeriod: 1
   SpawnBothWays: 0
   blockSize: 1
@@ -19840,9 +19840,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   laneType: 4
-  groupId: 1
+  groupId: 0
   componentType: 2
-  componentId: 0
+  componentId: 1
 --- !u!65 &1709459362
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -20036,7 +20036,7 @@ MonoBehaviour:
   SpawnableObjects:
   - {fileID: 5103702826102403537, guid: 6d6c00539f6564f469ddbb7ee4f4e1b0, type: 3}
   SpawnDelay: 1
-  SpawnChance: 10
+  SpawnChance: 600
   GracePeriod: 1
   SpawnBothWays: 0
   blockSize: 1
@@ -20217,7 +20217,7 @@ MonoBehaviour:
   SpawnableObjects:
   - {fileID: 6095559526769236910, guid: 305e530e74db3254e94913af0c0d268a, type: 3}
   SpawnDelay: 1
-  SpawnChance: 20
+  SpawnChance: 100
   GracePeriod: 1
   SpawnBothWays: 0
   blockSize: 1
@@ -20353,7 +20353,7 @@ MonoBehaviour:
   SpawnableObjects:
   - {fileID: 3240987765902758805, guid: 229015cbafdc2bc45b14be620e15aae5, type: 3}
   SpawnDelay: 1
-  SpawnChance: 20
+  SpawnChance: 50
   GracePeriod: 1
   SpawnBothWays: 0
   blockSize: 1
@@ -21039,7 +21039,7 @@ MonoBehaviour:
   SpawnableObjects:
   - {fileID: 6095559526769236910, guid: 305e530e74db3254e94913af0c0d268a, type: 3}
   SpawnDelay: 1
-  SpawnChance: 20
+  SpawnChance: 100
   GracePeriod: 1
   SpawnBothWays: 0
   blockSize: 1
@@ -21330,7 +21330,7 @@ MonoBehaviour:
   SpawnableObjects:
   - {fileID: 6095559526769236910, guid: 305e530e74db3254e94913af0c0d268a, type: 3}
   SpawnDelay: 1
-  SpawnChance: 20
+  SpawnChance: 100
   GracePeriod: 1
   SpawnBothWays: 0
   blockSize: 1
@@ -21730,7 +21730,7 @@ MonoBehaviour:
   SpawnableObjects:
   - {fileID: 100848, guid: aed502683c9d9b540b8e9f801bfebaf8, type: 3}
   SpawnDelay: 1
-  SpawnChance: 20
+  SpawnChance: 100
   GracePeriod: 1
   SpawnBothWays: 0
   blockSize: 1
@@ -22302,7 +22302,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1865284396
 Transform:
   m_ObjectHideFlags: 0
@@ -22769,7 +22769,7 @@ MonoBehaviour:
   SpawnableObjects:
   - {fileID: 3240987765902758805, guid: 229015cbafdc2bc45b14be620e15aae5, type: 3}
   SpawnDelay: 1
-  SpawnChance: 20
+  SpawnChance: 50
   GracePeriod: 1
   SpawnBothWays: 0
   blockSize: 1
@@ -23249,7 +23249,7 @@ MonoBehaviour:
   SpawnableObjects:
   - {fileID: 100848, guid: aed502683c9d9b540b8e9f801bfebaf8, type: 3}
   SpawnDelay: 1
-  SpawnChance: 20
+  SpawnChance: 100
   GracePeriod: 1
   SpawnBothWays: 0
   blockSize: 1
@@ -23856,7 +23856,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1906dc610092dee4e858a0f459399264, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  laneType: 0
+  laneType: 2
   groupId: 0
   componentType: 0
   componentId: 0
@@ -24477,7 +24477,7 @@ MonoBehaviour:
   SpawnableObjects:
   - {fileID: 100848, guid: aed502683c9d9b540b8e9f801bfebaf8, type: 3}
   SpawnDelay: 1
-  SpawnChance: 20
+  SpawnChance: 100
   GracePeriod: 1
   SpawnBothWays: 0
   blockSize: 1
@@ -24966,7 +24966,7 @@ MonoBehaviour:
   Points:
   - {x: 544.9, y: 0, z: 347.7}
   - {x: 285.1, y: 0, z: 347.7}
-  - {x: 187.7, y: 0, z: 347.7}
+  - {x: 224.9, y: 0, z: 337.4}
   - {x: 151.6, y: 0, z: 300.6}
   - {x: 149.2, y: 0, z: 276.1}
   - {x: 148.5, y: 0, z: 29.3}
@@ -24979,7 +24979,7 @@ MonoBehaviour:
   SpawnableObjects:
   - {fileID: 3240987765902758805, guid: 229015cbafdc2bc45b14be620e15aae5, type: 3}
   SpawnDelay: 1
-  SpawnChance: 20
+  SpawnChance: 50
   GracePeriod: 1
   SpawnBothWays: 0
   blockSize: 1
@@ -25443,7 +25443,7 @@ MonoBehaviour:
   SpawnableObjects:
   - {fileID: 6095559526769236910, guid: 305e530e74db3254e94913af0c0d268a, type: 3}
   SpawnDelay: 1
-  SpawnChance: 20
+  SpawnChance: 100
   GracePeriod: 1
   SpawnBothWays: 0
   blockSize: 1
