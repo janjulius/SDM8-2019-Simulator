@@ -29,7 +29,7 @@ namespace Assets.Scripts.Constants
         /// <summary>
         /// The team id to connect to (changes all topics) as string
         /// </summary>
-	    public static string CONNECTED_TEAM = "7";
+	    public static string CONNECTED_TEAM = "8";
 
         /// <summary>
         /// If it should show a debug message if a connection was successful
