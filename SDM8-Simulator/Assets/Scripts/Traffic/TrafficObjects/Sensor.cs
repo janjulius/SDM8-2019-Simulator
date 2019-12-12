@@ -10,6 +10,8 @@ namespace Assets.Scripts
     {
         private int previousStatus = 0;
 
+        protected int collisionSize = 0;
+
         public override void ConnectedRefresh()
         {
             base.ConnectedRefresh();

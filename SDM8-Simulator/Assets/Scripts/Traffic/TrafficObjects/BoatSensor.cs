@@ -11,6 +11,7 @@ namespace Assets.Scripts.Traffic.TrafficObjects
     {
         private void OnTriggerEnter(UnityEngine.Collider collision)
         {
+            collisionSize++;
             Boat boatoe = collision.gameObject.GetComponent<Boat>();
             if (boatoe != null)
                 SetStatus(1);
@@ -18,8 +19,9 @@ namespace Assets.Scripts.Traffic.TrafficObjects
 
         private void OnTriggerExit(UnityEngine.Collider collision)
         {
+            collisionSize--;
             Boat boatoe = collision.gameObject.GetComponent<Boat>();
-            if (boatoe != null)
+            if (boatoe != null && collisionSize <= 0)
                 SetStatus(0);
         }
     }
