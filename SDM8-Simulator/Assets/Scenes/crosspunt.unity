@@ -6276,8 +6276,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Points:
-  - {x: 590, y: -100, z: 890}
-  - {x: -90, y: -100, z: 890}
+  - {x: 940, y: -100, z: 890}
+  - {x: -500, y: -100, z: 890}
   PathType: 1
   SpawnBlockArea:
     m_Center: {x: 512.75, y: -100, z: 840}
@@ -6287,9 +6287,9 @@ MonoBehaviour:
   SpawnableObjects:
   - {fileID: 4636838405463798673, guid: 114ab369b3e177e4f88c0879109740ab, type: 3}
   SpawnDelay: 1
-  SpawnChance: 300
+  SpawnChance: 100
   GracePeriod: 1
-  SpawnBothWays: 1
+  SpawnBothWays: 0
   blockSize: 3
 --- !u!1001 &470757383
 PrefabInstance:
@@ -6425,8 +6425,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Points:
-  - {x: -90, y: -100, z: 770}
-  - {x: 590, y: -100, z: 770}
+  - {x: -500, y: -100, z: 770}
+  - {x: 940, y: -100, z: 770}
   PathType: 1
   SpawnBlockArea:
     m_Center: {x: 512.75, y: -100, z: 840}
@@ -6436,9 +6436,9 @@ MonoBehaviour:
   SpawnableObjects:
   - {fileID: 4636838405463798673, guid: 114ab369b3e177e4f88c0879109740ab, type: 3}
   SpawnDelay: 1
-  SpawnChance: 300
+  SpawnChance: 100
   GracePeriod: 1
-  SpawnBothWays: 1
+  SpawnBothWays: 0
   blockSize: 3
 --- !u!1001 &478226124
 PrefabInstance:
@@ -12142,8 +12142,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1005633298}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 42.08635, y: -120, z: 758.4769}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -0, y: -120, z: 594}
+  m_LocalScale: {x: 2, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 710579417}
   m_RootOrder: 4
@@ -21074,7 +21074,7 @@ MonoBehaviour:
   SpawnableObjects:
   - {fileID: 5103702826102403537, guid: 6d6c00539f6564f469ddbb7ee4f4e1b0, type: 3}
   SpawnDelay: 1
-  SpawnChance: 150
+  SpawnChance: 50
   GracePeriod: 1
   SpawnBothWays: 0
   blockSize: 1
