@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Assets.Scripts.Traffic.TrafficObjects;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -13,7 +14,7 @@ namespace Assets.Scripts.Traffic
         private Path path;
 
         private int currentNode = 0;
-        private int tailGatingDistance = 25;
+        public int tailGatingDistance = 25;
 
         protected float origSpeed { get; private set; } = 3;
 
@@ -46,19 +47,19 @@ namespace Assets.Scripts.Traffic
 
             UpdateSpeed();
 
-            foreach (StopLight s in path.StopForStopLights)
-            {
-                if (GetDistance(s) < 5 && InFrontOfStopLight(s))
-                {
-                    if (s.Status == 0)
-                    {
-                        Drive = false;
-                        status = $"Waiting for stoplight {s.name}";
-                        break;
-                    }
-                }
-                Drive = true;
-            }
+            //foreach (StopLight s in path.StopForStopLights)
+            //{
+            //    if (GetDistance(s) < 5 && InFrontOfStopLight(s))
+            //    {
+            //        if (s.Status == 0)
+            //        {
+            //            Drive = false;
+            //            status = $"Waiting for stoplight {s.name}";
+            //            break;
+            //        }
+            //    }
+            //    Drive = true;
+            //}
             if (Drive)
             {
                 status = $"Driving to point: {currentNode + 1} on path: {path.name}";
@@ -136,7 +137,7 @@ namespace Assets.Scripts.Traffic
             return false;
         }
 
-        private float GetDistance(StopLight s)
+        private float GetDistance(StopableTrafficObject s)
         {
             var rot = s.transform.rotation.y;
             if (rot == 0 || rot == 180)

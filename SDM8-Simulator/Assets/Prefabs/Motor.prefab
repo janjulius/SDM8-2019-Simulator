@@ -105,4 +105,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 316339abfb64c94498ec09699494bd8f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tailGatingDistance: 12
   Speed: 12

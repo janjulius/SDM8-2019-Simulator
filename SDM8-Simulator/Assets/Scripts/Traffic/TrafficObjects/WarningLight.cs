@@ -27,7 +27,15 @@ namespace Assets.Scripts
         public override void SetStatus(int s)
         {
             base.SetStatus(s);
-            UnityThread.executeCoroutine(WarningLightIEnumerator());
+            if (Status >= 1)
+            {
+                UnityThread.executeInUpdate(() => stopCube?.SetActive(true));
+                UnityThread.executeCoroutine(WarningLightIEnumerator());
+            }
+            else
+            {
+                UnityThread.executeInUpdate(() => stopCube?.SetActive(false));
+            }
         }
 
         IEnumerator WarningLightIEnumerator()
