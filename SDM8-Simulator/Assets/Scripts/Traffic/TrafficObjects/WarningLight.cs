@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Assets.Scripts.Traffic.TrafficObjects;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,11 +9,11 @@ using UnityEngine;
 
 namespace Assets.Scripts
 {
-    class WarningLight : TrafficObject
+    class WarningLight : StopableTrafficObject
     {
         private Coroutine routine;
 
-        [HeaderAttribute("IMPORTANT: This is overriden by LaneType Track and Vessel")]
+        [Header("IMPORTANT: This is overriden by LaneType Track and Vessel")]
         public WarningLightType warningLightType;
 
         void Awake()
