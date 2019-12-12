@@ -24,6 +24,13 @@ namespace Assets.Scripts
                 warningLightType);
         }
 
+        public override void SetUp()
+        {
+            base.SetUp();
+            SetStatus(0);
+            Subscribe();
+        }
+
         public override void SetStatus(int s)
         {
             base.SetStatus(s);

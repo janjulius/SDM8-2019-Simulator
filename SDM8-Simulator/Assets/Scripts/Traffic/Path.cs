@@ -96,6 +96,7 @@ public class Path : MonoBehaviour
                 GameObject obj = Instantiate(spawneyboy, spawnLoc, Quaternion.identity);
                 obj.GetComponent<TrafficParticipant>().SetPath(this);
                 Camera.main.GetComponent<SdmManager>().trafficParticipants.Add(obj.GetComponent<TrafficParticipant>());
+                gracePeriod = GracePeriod;
                 return obj.GetComponent<TrafficParticipant>();
             }
         }

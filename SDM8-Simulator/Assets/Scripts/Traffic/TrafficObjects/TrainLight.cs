@@ -1,18 +1,41 @@
-﻿using System.Collections;
+﻿using Assets.Scripts.Traffic.TrafficObjects;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TrainLight : MonoBehaviour
+public class TrainLight : StopableTrafficObject
 {
-    // Start is called before the first frame update
-    void Start()
+    public override void SetUp()
     {
-        
+        base.SetUp();
+        SetStatus(0);
+        Subscribe();
     }
 
-    // Update is called once per frame
-    void Update()
+    public override void SetStatus(int i)
     {
-        
+        base.SetStatus(i);
+        if (Status > 0)
+            UnityThread.executeInUpdate(() => stopCube?.SetActive(false));
+        else
+            UnityThread.executeInUpdate(() => stopCube?.SetActive(true));
+        UpdateTrainLight();
+    }
+
+    public void UpdateTrainLight()
+    {
+        UnityThread.executeInUpdate(() =>
+            SetRendererColor(GetColorByStatus(Status))
+        );
+    }
+
+    public Color GetColorByStatus(int status)
+    {
+        if (status == 0)
+            return Color.red;
+        if (status == 1)
+            return Color.green;
+
+        return Color.black;
     }
 }

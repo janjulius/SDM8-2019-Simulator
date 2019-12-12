@@ -99,7 +99,7 @@ namespace Assets.Scripts
             client.MqttMsgPublishReceived += Client_MqttMsgPublishReceived;
             string clientId = Guid.NewGuid().ToString();
             client.Connect(clientId);
-            client.Subscribe(new string[] { ToString() }, new byte[] { MqttMsgBase.QOS_LEVEL_AT_LEAST_ONCE });
+            client.Subscribe(new string[] { ToString() }, new byte[] { MqttMsgBase.QOS_LEVEL_EXACTLY_ONCE });
             if (Constants.Constants.SHOW_CONNECTED_MESSAGES)
                 print($"Started subscription on: {Constants.Constants.ADDRESS}:{Constants.Constants.PORT}, topic: {ToString()}");
         }

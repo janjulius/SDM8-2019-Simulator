@@ -20,12 +20,16 @@ namespace Assets.Scripts
         private Vector3 closeState = new Vector3(0, 0, 0);
         private Vector3 openState = new Vector3(90, 0, 0);
 
+        private void Start()
+        {
+            DetermineStates();
+        }
+
         public override void SetUp()
         {
             base.SetUp();
             SetStatus(0);
             Subscribe();
-            DetermineStates();
         }
 
         public override void SetStatus(int i)

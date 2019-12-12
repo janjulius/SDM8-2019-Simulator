@@ -1315,7 +1315,8 @@ MonoBehaviour:
   componentType: 3
   componentId: 0
   StopCollisionLocation: {x: 237.5, y: 5, z: 930}
-  StopCollisionSize: {x: 20, y: 10, z: 10}
+  StopCollisionSize: {x: 20, y: 34.9, z: 10}
+  rotateState: 0
 --- !u!4 &121009304 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 07c627544057bf342983155ea21aedfa,
@@ -3321,7 +3322,8 @@ MonoBehaviour:
   componentType: 3
   componentId: 0
   StopCollisionLocation: {x: 205.6, y: 5, z: 723.4}
-  StopCollisionSize: {x: 20, y: 10, z: 10}
+  StopCollisionSize: {x: 20, y: 34.9, z: 10}
+  rotateState: 2
 --- !u!1001 &268271007
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4020,7 +4022,7 @@ MonoBehaviour:
   componentType: 1
   componentId: 
   StopCollisionLocation: {x: 237.28, y: 5.05, z: 697.12}
-  StopCollisionSize: {x: 20, y: 10, z: 10}
+  StopCollisionSize: {x: 20, y: 27.92, z: 10}
   warningLightType: 1
 --- !u!65 &326534550
 BoxCollider:
@@ -4432,8 +4434,8 @@ MonoBehaviour:
   groupId: 0
   componentType: 1
   componentId: 
-  StopCollisionLocation: {x: 254.93, y: 5.3, z: 246.35}
-  StopCollisionSize: {x: 15, y: 10, z: 10}
+  StopCollisionLocation: {x: 254.93, y: 5.3, z: 244.6}
+  StopCollisionSize: {x: 15, y: 10, z: 20}
   warningLightType: 0
 --- !u!65 &341289947
 BoxCollider:
@@ -4942,7 +4944,7 @@ MonoBehaviour:
   componentType: 1
   componentId: 
   StopCollisionLocation: {x: 189.5, y: 5, z: 940}
-  StopCollisionSize: {x: 10, y: 10, z: 10}
+  StopCollisionSize: {x: 10, y: 26.02, z: 10}
   warningLightType: 1
 --- !u!65 &367414973
 BoxCollider:
@@ -5332,7 +5334,8 @@ MonoBehaviour:
   componentType: 3
   componentId: 0
   StopCollisionLocation: {x: 190.2, y: 5, z: 930}
-  StopCollisionSize: {x: 10, y: 10, z: 10}
+  StopCollisionSize: {x: 10, y: 34.9, z: 10}
+  rotateState: 0
 --- !u!1001 &385210383
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6367,7 +6370,7 @@ MonoBehaviour:
     m_Center: {x: 512.75, y: -100, z: 840}
     m_Extent: {x: 63.44, y: 30.1, z: 63.4}
   StopForStopLights:
-  - {fileID: 939637757}
+  - {fileID: 0}
   SpawnableObjects:
   - {fileID: 4636838405463798673, guid: 114ab369b3e177e4f88c0879109740ab, type: 3}
   SpawnDelay: 1
@@ -6516,7 +6519,7 @@ MonoBehaviour:
     m_Center: {x: 512.75, y: -100, z: 840}
     m_Extent: {x: 63.44, y: 30.1, z: 63.4}
   StopForStopLights:
-  - {fileID: 939637757}
+  - {fileID: 0}
   SpawnableObjects:
   - {fileID: 4636838405463798673, guid: 114ab369b3e177e4f88c0879109740ab, type: 3}
   SpawnDelay: 1
@@ -6673,8 +6676,8 @@ MonoBehaviour:
   groupId: 0
   componentType: 1
   componentId: 
-  StopCollisionLocation: {x: 127.7, y: 5.66, z: 219.24}
-  StopCollisionSize: {x: 20, y: 10, z: 10}
+  StopCollisionLocation: {x: 127.7, y: 5.66, z: 223.3}
+  StopCollisionSize: {x: 20, y: 10, z: 18.72}
   warningLightType: 0
 --- !u!65 &485160324
 BoxCollider:
@@ -6850,7 +6853,7 @@ MonoBehaviour:
   componentType: 1
   componentId: 
   StopCollisionLocation: {x: 204.8, y: 4.4, z: 940.2}
-  StopCollisionSize: {x: 19.13, y: 10, z: 10}
+  StopCollisionSize: {x: 19.13, y: 19.78, z: 10}
   warningLightType: 1
 --- !u!65 &499305392
 BoxCollider:
@@ -7419,7 +7422,8 @@ MonoBehaviour:
   componentType: 3
   componentId: 0
   StopCollisionLocation: {x: 252.5, y: 5, z: 720.3}
-  StopCollisionSize: {x: 10, y: 10, z: 10}
+  StopCollisionSize: {x: 10, y: 34.9, z: 10}
+  rotateState: 0
 --- !u!1001 &570574351
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7588,6 +7592,7 @@ MonoBehaviour:
   componentId: 0
   StopCollisionLocation: {x: 254.93, y: 5.3, z: 246.35}
   StopCollisionSize: {x: 15, y: 10, z: 10}
+  rotateState: 0
 --- !u!1 &582280836
 GameObject:
   m_ObjectHideFlags: 0
@@ -11431,7 +11436,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 939637756}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1906dc610092dee4e858a0f459399264, type: 3}
+  m_Script: {fileID: 11500000, guid: c2ff9bd02c56775469803e22fdc1d794, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   laneType: 3
@@ -12680,8 +12685,8 @@ MonoBehaviour:
   groupId: 0
   componentType: 1
   componentId: 
-  StopCollisionLocation: {x: 255, y: 5, z: 220.1}
-  StopCollisionSize: {x: 15, y: 10, z: 10}
+  StopCollisionLocation: {x: 255, y: 5, z: 224}
+  StopCollisionSize: {x: 15, y: 10, z: 18.38}
   warningLightType: 0
 --- !u!65 &1049717189
 BoxCollider:
@@ -12832,7 +12837,8 @@ MonoBehaviour:
   componentType: 3
   componentId: 0
   StopCollisionLocation: {x: 252.8, y: 5, z: 932.22}
-  StopCollisionSize: {x: 10, y: 10, z: 10}
+  StopCollisionSize: {x: 10, y: 34.9, z: 10}
+  rotateState: 0
 --- !u!4 &1050993022 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 07e6fdb41b265184dad1158beefc08f1,
@@ -12949,6 +12955,7 @@ MonoBehaviour:
   componentId: 0
   StopCollisionLocation: {x: 127.7, y: 5.66, z: 250.4}
   StopCollisionSize: {x: 20, y: 10, z: 10}
+  rotateState: 0
 --- !u!1 &1087605761
 GameObject:
   m_ObjectHideFlags: 0
@@ -13215,7 +13222,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1095069193}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1906dc610092dee4e858a0f459399264, type: 3}
+  m_Script: {fileID: 11500000, guid: c2ff9bd02c56775469803e22fdc1d794, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   laneType: 3
@@ -14581,6 +14588,7 @@ MonoBehaviour:
   componentId: 0
   StopCollisionLocation: {x: 255, y: 5, z: 220}
   StopCollisionSize: {x: 15, y: 10, z: 10}
+  rotateState: 0
 --- !u!4 &1196252863 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 07e6fdb41b265184dad1158beefc08f1,
@@ -16782,8 +16790,8 @@ MonoBehaviour:
   groupId: 0
   componentType: 1
   componentId: 
-  StopCollisionLocation: {x: 127.7, y: 5.66, z: 258.19}
-  StopCollisionSize: {x: 20, y: 10, z: 10}
+  StopCollisionLocation: {x: 127.7, y: 5.66, z: 247}
+  StopCollisionSize: {x: 20, y: 10, z: 22.1}
   warningLightType: 0
 --- !u!65 &1367309940
 BoxCollider:
@@ -17045,7 +17053,8 @@ MonoBehaviour:
   componentType: 3
   componentId: 0
   StopCollisionLocation: {x: 237.3, y: 5, z: 719.65}
-  StopCollisionSize: {x: 20, y: 10, z: 10}
+  StopCollisionSize: {x: 20, y: 34.9, z: 10}
+  rotateState: 0
 --- !u!1001 &1383196945
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18440,12 +18449,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1503368230}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1906dc610092dee4e858a0f459399264, type: 3}
+  m_Script: {fileID: 11500000, guid: f605e66ed974c164b957521443ebad5d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   laneType: 4
   groupId: 0
-  componentType: 0
+  componentType: 6
   componentId: 0
   StopCollisionLocation: {x: 293.2, y: 9.7, z: 232.56}
   StopCollisionSize: {x: 60, y: 20, z: 18.7}
@@ -21234,7 +21243,7 @@ MonoBehaviour:
   SpawnableObjects:
   - {fileID: 5103702826102403537, guid: 6d6c00539f6564f469ddbb7ee4f4e1b0, type: 3}
   SpawnDelay: 1
-  SpawnChance: 50
+  SpawnChance: 10
   GracePeriod: 1
   SpawnBothWays: 0
   blockSize: 1
@@ -21792,7 +21801,8 @@ MonoBehaviour:
   componentType: 3
   componentId: 0
   StopCollisionLocation: {x: 189.5, y: 5, z: 720}
-  StopCollisionSize: {x: 10, y: 10, z: 10}
+  StopCollisionSize: {x: 10, y: 34.9, z: 10}
+  rotateState: 0
 --- !u!1001 &1767061761
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -24402,6 +24412,7 @@ MonoBehaviour:
   componentId: 0
   StopCollisionLocation: {x: 127.7, y: 5.66, z: 219.24}
   StopCollisionSize: {x: 20, y: 10, z: 10}
+  rotateState: 0
 --- !u!4 &1958360061 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: e9390ae0e432be447bf637e4bac268ae,
@@ -26138,7 +26149,7 @@ MonoBehaviour:
   componentType: 1
   componentId: 
   StopCollisionLocation: {x: 252.6, y: 5.3, z: 699.59}
-  StopCollisionSize: {x: 10, y: 10, z: 10}
+  StopCollisionSize: {x: 10, y: 35.82, z: 10}
   warningLightType: 1
 --- !u!65 &2069186286
 BoxCollider:
@@ -27034,7 +27045,8 @@ MonoBehaviour:
   componentType: 3
   componentId: 0
   StopCollisionLocation: {x: 205.2, y: 5, z: 930}
-  StopCollisionSize: {x: 20, y: 10, z: 10}
+  StopCollisionSize: {x: 20, y: 34.9, z: 10}
+  rotateState: 0
 --- !u!1 &2128291714
 GameObject:
   m_ObjectHideFlags: 0

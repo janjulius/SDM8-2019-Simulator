@@ -11,7 +11,8 @@ GameObject:
   - component: {fileID: 2502957061961039739}
   - component: {fileID: -3693193706685062650}
   - component: {fileID: -5215050502499982582}
-  m_Layer: 0
+  - component: {fileID: 5672361904531365770}
+  m_Layer: 8
   m_Name: Trinna
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -61,6 +62,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 771f498dd19675a40bf6b92dafecb743, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tailGatingDistance: 50
   Speed: 40
 --- !u!54 &-5215050502499982582
 Rigidbody:
@@ -78,6 +80,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 116
   m_CollisionDetection: 0
+--- !u!65 &5672361904531365770
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5103702826102403537}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 6.22, y: 7.39, z: 46.1}
+  m_Center: {x: 0.19, y: 3.19, z: -23.1}
 --- !u!1001 &398164459299420765
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -88,6 +103,14 @@ PrefabInstance:
     - target: {fileID: 100000, guid: b2f18b04d49ec784bbfa7f6663143073, type: 3}
       propertyPath: m_Name
       value: box2-2 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: b2f18b04d49ec784bbfa7f6663143073, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: b2f18b04d49ec784bbfa7f6663143073, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: b2f18b04d49ec784bbfa7f6663143073, type: 3}
       propertyPath: m_LocalPosition.x
@@ -156,6 +179,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: bogies_wheel_b (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: ed9ad60faf5ec6245bfc6c98a0cddf3f, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: ed9ad60faf5ec6245bfc6c98a0cddf3f, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: ed9ad60faf5ec6245bfc6c98a0cddf3f, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.19000244
@@ -222,6 +253,14 @@ PrefabInstance:
     - target: {fileID: 100000, guid: ed9ad60faf5ec6245bfc6c98a0cddf3f, type: 3}
       propertyPath: m_Name
       value: bogies_wheel_b (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: ed9ad60faf5ec6245bfc6c98a0cddf3f, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: ed9ad60faf5ec6245bfc6c98a0cddf3f, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: ed9ad60faf5ec6245bfc6c98a0cddf3f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -290,6 +329,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: bogies_frame (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: a4569c74e307ad94c904f9f4a5efdbcf, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: a4569c74e307ad94c904f9f4a5efdbcf, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: a4569c74e307ad94c904f9f4a5efdbcf, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.30999756
@@ -356,6 +403,14 @@ PrefabInstance:
     - target: {fileID: 100000, guid: b2f18b04d49ec784bbfa7f6663143073, type: 3}
       propertyPath: m_Name
       value: box2-2 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: b2f18b04d49ec784bbfa7f6663143073, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: b2f18b04d49ec784bbfa7f6663143073, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: b2f18b04d49ec784bbfa7f6663143073, type: 3}
       propertyPath: m_LocalPosition.x
@@ -424,6 +479,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: bogies_wheel_a (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 11d4e267d1f94a44eb5960d380b09213, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 11d4e267d1f94a44eb5960d380b09213, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 11d4e267d1f94a44eb5960d380b09213, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.23001099
@@ -490,6 +553,14 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 11d4e267d1f94a44eb5960d380b09213, type: 3}
       propertyPath: m_Name
       value: bogies_wheel_a (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 11d4e267d1f94a44eb5960d380b09213, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 11d4e267d1f94a44eb5960d380b09213, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 11d4e267d1f94a44eb5960d380b09213, type: 3}
       propertyPath: m_LocalPosition.x
@@ -558,6 +629,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: bogies_frame (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: a4569c74e307ad94c904f9f4a5efdbcf, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: a4569c74e307ad94c904f9f4a5efdbcf, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: a4569c74e307ad94c904f9f4a5efdbcf, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.30999756
@@ -624,6 +703,14 @@ PrefabInstance:
     - target: {fileID: 100000, guid: b2f18b04d49ec784bbfa7f6663143073, type: 3}
       propertyPath: m_Name
       value: box2-2
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: b2f18b04d49ec784bbfa7f6663143073, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: b2f18b04d49ec784bbfa7f6663143073, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: b2f18b04d49ec784bbfa7f6663143073, type: 3}
       propertyPath: m_LocalPosition.x
@@ -692,6 +779,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: bogies_wheel_b (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: ed9ad60faf5ec6245bfc6c98a0cddf3f, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: ed9ad60faf5ec6245bfc6c98a0cddf3f, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: ed9ad60faf5ec6245bfc6c98a0cddf3f, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.19000244
@@ -755,6 +850,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2502957061961039739}
     m_Modifications:
+    - target: {fileID: -8560453618978621426, guid: 42998e40cd9646a47bdd2a987696cdc8,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: -6643266958757217059, guid: 42998e40cd9646a47bdd2a987696cdc8,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: -6271200117833014625, guid: 42998e40cd9646a47bdd2a987696cdc8,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 42998e40cd9646a47bdd2a987696cdc8,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -810,10 +920,70 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 90
       objectReference: {fileID: 0}
+    - target: {fileID: -3665748219243044264, guid: 42998e40cd9646a47bdd2a987696cdc8,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: -2811792025278490541, guid: 42998e40cd9646a47bdd2a987696cdc8,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: -2561732718775303811, guid: 42998e40cd9646a47bdd2a987696cdc8,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: -927199367670048503, guid: 42998e40cd9646a47bdd2a987696cdc8,
         type: 3}
       propertyPath: m_Name
       value: 11709_train_v1_L3
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 42998e40cd9646a47bdd2a987696cdc8,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 196445244616446726, guid: 42998e40cd9646a47bdd2a987696cdc8,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1369813132116649124, guid: 42998e40cd9646a47bdd2a987696cdc8,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1510276532993263959, guid: 42998e40cd9646a47bdd2a987696cdc8,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3316897328964113391, guid: 42998e40cd9646a47bdd2a987696cdc8,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3342616259157304009, guid: 42998e40cd9646a47bdd2a987696cdc8,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4974343524722593546, guid: 42998e40cd9646a47bdd2a987696cdc8,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7120971019826222495, guid: 42998e40cd9646a47bdd2a987696cdc8,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8904387582833550170, guid: 42998e40cd9646a47bdd2a987696cdc8,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 42998e40cd9646a47bdd2a987696cdc8, type: 3}
@@ -833,6 +1003,14 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 11d4e267d1f94a44eb5960d380b09213, type: 3}
       propertyPath: m_Name
       value: bogies_wheel_a (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 11d4e267d1f94a44eb5960d380b09213, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 11d4e267d1f94a44eb5960d380b09213, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 11d4e267d1f94a44eb5960d380b09213, type: 3}
       propertyPath: m_LocalPosition.x
@@ -901,6 +1079,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: bogies_wheel_a
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 11d4e267d1f94a44eb5960d380b09213, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 11d4e267d1f94a44eb5960d380b09213, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 11d4e267d1f94a44eb5960d380b09213, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.23001099
@@ -967,6 +1153,14 @@ PrefabInstance:
     - target: {fileID: 100000, guid: a4569c74e307ad94c904f9f4a5efdbcf, type: 3}
       propertyPath: m_Name
       value: bogies_frame
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: a4569c74e307ad94c904f9f4a5efdbcf, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: a4569c74e307ad94c904f9f4a5efdbcf, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: a4569c74e307ad94c904f9f4a5efdbcf, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1035,6 +1229,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: box2-2 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: b2f18b04d49ec784bbfa7f6663143073, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: b2f18b04d49ec784bbfa7f6663143073, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: b2f18b04d49ec784bbfa7f6663143073, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.23794556
@@ -1102,6 +1304,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: bogies_frame (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: a4569c74e307ad94c904f9f4a5efdbcf, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: a4569c74e307ad94c904f9f4a5efdbcf, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: a4569c74e307ad94c904f9f4a5efdbcf, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.30999756
@@ -1168,6 +1378,14 @@ PrefabInstance:
     - target: {fileID: 100000, guid: ed9ad60faf5ec6245bfc6c98a0cddf3f, type: 3}
       propertyPath: m_Name
       value: bogies_wheel_b
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: ed9ad60faf5ec6245bfc6c98a0cddf3f, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: ed9ad60faf5ec6245bfc6c98a0cddf3f, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: ed9ad60faf5ec6245bfc6c98a0cddf3f, type: 3}
       propertyPath: m_LocalPosition.x
