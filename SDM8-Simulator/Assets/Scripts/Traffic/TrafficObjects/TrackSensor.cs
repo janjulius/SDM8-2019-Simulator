@@ -7,14 +7,14 @@ namespace Assets.Scripts.Traffic.TrafficObjects
         private void OnTriggerEnter(UnityEngine.Collider collision)
         {
             Train train = collision.gameObject.GetComponent<Train>();
-            if (car != null)
+            if (train != null)
                 SetStatus(1);
         }
 
         private void OnTriggerExit(UnityEngine.Collider collision)
         {
             Train train = collision.gameObject.GetComponent<Train>();
-            if (car != null)
+            if (train != null)
                 SetStatus(0);
         }
     }
