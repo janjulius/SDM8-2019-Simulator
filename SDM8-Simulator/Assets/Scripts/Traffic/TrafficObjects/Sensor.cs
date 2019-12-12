@@ -1,16 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Assets.Scripts
+﻿namespace Assets.Scripts
 {
-    class Sensor : TrafficObject
+    internal class Sensor : TrafficObject
     {
         private int previousStatus = 0;
 
         protected int collisionSize = 0;
+
+        public override void SetUp()
+        {
+            base.SetUp();
+            componentType = ComponentType.SENSOR;
+        }
 
         public override void ConnectedRefresh()
         {
