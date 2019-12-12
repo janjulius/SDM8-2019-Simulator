@@ -2162,7 +2162,7 @@ MonoBehaviour:
   SpawnableObjects:
   - {fileID: 6095559526769236910, guid: 305e530e74db3254e94913af0c0d268a, type: 3}
   SpawnDelay: 1
-  SpawnChance: 100
+  SpawnChance: 75
   GracePeriod: 1
   SpawnBothWays: 0
   blockSize: 1
@@ -6024,7 +6024,7 @@ MonoBehaviour:
   SpawnableObjects:
   - {fileID: 100848, guid: aed502683c9d9b540b8e9f801bfebaf8, type: 3}
   SpawnDelay: 1
-  SpawnChance: 100
+  SpawnChance: 75
   GracePeriod: 1
   SpawnBothWays: 0
   blockSize: 1
@@ -6287,7 +6287,7 @@ MonoBehaviour:
   SpawnableObjects:
   - {fileID: 4636838405463798673, guid: 114ab369b3e177e4f88c0879109740ab, type: 3}
   SpawnDelay: 1
-  SpawnChance: 200
+  SpawnChance: 300
   GracePeriod: 1
   SpawnBothWays: 1
   blockSize: 3
@@ -6436,7 +6436,7 @@ MonoBehaviour:
   SpawnableObjects:
   - {fileID: 4636838405463798673, guid: 114ab369b3e177e4f88c0879109740ab, type: 3}
   SpawnDelay: 1
-  SpawnChance: 200
+  SpawnChance: 300
   GracePeriod: 1
   SpawnBothWays: 1
   blockSize: 3
@@ -9237,7 +9237,7 @@ MonoBehaviour:
   SpawnableObjects:
   - {fileID: 6095559526769236910, guid: 305e530e74db3254e94913af0c0d268a, type: 3}
   SpawnDelay: 1
-  SpawnChance: 100
+  SpawnChance: 75
   GracePeriod: 1
   SpawnBothWays: 0
   blockSize: 1
@@ -9460,7 +9460,7 @@ MonoBehaviour:
   SpawnableObjects:
   - {fileID: 100848, guid: aed502683c9d9b540b8e9f801bfebaf8, type: 3}
   SpawnDelay: 1
-  SpawnChance: 100
+  SpawnChance: 75
   GracePeriod: 1
   SpawnBothWays: 0
   blockSize: 1
@@ -10487,7 +10487,7 @@ MonoBehaviour:
   SpawnableObjects:
   - {fileID: 6095559526769236910, guid: 305e530e74db3254e94913af0c0d268a, type: 3}
   SpawnDelay: 1
-  SpawnChance: 100
+  SpawnChance: 75
   GracePeriod: 1
   SpawnBothWays: 0
   blockSize: 1
@@ -11617,7 +11617,7 @@ MonoBehaviour:
   SpawnableObjects:
   - {fileID: 6095559526769236910, guid: 305e530e74db3254e94913af0c0d268a, type: 3}
   SpawnDelay: 1
-  SpawnChance: 100
+  SpawnChance: 75
   GracePeriod: 1
   SpawnBothWays: 0
   blockSize: 1
@@ -12206,7 +12206,7 @@ MonoBehaviour:
   SpawnableObjects:
   - {fileID: 100848, guid: aed502683c9d9b540b8e9f801bfebaf8, type: 3}
   SpawnDelay: 1
-  SpawnChance: 100
+  SpawnChance: 75
   GracePeriod: 1
   SpawnBothWays: 0
   blockSize: 1
@@ -12852,7 +12852,7 @@ MonoBehaviour:
   SpawnableObjects:
   - {fileID: 100848, guid: aed502683c9d9b540b8e9f801bfebaf8, type: 3}
   SpawnDelay: 1
-  SpawnChance: 100
+  SpawnChance: 75
   GracePeriod: 1
   SpawnBothWays: 0
   blockSize: 1
@@ -13827,7 +13827,7 @@ MonoBehaviour:
   SpawnableObjects:
   - {fileID: 6095559526769236910, guid: 305e530e74db3254e94913af0c0d268a, type: 3}
   SpawnDelay: 1
-  SpawnChance: 100
+  SpawnChance: 75
   GracePeriod: 1
   SpawnBothWays: 0
   blockSize: 1
@@ -14056,7 +14056,7 @@ MonoBehaviour:
   SpawnableObjects:
   - {fileID: 100848, guid: aed502683c9d9b540b8e9f801bfebaf8, type: 3}
   SpawnDelay: 1
-  SpawnChance: 100
+  SpawnChance: 75
   GracePeriod: 1
   SpawnBothWays: 0
   blockSize: 1
@@ -14125,7 +14125,7 @@ MonoBehaviour:
   SpawnableObjects:
   - {fileID: 100848, guid: aed502683c9d9b540b8e9f801bfebaf8, type: 3}
   SpawnDelay: 1
-  SpawnChance: 100
+  SpawnChance: 75
   GracePeriod: 1
   SpawnBothWays: 0
   blockSize: 1
@@ -15039,7 +15039,7 @@ MonoBehaviour:
   SpawnableObjects:
   - {fileID: 100848, guid: aed502683c9d9b540b8e9f801bfebaf8, type: 3}
   SpawnDelay: 1
-  SpawnChance: 100
+  SpawnChance: 75
   GracePeriod: 1
   SpawnBothWays: 0
   blockSize: 1
@@ -18717,7 +18717,7 @@ MonoBehaviour:
   SpawnableObjects:
   - {fileID: 100848, guid: aed502683c9d9b540b8e9f801bfebaf8, type: 3}
   SpawnDelay: 1
-  SpawnChance: 100
+  SpawnChance: 75
   GracePeriod: 1
   SpawnBothWays: 0
   blockSize: 1
@@ -18863,7 +18863,7 @@ MonoBehaviour:
   SpawnableObjects:
   - {fileID: 100848, guid: aed502683c9d9b540b8e9f801bfebaf8, type: 3}
   SpawnDelay: 1
-  SpawnChance: 100
+  SpawnChance: 75
   GracePeriod: 1
   SpawnBothWays: 0
   blockSize: 1
@@ -21074,7 +21074,7 @@ MonoBehaviour:
   SpawnableObjects:
   - {fileID: 5103702826102403537, guid: 6d6c00539f6564f469ddbb7ee4f4e1b0, type: 3}
   SpawnDelay: 1
-  SpawnChance: 200
+  SpawnChance: 150
   GracePeriod: 1
   SpawnBothWays: 0
   blockSize: 1
@@ -21255,7 +21255,7 @@ MonoBehaviour:
   SpawnableObjects:
   - {fileID: 6095559526769236910, guid: 305e530e74db3254e94913af0c0d268a, type: 3}
   SpawnDelay: 1
-  SpawnChance: 100
+  SpawnChance: 75
   GracePeriod: 1
   SpawnBothWays: 0
   blockSize: 1
@@ -22077,7 +22077,7 @@ MonoBehaviour:
   SpawnableObjects:
   - {fileID: 6095559526769236910, guid: 305e530e74db3254e94913af0c0d268a, type: 3}
   SpawnDelay: 1
-  SpawnChance: 100
+  SpawnChance: 75
   GracePeriod: 1
   SpawnBothWays: 0
   blockSize: 1
@@ -22368,7 +22368,7 @@ MonoBehaviour:
   SpawnableObjects:
   - {fileID: 6095559526769236910, guid: 305e530e74db3254e94913af0c0d268a, type: 3}
   SpawnDelay: 1
-  SpawnChance: 100
+  SpawnChance: 75
   GracePeriod: 1
   SpawnBothWays: 0
   blockSize: 1
@@ -22781,7 +22781,7 @@ MonoBehaviour:
   SpawnableObjects:
   - {fileID: 100848, guid: aed502683c9d9b540b8e9f801bfebaf8, type: 3}
   SpawnDelay: 1
-  SpawnChance: 100
+  SpawnChance: 75
   GracePeriod: 1
   SpawnBothWays: 0
   blockSize: 1
@@ -24300,7 +24300,7 @@ MonoBehaviour:
   SpawnableObjects:
   - {fileID: 100848, guid: aed502683c9d9b540b8e9f801bfebaf8, type: 3}
   SpawnDelay: 1
-  SpawnChance: 100
+  SpawnChance: 75
   GracePeriod: 1
   SpawnBothWays: 0
   blockSize: 1
@@ -25528,7 +25528,7 @@ MonoBehaviour:
   SpawnableObjects:
   - {fileID: 100848, guid: aed502683c9d9b540b8e9f801bfebaf8, type: 3}
   SpawnDelay: 1
-  SpawnChance: 100
+  SpawnChance: 75
   GracePeriod: 1
   SpawnBothWays: 0
   blockSize: 1
@@ -26604,7 +26604,7 @@ MonoBehaviour:
   SpawnableObjects:
   - {fileID: 6095559526769236910, guid: 305e530e74db3254e94913af0c0d268a, type: 3}
   SpawnDelay: 1
-  SpawnChance: 100
+  SpawnChance: 75
   GracePeriod: 1
   SpawnBothWays: 0
   blockSize: 1
