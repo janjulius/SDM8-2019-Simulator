@@ -42,6 +42,11 @@ namespace Assets.Scripts.Traffic.TrafficObjects
                 stopCube.SetActive(true);
             });
         }
-
+        
+        private void OnDrawGizmosSelected()
+        {
+            Gizmos.color = Color.black;
+            Gizmos.DrawCube(StopCollisionLocation, StopCollisionSize);
+        }
     }
 }

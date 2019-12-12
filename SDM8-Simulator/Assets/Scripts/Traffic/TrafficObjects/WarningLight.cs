@@ -32,7 +32,7 @@ namespace Assets.Scripts
 
         IEnumerator WarningLightIEnumerator()
         {
-            if (Status != 1)
+            if (Status < 1)
                 yield break; //stop this routine
             SetRendererColor(Color.white);
             yield return new WaitForSeconds(1f);
