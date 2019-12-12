@@ -4,6 +4,12 @@ namespace Assets.Scripts.Traffic.TrafficObjects
 {
     internal class CycleSensor : Sensor
     {
+        public override void SetUp()
+        {
+            base.SetUp();
+            laneType = LaneType.CYCLE;
+        }
+
         private void OnTriggerEnter(UnityEngine.Collider collision)
         {
             Biker biker = collision.gameObject.GetComponent<Biker>();

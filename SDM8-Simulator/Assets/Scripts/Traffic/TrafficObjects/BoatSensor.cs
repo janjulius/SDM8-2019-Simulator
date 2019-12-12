@@ -1,14 +1,15 @@
 ﻿using Assets.Scripts.Traffic.Participant;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Assets.Scripts.Traffic.TrafficObjects
 {
-    class BoatSensor : Sensor
+    internal class BoatSensor : Sensor
     {
+        public override void SetUp()
+        {
+            base.SetUp();
+            laneType = LaneType.VESSEL;
+        }
+
         private void OnTriggerEnter(UnityEngine.Collider collision)
         {
             collisionSize++;

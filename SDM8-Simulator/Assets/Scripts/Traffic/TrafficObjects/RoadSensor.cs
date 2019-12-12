@@ -1,13 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Assets.Scripts.Traffic.TrafficObjects
+﻿namespace Assets.Scripts.Traffic.TrafficObjects
 {
-    class RoadSensor : Sensor
+    internal class RoadSensor : Sensor
     {
+        public override void SetUp()
+        {
+            base.SetUp();
+        }
+
         private void OnTriggerEnter(UnityEngine.Collider collision)
         {
             Car car = collision.gameObject.GetComponent<Car>();
