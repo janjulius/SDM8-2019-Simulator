@@ -1,6 +1,5 @@
 ﻿using Assets.Scripts.Traffic;
 using System.Collections;
-using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
 
@@ -19,9 +18,9 @@ public class Path : MonoBehaviour
 
     [Header("Stoplights units on this path should stop for")]
     public StopLight[] StopForStopLights;
-    
+
     public GameObject[] SpawnableObjects;
-    
+
     [Header("How much delay between each spawn, in seconds.")]
     public float SpawnDelay = 1;
 
@@ -36,7 +35,7 @@ public class Path : MonoBehaviour
     public bool SpawnBothWays = false;
 
     public int blockSize = 10;
-    
+
     /// <summary>
     /// The location of the stopping area
     /// </summary>
@@ -47,8 +46,9 @@ public class Path : MonoBehaviour
     /// </summary>
     private Vector3 StopCollisionSize;
 
-    void Start()
+    private void Start()
     {
+        SpawnTrafficParticipant();
         gracePeriod = GracePeriod;
 
         if (SpawnableObjects == null)
@@ -60,11 +60,10 @@ public class Path : MonoBehaviour
         //spawnBlockAreaCollider.size = SpawnBlockArea.size;
         //spawnBlockAreaCollider.center = Points[0];
 
-
         StartCoroutine(ContiniousSpawning());
     }
 
-    IEnumerator ContiniousSpawning()
+    private IEnumerator ContiniousSpawning()
     {
         yield return new WaitForSeconds(SpawnDelay);
         int r = Random.Range(1, SpawnChance);
@@ -82,7 +81,7 @@ public class Path : MonoBehaviour
                 var spawneyboy = SpawnableObjects[Random.Range(0, SpawnableObjects.Length)];
                 Vector3 spawnLoc = SpawnBothWays ? Random.Range(0, 1) == 1 ? Points[Points.Length - 1] : Points[0] : Points[0];
 
-                foreach(TrafficParticipant p in Camera.main.GetComponent<SdmManager>().trafficParticipants)
+                foreach (TrafficParticipant p in Camera.main.GetComponent<SdmManager>().trafficParticipants)
                 {
                     if (p == null)
                         continue;
@@ -107,7 +106,7 @@ public class Path : MonoBehaviour
         return null;
     }
 
-    void OnDrawGizmos()
+    private void OnDrawGizmos()
     {
         GizmoColor = GetPathColor(PathType);
         for (int i = 0; i < Points.Length; i++)
@@ -125,7 +124,7 @@ public class Path : MonoBehaviour
 
     private void OnDrawGizmosSelected()
     {
-        for(int i = 0; i < Points.Length; i++)
+        for (int i = 0; i < Points.Length; i++)
         {
             Vector3 p = Points[i];
             Handles.Label(p, $"P:{i} X: {p.x}, Y: {p.y}, Z: {p.z} T: {PathType}");

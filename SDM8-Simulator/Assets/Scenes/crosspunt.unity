@@ -11443,8 +11443,8 @@ MonoBehaviour:
   groupId: 0
   componentType: 4
   componentId: 0
-  StopCollisionLocation: {x: 312.87, y: -14.7, z: 833.9}
-  StopCollisionSize: {x: 88.7, y: 279.75, z: 231.7}
+  StopCollisionLocation: {x: 312.87, y: -83.8, z: 877.2}
+  StopCollisionSize: {x: 88.7, y: 69.6, z: 85}
 --- !u!4 &939637760 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4549882812725322, guid: a5faf4711ef4cef489a20f0ef5c5e8f3,
@@ -13229,8 +13229,8 @@ MonoBehaviour:
   groupId: 0
   componentType: 4
   componentId: 1
-  StopCollisionLocation: {x: 137.16, y: -14.7, z: 833.9}
-  StopCollisionSize: {x: 87.9, y: 279.75, z: 215.8}
+  StopCollisionLocation: {x: 137.16, y: -86.6, z: 761.2}
+  StopCollisionSize: {x: 87.9, y: 84.4, z: 68.1}
 --- !u!1 &1103052662
 GameObject:
   m_ObjectHideFlags: 0
@@ -13393,7 +13393,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4549882812725322, guid: a5faf4711ef4cef489a20f0ef5c5e8f3, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 509.5
+      value: 511.2
       objectReference: {fileID: 0}
     - target: {fileID: 4549882812725322, guid: a5faf4711ef4cef489a20f0ef5c5e8f3, type: 3}
       propertyPath: m_LocalRotation.x
@@ -14749,7 +14749,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1221874139}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ae859443ad2eea047875da9a4e527896, type: 3}
+  m_Script: {fileID: 11500000, guid: 2412513dee1f55e4582f862082b00457, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   laneType: 3

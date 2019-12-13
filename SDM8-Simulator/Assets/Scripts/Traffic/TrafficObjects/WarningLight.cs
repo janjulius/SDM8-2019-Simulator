@@ -8,17 +8,6 @@ namespace Assets.Scripts
     {
         private Coroutine routine;
 
-        [Header("IMPORTANT: This is overriden by LaneType Track and Vessel")]
-        public WarningLightType warningLightType;
-
-        private void Awake()
-        {
-            warningLightType = (
-                laneType == LaneType.TRACK ? WarningLightType.TRAIN :
-                laneType == LaneType.VESSEL ? WarningLightType.BOAT :
-                warningLightType);
-        }
-
         public override void SetUp()
         {
             base.SetUp();
