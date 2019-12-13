@@ -3,6 +3,7 @@ using System.Text;
 using System.Threading;
 using UnityEngine;
 using uPLibrary.Networking.M2Mqtt;
+using uPLibrary.Networking.M2Mqtt.Exceptions;
 using uPLibrary.Networking.M2Mqtt.Messages;
 
 namespace Assets.Scripts
@@ -95,7 +96,7 @@ namespace Assets.Scripts
             string clientId = Guid.NewGuid().ToString();
             client.Connect(clientId);
             var topics = new string[] { ToString() };
-            var qos = new byte[] { MqttMsgBase.QOS_LEVEL_EXACTLY_ONCE };
+            var qos = new byte[] { MqttMsgBase.QOS_LEVEL_AT_LEAST_ONCE };
             Subscribe(client, topics, qos);
             if (Constants.Constants.SHOW_CONNECTED_MESSAGES)
                 print($"Started subscription on: {Constants.Constants.ADDRESS}:{Constants.Constants.PORT}, topic: {ToString()}");
@@ -106,6 +107,11 @@ namespace Assets.Scripts
             try
             {
                 client.Subscribe(topics, qos);
+            }
+            catch (MqttCommunicationException e)
+            {
+                Thread.Sleep(200);
+                Subscribe(client, topics, qos);
             }
             catch (Exception e)
             {
