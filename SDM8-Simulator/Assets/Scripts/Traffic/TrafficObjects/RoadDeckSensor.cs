@@ -10,8 +10,6 @@
         private void OnTriggerEnter(UnityEngine.Collider collision)
         {
             collisionSize++;
-            print(collisionSize);
-
             SetStatus(1);
         }
 

@@ -105,7 +105,7 @@ GameObject:
   - component: {fileID: 2409134677897796269}
   - component: {fileID: 7391524939373336187}
   - component: {fileID: 7822273282127160699}
-  - component: {fileID: 949095168753885087}
+  - component: {fileID: 5444027197159554709}
   m_Layer: 0
   m_Name: Loper
   m_TagString: Untagged
@@ -184,7 +184,7 @@ CapsuleCollider:
   m_GameObject: {fileID: 6095559526769236910}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Enabled: 0
+  m_Enabled: 1
   m_Radius: 0.5
   m_Height: 2
   m_Direction: 1
@@ -203,19 +203,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tailGatingDistance: 10
   Speed: 7
---- !u!65 &949095168753885087
-BoxCollider:
+--- !u!54 &5444027197159554709
+Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6095559526769236910}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 3.11, y: 3.66, z: 3.55}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 116
+  m_CollisionDetection: 0
 --- !u!1 &7809700922281730485
 GameObject:
   m_ObjectHideFlags: 0
