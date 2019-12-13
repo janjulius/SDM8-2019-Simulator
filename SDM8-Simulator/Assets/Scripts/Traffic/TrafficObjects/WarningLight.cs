@@ -1,26 +1,21 @@
 ﻿using Assets.Scripts.Traffic.TrafficObjects;
-using System;
 using System.Collections;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using UnityEngine;
 
 namespace Assets.Scripts
 {
-    class WarningLight : StopableTrafficObject
+    internal class WarningLight : StopableTrafficObject
     {
         private Coroutine routine;
 
         [Header("IMPORTANT: This is overriden by LaneType Track and Vessel")]
         public WarningLightType warningLightType;
 
-        void Awake()
+        private void Awake()
         {
             warningLightType = (
-                laneType == LaneType.TRACK ? WarningLightType.TRAIN : 
-                laneType == LaneType.VESSEL ? WarningLightType.BOAT : 
+                laneType == LaneType.TRACK ? WarningLightType.TRAIN :
+                laneType == LaneType.VESSEL ? WarningLightType.BOAT :
                 warningLightType);
         }
 
@@ -29,6 +24,7 @@ namespace Assets.Scripts
             base.SetUp();
             SetStatus(0);
             Subscribe();
+            componentId = componentId == "" ? "0" : componentId;
         }
 
         public override void SetStatus(int s)
@@ -45,7 +41,7 @@ namespace Assets.Scripts
             }
         }
 
-        IEnumerator WarningLightIEnumerator()
+        private IEnumerator WarningLightIEnumerator()
         {
             if (Status < 1)
                 yield break; //stop this routine
