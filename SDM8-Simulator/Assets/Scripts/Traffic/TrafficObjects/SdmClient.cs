@@ -1,13 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
+using System.Threading;
 using UnityEngine;
 using uPLibrary.Networking.M2Mqtt;
-using Assets.Scripts.Constants;
 using uPLibrary.Networking.M2Mqtt.Messages;
-using System.Threading;
 
 namespace Assets.Scripts
 {
@@ -58,7 +54,6 @@ namespace Assets.Scripts
         /// </summary>
         public virtual void SetUp() { }
 
-
         /// <summary>
         /// Method is called every frame, after Update
         /// </summary>
@@ -99,9 +94,24 @@ namespace Assets.Scripts
             client.MqttMsgPublishReceived += Client_MqttMsgPublishReceived;
             string clientId = Guid.NewGuid().ToString();
             client.Connect(clientId);
-            client.Subscribe(new string[] { ToString() }, new byte[] { MqttMsgBase.QOS_LEVEL_EXACTLY_ONCE });
+            var topics = new string[] { ToString() };
+            var qos = new byte[] { MqttMsgBase.QOS_LEVEL_EXACTLY_ONCE };
+            Subscribe(client, topics, qos);
             if (Constants.Constants.SHOW_CONNECTED_MESSAGES)
                 print($"Started subscription on: {Constants.Constants.ADDRESS}:{Constants.Constants.PORT}, topic: {ToString()}");
+        }
+
+        private void Subscribe(MqttClient client, string[] topics, byte[] qos)
+        {
+            try
+            {
+                client.Subscribe(topics, qos);
+            }
+            catch (Exception e)
+            {
+                Thread.Sleep(200);
+                Subscribe(client, topics, qos);
+            }
         }
 
         /// <summary>
@@ -111,7 +121,7 @@ namespace Assets.Scripts
         protected void Publish(string message)
             =>
             Publish(mqttClient ?? Connect(Constants.Constants.ADDRESS, Constants.Constants.PORT), ToString(), Encoding.ASCII.GetBytes(message));
-        
+
         /// <summary>
         /// Publishes a message on the current topic
         /// </summary>
@@ -138,13 +148,13 @@ namespace Assets.Scripts
         private void Publish(MqttClient client, string topic, byte[] message)
         {
             //if (Constants.Constants.SHOW_CONNECTED_MESSAGES)
-                //print($"Sent message: {message.ToString()} to topic: {topic.ToString()}");
+            //print($"Sent message: {message.ToString()} to topic: {topic.ToString()}");
             string clientId = Guid.NewGuid().ToString();
-            if(!client.IsConnected)
+            if (!client.IsConnected)
                 client.Connect(clientId);
             client.Publish(topic, message);
         }
-        
+
         public virtual void Client_MqttMsgPublishReceived(object sender, MqttMsgPublishEventArgs e)
         {
             Debug.Log($"Received message on: {e.Topic} {Encoding.UTF8.GetString(e.Message)}");
@@ -154,6 +164,5 @@ namespace Assets.Scripts
         {
             return $"{teamId}/{laneType.ToString().ToLower()}/{groupId}/{componentType.ToString().ToLower()}/{componentId}";
         }
-
     }
 }
